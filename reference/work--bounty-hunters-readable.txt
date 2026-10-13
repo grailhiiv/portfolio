@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="geist_dbbf8c4b-module__5qCx7q__variable antialiased" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="font" crossorigin="" href="/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2" rel="preload" type="font/woff2"/>
+  <link as="image" imagesizes="(min-width: 1024px) 1024px, 100vw" imagesrcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=3840&amp;q=90 3840w" rel="preload"/>
+  <link data-precedence="next" href="/_next/static/chunks/0h8hoyqlcq14w.css" rel="stylesheet"/>
+  <link as="script" fetchpriority="low" href="/_next/static/chunks/070.9.ep.fny7.js" rel="preload"/>
+  <meta content="" name="next-size-adjust"/>
+  <title>
+   Bounty Hunters Case Study — Arturo Spatino
+  </title>
+  <meta content="Design and development for Bounty Hunters — an independent platform that promotes and publishes graphic design work from studios and designers around the world." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <link href="https://arturospatino.com/work/bounty-hunters" rel="canonical"/>
+  <meta content="Bounty Hunters — Arturo Spatino" property="og:title"/>
+  <meta content="Design and development for Bounty Hunters — an independent platform that promotes and publishes graphic design work from studios and designers around the world." property="og:description"/>
+  <meta content="https://arturospatino.com/images/bounty-hunters/bh-hero.png" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Arturo Spatino — Product Designer" name="twitter:title"/>
+  <meta content="Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments." name="twitter:description"/>
+  <meta content="https://arturospatino.com/images/home-hero-left.png" name="twitter:image"/>
+  <link href="/icon.png?icon.04fpt~f~xn4fs.png" rel="icon" sizes="264x264" type="image/png"/>
+ </head>
+ <body class="min-h-screen bg-white text-[#111111] font-sans">
+  <div hidden="">
+   <!--$-->
+   <!--/$-->
+  </div>
+  <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-white focus:text-[#111111] focus:rounded-lg focus:shadow-lg" href="#main-content">
+   Skip to content
+  </a>
+  <!--$!-->
+  <!--/$-->
+  <header class="px-4 py-4 border-b border-gray-100">
+   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start md:items-end justify-between gap-4">
+    <div class="flex flex-col">
+     <p class="text-md font-medium leading-none">
+      Design by Art.
+     </p>
+     <p class="block text-sm text-gray-400 mt-1">
+      —
+      <!-- -->
+      Catania, IT
+     </p>
+    </div>
+    <div class="md:justify-end flex">
+     <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/">
+       Home
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/about">
+       About
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+       Work
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+       Contact
+      </a>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 px-4 py-4" style="transform:translateY(-100%)">
+   <div class="max-w-5xl mx-auto flex-col md:flex-row flex md:items-center gap-2 justify-between">
+    <p class="text-md font-medium">
+     Design by Art.
+    </p>
+    <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/">
+      Home
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/about">
+      About
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+      Work
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main id="main-content">
+   <section class="px-4 pt-10 md:pt-14 pb-10 md:pb-14">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-8">
+     <div class="hidden md:block">
+     </div>
+     <div>
+      <h1 class="text-2xl leading-[1.05] tracking-[-2.56px] text-[#111111] mb-8">
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         B
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         o
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         u
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         n
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         y
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         H
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         u
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         n
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         r
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         s
+        </span>
+       </span>
+      </h1>
+      <div class="flex flex-wrap gap-x-8 gap-y-5">
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Year
+        </p>
+        <p class="text-sm text-[#111111]">
+         2025
+        </p>
+       </div>
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Role
+        </p>
+        <p class="text-sm text-[#111111]">
+         Design and development
+        </p>
+       </div>
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Type
+        </p>
+        <p class="text-sm text-[#111111]">
+         Website
+        </p>
+       </div>
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Link
+        </p>
+        <a class="text-sm text-[#111111] underline underline-offset-4 hover:text-gray-500 transition-colors" href="https://www.bounty-hunters.co.uk/" rel="noopener noreferrer" target="_blank">
+         Visit site
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4">
+     <div class="max-w-5xl mx-auto aspect-[10/7] rounded-lg relative bg-gray-100 overflow-hidden">
+      <img alt="Bounty Hunters website" class="object-cover" data-nimg="fill" decoding="async" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-hero.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <section class="px-4 py-10 md:py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1">
+     <div>
+     </div>
+     <div class="space-y-4 text-md leading-relaxed text-gray-500" style="opacity:0;transform:translateY(18px)">
+      <p>
+       Bounty Hunters is an independent platform that promotes and publishes graphic design work from studios and designers around the world. The content was already there: strong, curated, consistent.
+      </p>
+      <p>
+       The problem was everything around it: navigation that got in the way, a content structure that made discovery harder than it needed to be, and a visual language that didn't match the quality of what it was showcasing.
+      </p>
+      <p>
+       The brief was to redesign the site without losing the identity it had built. Same editorial attitude, better everything else. I redesigned the UX from the ground up , restructuring how content is organized and surfaced, and developed the final product on WordPress.
+      </p>
+      <p>
+       One deliberate change: replacing Helvetica with Saans by Displaay Type. Not just for legibility, but because it felt right for a platform that champions original work: a typeface with character, without the generic neutrality that Helvetica brings to almost everything it touches.
+      </p>
+     </div>
+    </div>
+   </section>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4 mb-4">
+     <div class="max-w-5xl mx-auto aspect-[10/6] relative rounded-lg overflow-hidden bg-gray-100">
+      <img alt="Bounty Hunters screens" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-1.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <section class="px-4 py-10 md:py-12 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-4">
+     <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+      Design Goals
+     </p>
+     <div style="opacity:0;transform:translateY(18px)">
+      <div>
+       <p class="text-md leading-relaxed text-gray-500">
+        The content was the strength of the platform — the design just needed to get out of its way. The goals were to make navigation intuitive enough to disappear, restructure the content architecture so that good work could actually be found, and build a visual language that felt as considered as the projects it was featuring. Preserving the editorial identity while upgrading everything else.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-12 md:py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 gap-1" style="opacity:0;transform:translateY(18px)">
+     <div class="aspect-[4/3] relative overflow-hidden rounded-lg">
+      <img alt="bounty-hunters screen 2" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-2.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+     <div class="aspect-[4/3] relative overflow-hidden rounded-lg">
+      <img alt="bounty-hunters screen 3" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-3.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+     <div class="aspect-[4/3] relative overflow-hidden rounded-lg" style="grid-column:span 2">
+      <img alt="bounty-hunters screen 4" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-4.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-10 md:py-12 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-4">
+     <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+      The Build
+     </p>
+     <div style="opacity:0;transform:translateY(18px)">
+      <div>
+       <p class="text-md leading-relaxed text-gray-500">
+        The site runs on a custom WordPress theme built from scratch. The goal was to give the Bounty Hunters team full control over content: publishing, editing, archiving, without depending on a developer for every change. No off-the-shelf template compromises, no plugin bloat: just a theme designed around how they actually work.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4 mb-4">
+     <div class="max-w-5xl mx-auto aspect-[10/6] relative rounded-lg overflow-hidden bg-gray-100">
+      <img alt="Bounty Hunters mobile" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-5.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4 mb-4">
+     <div class="max-w-5xl mx-auto aspect-[10/6] relative rounded-lg overflow-hidden">
+      <img alt="Bounty Hunters share your work" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbounty-hunters%2Fbh-6.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <a class="block bg-[#ffffff] border-t border-gray-100 px-4 py-8 md:py-10 hover:bg-gray-50 transition-colors" href="/work/4fett">
+    <div class="max-w-5xl mx-auto flex items-end justify-between">
+     <div>
+      <p class="text-xs text-gray-800 mb-1">
+       Next project
+      </p>
+      <p class="text-2xl tracking-[-2.56px] text-black">
+       4fett
+      </p>
+     </div>
+     <span class="text-sm pb-4 text-black">
+      Visualizza →
+     </span>
+    </div>
+   </a>
+   <!--$-->
+   <!--/$-->
+  </main>
+  <footer class="bg-gray-100 px-4 pt-10 md:pt-16 pb-10 md:pb-12" id="contact">
+   <div class="max-w-5xl mx-auto flex flex-col gap-16 md:gap-64">
+    <div>
+     <h2 class="text-2xl font-light leading-[1.1] tracking-[-2px] md:tracking-[-2.56px] text-[#111111]">
+      Connect, collaborate,
+      <br/>
+      or just say hello
+     </h2>
+     <a class="hidden md:block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      ciao@arturospatino.com
+     </a>
+     <a class="block md:hidden text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      Email
+     </a>
+    </div>
+    <a aria-label="Arturo Spatino on LinkedIn (opens in new tab)" class="block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="https://www.linkedin.com/in/arturo-spatino/" rel="noopener noreferrer" target="_blank">
+     LinkedIn
+    </a>
+   </div>
+  </footer>
+  <!--$!-->
+  <!--/$-->
+  <!--$!-->
+  <!--/$-->
+ </body>
+</html>

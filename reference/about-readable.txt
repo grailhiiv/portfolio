@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="geist_dbbf8c4b-module__5qCx7q__variable antialiased" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="font" crossorigin="" href="/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2" rel="preload" type="font/woff2"/>
+  <link as="image" imagesizes="(min-width: 1024px) 512px, 50vw" imagesrcset="/_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=3840&amp;q=90 3840w" rel="preload"/>
+  <link data-precedence="next" href="/_next/static/chunks/0h8hoyqlcq14w.css" rel="stylesheet"/>
+  <link as="script" fetchpriority="low" href="/_next/static/chunks/070.9.ep.fny7.js" rel="preload"/>
+  <meta content="" name="next-size-adjust"/>
+  <title>
+   About — Arturo Spatino
+  </title>
+  <meta content="Designer with 10+ years of experience across UX, UI and design systems. Based in Italy, working with startups, agencies and consulting environments." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <link href="https://arturospatino.com/about" rel="canonical"/>
+  <meta content="About — Arturo Spatino" property="og:title"/>
+  <meta content="Designer with 10+ years of experience across UX, UI and design systems." property="og:description"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Arturo Spatino — Product Designer" name="twitter:title"/>
+  <meta content="Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments." name="twitter:description"/>
+  <meta content="https://arturospatino.com/images/home-hero-left.png" name="twitter:image"/>
+  <link href="/icon.png?icon.04fpt~f~xn4fs.png" rel="icon" sizes="264x264" type="image/png"/>
+ </head>
+ <body class="min-h-screen bg-white text-[#111111] font-sans">
+  <div hidden="">
+   <!--$-->
+   <!--/$-->
+  </div>
+  <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-white focus:text-[#111111] focus:rounded-lg focus:shadow-lg" href="#main-content">
+   Skip to content
+  </a>
+  <!--$!-->
+  <!--/$-->
+  <header class="px-4 py-4 border-b border-gray-100">
+   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start md:items-end justify-between gap-4">
+    <div class="flex flex-col">
+     <p class="text-md font-medium leading-none">
+      Design by Art.
+     </p>
+     <p class="block text-sm text-gray-400 mt-1">
+      —
+      <!-- -->
+      Catania, IT
+     </p>
+    </div>
+    <div class="md:justify-end flex">
+     <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/">
+       Home
+      </a>
+      <a class="transition-colors text-sm md:text-md text-[#111111]" href="/about">
+       About
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+       Work
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+       Contact
+      </a>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 px-4 py-4" style="transform:translateY(-100%)">
+   <div class="max-w-5xl mx-auto flex-col md:flex-row flex md:items-center gap-2 justify-between">
+    <p class="text-md font-medium">
+     Design by Art.
+    </p>
+    <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/">
+      Home
+     </a>
+     <a class="transition-colors text-sm md:text-md text-[#111111]" href="/about">
+      About
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+      Work
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main id="main-content">
+   <section class="px-4 pb-4 md:pb-14 pt-4">
+    <div class="max-w-5xl mx-auto">
+     <div style="opacity:0;transform:translateY(18px)">
+      <div class="aspect-[3/4] md:aspect-[2/1] rounded-lg relative overflow-hidden">
+       <img alt="Portrait of Arturo Spatino" class="object-cover" data-nimg="fill" decoding="async" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fabout-hero.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-10 pt-4 md:py-12 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6">
+     <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+      Info
+     </p>
+     <div class="space-y-4 text-md leading-relaxed text-gray-500" style="opacity:0;transform:translateY(18px)">
+      <p>
+       I'm Arturo Spatino, a digital product designer based in Italy with over 10 years of experience designing digital products across startups, agencies and consulting environments.
+      </p>
+      <p>
+       Over the years, I've worked across UX, UI and design systems, helping teams create products that are clearer, more consistent and easier to use.
+      </p>
+      <p>
+       My career evolved from hands-on product design to leading teams, shaping design processes and mentoring designers through collaboration and training.
+      </p>
+      <p>
+       Today, I work as an independent designer, partnering with companies to build thoughtful digital experiences that balance user needs, business goals and scalable systems.
+      </p>
+      <p>
+       My work is driven by curiosity, clarity and a constant desire to improve how things work — both for people and for the teams building them.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-10 md:py-12 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6">
+     <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+      Work Experience
+     </p>
+     <div class="divide-y divide-gray-100">
+      <div class="py-10 first:pt-0" style="opacity:0;transform:translateY(18px)">
+       <div class="flex items-end justify-between mb-5">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
+          <img alt="Independent" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="48px" src="/_next/image?url=%2Ficon.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Ficon.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Ficon.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Ficon.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Ficon.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Ficon.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Ficon.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Ficon.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Ficon.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Ficon.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Ficon.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Ficon.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Ficon.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Ficon.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Ficon.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Ficon.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+         </div>
+         <div>
+          <p class="text-md font-medium text-[#111111]">
+           Independent
+          </p>
+          <p class="text-sm text-gray-400 mt-0.5">
+           Freelance and partnerships
+          </p>
+         </div>
+        </div>
+       </div>
+       <div class="space-y-3">
+        <p class="text-sm text-gray-500 leading-relaxed">
+         I’m working with product teams and startups to help them build digital experiences that are clearer, more consistent and easier to use.
+        </p>
+       </div>
+      </div>
+      <div class="py-10 first:pt-0" style="opacity:0;transform:translateY(18px)">
+       <div class="flex items-end justify-between mb-5">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
+          <img alt="Nebula" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="48px" src="/_next/image?url=%2Fimages%2Fnebula.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fnebula.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fnebula.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+         </div>
+         <div>
+          <p class="text-md font-medium text-[#111111]">
+           Nebula
+          </p>
+          <p class="text-sm text-gray-400 mt-0.5">
+           Co-founder and Lead of Design
+          </p>
+         </div>
+        </div>
+        <span class="text-xs text-gray-400 shrink-0 ml-4">
+         2024 — Today
+        </span>
+       </div>
+       <div class="space-y-3">
+        <p class="text-sm text-gray-500 leading-relaxed">
+         Nebula is an independent tech company focused on building digital products and tailored solutions for startups and businesses, combining design, technology and AI to create intuitive user experiences.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         As Co-Founder and Lead Designer, I led the design direction across products, brand and user experience, helping shape the company vision from the ground up. I worked across UX, UI and design systems, while also guiding design decisions, collaboration processes and product strategy.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         During this experience, I contributed to the launch of Togevent, a platform designed to simplify event organization through a shared digital space for guests, updates, media and communication.
+        </p>
+       </div>
+      </div>
+      <div class="py-10 first:pt-0" style="opacity:0;transform:translateY(18px)">
+       <div class="flex items-end justify-between mb-5">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
+          <img alt="Bip Red" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="48px" src="/_next/image?url=%2Fimages%2Fbipred.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbipred.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbipred.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+         </div>
+         <div>
+          <p class="text-md font-medium text-[#111111]">
+           Bip Red
+          </p>
+          <p class="text-sm text-gray-400 mt-0.5">
+           Senior UI Designer
+          </p>
+         </div>
+        </div>
+        <span class="text-xs text-gray-400 shrink-0 ml-4">
+         2022 — 2025
+        </span>
+       </div>
+       <div class="space-y-3">
+        <p class="text-sm text-gray-500 leading-relaxed">
+         BIP Red is the digital experience and innovation unit of BIP Group, focused on designing products and services that connect strategy, technology and user experience for large-scale companies and organizations.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         As a Senior UI Designer, I worked on digital platforms and product experiences across different industries, collaborating with multidisciplinary teams to transform complex requirements into accessible, scalable and visually consistent interfaces.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         My work focused on UI design, design systems and product consistency, contributing to the creation of cohesive user experiences aligned with both business objectives and user needs.
+        </p>
+       </div>
+      </div>
+      <div class="py-10 first:pt-0" style="opacity:0;transform:translateY(18px)">
+       <div class="flex items-end justify-between mb-5">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
+          <img alt="The Wave Studio" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="48px" src="/_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fthewavestudio.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+         </div>
+         <div>
+          <p class="text-md font-medium text-[#111111]">
+           The Wave Studio
+          </p>
+          <p class="text-sm text-gray-400 mt-0.5">
+           Lead UX / UI Designer
+          </p>
+         </div>
+        </div>
+        <span class="text-xs text-gray-400 shrink-0 ml-4">
+         2020 — 2022
+        </span>
+       </div>
+       <div class="space-y-3">
+        <p class="text-sm text-gray-500 leading-relaxed">
+         The Wave is a digital agency focused on designing and developing digital products, combining strategy, design and technology to create scalable experiences for startups and established companies.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         As Lead Designer, I led design activities across multiple digital products and client projects, collaborating with cross-functional teams to shape user experiences from concept to delivery.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         My role combined product thinking, UI design and design systems, while also guiding design direction, team collaboration and internal processes. Alongside project work, I was involved in training and mentoring activities, supporting the growth of junior designers and helping teams develop stronger design practices and workflows.
+        </p>
+       </div>
+      </div>
+      <div class="py-10 first:pt-0" style="opacity:0;transform:translateY(18px)">
+       <div class="flex items-end justify-between mb-5">
+        <div class="flex items-center gap-4">
+         <div class="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
+          <img alt="SEO Tester Online" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="48px" src="/_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fseotesteronline.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+         </div>
+         <div>
+          <p class="text-md font-medium text-[#111111]">
+           SEO Tester Online
+          </p>
+          <p class="text-sm text-gray-400 mt-0.5">
+           UX / UI Designer
+          </p>
+         </div>
+        </div>
+        <span class="text-xs text-gray-400 shrink-0 ml-4">
+         2018 — 2020
+        </span>
+       </div>
+       <div class="space-y-3">
+        <p class="text-sm text-gray-500 leading-relaxed">
+         SEO Tester Online is an all-in-one SEO platform used by marketers, agencies and businesses to improve website visibility through technical analysis, keyword research and optimization tools.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         As UI/UX Designer, I worked on the evolution of the platform experience, designing interfaces and user flows aimed at simplifying complex SEO processes into more accessible and intuitive interactions.
+        </p>
+        <p class="text-sm text-gray-500 leading-relaxed">
+         My work focused on improving usability, visual consistency and product scalability across different tools and dashboards, collaborating closely with product and development teams to enhance both user experience and platform clarity.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-10 md:py-12 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6">
+     <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+      Clients
+     </p>
+     <div class="grid grid-cols-3 md:grid-cols-4 gap-x-4 items-center">
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Talent Garden" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Sketchin" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fsketchin.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fsketchin.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Tangity" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Ftangity.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftangity.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="The Wave" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fthewave.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fthewave.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Kiwi" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fkiwi.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fkiwi.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Poste Italiane" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fposte.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fposte.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Barilla" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fbarilla.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbarilla.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Giro d'Italia" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="E.ON" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Feon.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Feon.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Feon.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Feon.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Feon.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Feon.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Feon.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Feon.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Enel" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fenel.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fenel.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Prada" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fprada.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fprada.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Costa" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fcosta.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fcosta.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="BPER" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fbper.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbper.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Sanofi" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fsanofi.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fsanofi.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="DHL" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fdhl.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fdhl.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Brembo" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fbrembo.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbrembo.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Mottura" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fmottura.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fmottura.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Monogrid" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Tangible" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Ftangible.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftangible.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+      <div class="relative h-15 md:h-20 w-full">
+       <img alt="Togevent" class="object-contain object-left" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 200px, 33vw" src="/_next/image?url=%2Fimages%2Ftogevent.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftogevent.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!--$-->
+   <!--/$-->
+  </main>
+  <footer class="bg-gray-100 px-4 pt-10 md:pt-16 pb-10 md:pb-12" id="contact">
+   <div class="max-w-5xl mx-auto flex flex-col gap-16 md:gap-64">
+    <div>
+     <h2 class="text-2xl font-light leading-[1.1] tracking-[-2px] md:tracking-[-2.56px] text-[#111111]">
+      Connect, collaborate,
+      <br/>
+      or just say hello
+     </h2>
+     <a class="hidden md:block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      ciao@arturospatino.com
+     </a>
+     <a class="block md:hidden text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      Email
+     </a>
+    </div>
+    <a aria-label="Arturo Spatino on LinkedIn (opens in new tab)" class="block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="https://www.linkedin.com/in/arturo-spatino/" rel="noopener noreferrer" target="_blank">
+     LinkedIn
+    </a>
+   </div>
+  </footer>
+  <!--$!-->
+  <!--/$-->
+  <!--$!-->
+  <!--/$-->
+ </body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html class="geist_dbbf8c4b-module__5qCx7q__variable antialiased" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="font" crossorigin="" href="/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2" rel="preload" type="font/woff2"/>
+  <link as="image" imagesizes="(min-width: 1024px) 512px, 50vw" imagesrcset="/_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=3840&amp;q=90 3840w" rel="preload"/>
+  <link as="image" imagesizes="(min-width: 1024px) 1024px, 100vw" imagesrcset="/_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=3840&amp;q=90 3840w" rel="preload"/>
+  <link data-precedence="next" href="/_next/static/chunks/0h8hoyqlcq14w.css" rel="stylesheet"/>
+  <link as="script" fetchpriority="low" href="/_next/static/chunks/070.9.ep.fny7.js" rel="preload"/>
+  <meta content="" name="next-size-adjust"/>
+  <title>
+   Arturo Spatino — Product Designer
+  </title>
+  <meta content="Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <link href="https://arturospatino.com" rel="canonical"/>
+  <meta content="Arturo Spatino — Product Designer" property="og:title"/>
+  <meta content="Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments." property="og:description"/>
+  <meta content="https://arturospatino.com" property="og:url"/>
+  <meta content="Arturo Spatino" property="og:site_name"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="https://arturospatino.com/images/home-hero-left.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="website" property="og:type"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Arturo Spatino — Product Designer" name="twitter:title"/>
+  <meta content="Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments." name="twitter:description"/>
+  <meta content="https://arturospatino.com/images/home-hero-left.png" name="twitter:image"/>
+  <link href="/icon.png?icon.04fpt~f~xn4fs.png" rel="icon" sizes="264x264" type="image/png"/>
+ </head>
+ <body class="min-h-screen bg-white text-[#111111] font-sans">
+  <div hidden="">
+   <!--$-->
+   <!--/$-->
+  </div>
+  <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-white focus:text-[#111111] focus:rounded-lg focus:shadow-lg" href="#main-content">
+   Skip to content
+  </a>
+  <!--$!-->
+  <!--/$-->
+  <header class="px-4 py-4 border-b border-gray-100">
+   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start md:items-end justify-between gap-4">
+    <div class="flex flex-col">
+     <p class="text-md font-medium leading-none">
+      Design by Art.
+     </p>
+     <p class="block text-sm text-gray-400 mt-1">
+      —
+      <!-- -->
+      Catania, IT
+     </p>
+    </div>
+    <div class="md:justify-end flex">
+     <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+      <a class="transition-colors text-sm md:text-md text-[#111111]" href="/">
+       Home
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/about">
+       About
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+       Work
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+       Contact
+      </a>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 px-4 py-4" style="transform:translateY(-100%)">
+   <div class="max-w-5xl mx-auto flex-col md:flex-row flex md:items-center gap-2 justify-between">
+    <p class="text-md font-medium">
+     Design by Art.
+    </p>
+    <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+     <a class="transition-colors text-sm md:text-md text-[#111111]" href="/">
+      Home
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/about">
+      About
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+      Work
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main id="main-content">
+   <section class="px-4 pt-4 pb-2">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6 items-stretch">
+     <div class="flex flex-col justify-end py-4 md:py-16 gap-6 md:gap-10 md:h-full">
+      <h1 class="text-2xl md:max-w-[540px] leading-none tracking-[-2.5px]">
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         D
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         s
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         i
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         g
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         n
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         r
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         c
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         r
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         a
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         f
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         i
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         n
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         g
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         d
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         i
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         g
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         i
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         a
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         l
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         x
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         p
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         r
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         i
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         n
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         c
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         s
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         f
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         r
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         o
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         m
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         U
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         X
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         o
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         U
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         I
+        </span>
+        <span style="display:inline-block">
+        </span>
+       </span>
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         s
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         y
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         s
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         m
+        </span>
+        <span class="text-[#111111]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         s
+        </span>
+        <span class="text-[#b2b2b2]" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         .
+        </span>
+       </span>
+      </h1>
+      <div style="opacity:0;transform:translateY(18px)">
+       <p class="text-md md:max-w-[540px] leading-relaxed text-gray-400">
+        Product Designer with 10 years of experience designing digital products end-to-end, helping teams build experiences that work for both users and business goals.
+       </p>
+      </div>
+     </div>
+     <div style="opacity:0;transform:translateY(18px)">
+      <div class="aspect-[3/4] md:aspect-square relative overflow-hidden rounded-lg">
+       <img alt="Portrait" class="object-cover" data-nimg="fill" decoding="async" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fhome-hero-right-img.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 pb-10 md:pb-16">
+    <div style="opacity:0;transform:translateY(18px)">
+     <div class="max-w-5xl mx-auto aspect-square md:aspect-[2/1] relative overflow-hidden rounded-lg">
+      <img alt="App design mockup" class="object-cover" data-nimg="fill" decoding="async" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fhome-hero-left.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-16 md:py-24 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-4">
+     <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+      Info
+     </p>
+     <div style="opacity:0;transform:translateY(18px)">
+      <div>
+       <p class="text-md leading-relaxed text-gray-500">
+        I'm Arturo Spatino, a digital product designer based in Italy with over 10 years of experience designing digital products across startups, agencies and consulting environments.
+       </p>
+       <a class="inline-block mt-4 text-md underline underline-offset-4 text-gray-400 hover:text-[#111111] transition-colors" href="/about">
+        Discover more
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-16 md:py-24 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto">
+     <p class="text-lg leading-[36.4px] tracking-[-0.64px] text-black mb-6 md:mb-8">
+      Services
+     </p>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+      <div class="flex flex-col gap-28 border border-gray-200 rounded-lg p-6" style="opacity:0;transform:translateY(18px)">
+       <div class="flex flex-col">
+        <p class="text-xs text-gray-400">
+         001
+        </p>
+        <!--$!-->
+        <!--/$-->
+       </div>
+       <div class="flex flex-col">
+        <p class="text-xl font-medium text-[#111111]">
+         UX Design
+        </p>
+        <p class="text-sm font-medium text-[#111111] mt-2 mb-4">
+         Understand before designing.
+        </p>
+        <p class="text-sm text-gray-400 leading-relaxed">
+         I turn user needs into flows that reduce friction and guesswork, so your product just makes sense.
+        </p>
+       </div>
+      </div>
+      <div class="flex flex-col gap-28 border border-gray-200 rounded-lg p-6" style="opacity:0;transform:translateY(18px)">
+       <div class="flex flex-col">
+        <p class="text-xs text-gray-400">
+         002
+        </p>
+        <!--$!-->
+        <!--/$-->
+       </div>
+       <div class="flex flex-col">
+        <p class="text-xl font-medium text-[#111111]">
+         UI Design
+        </p>
+        <p class="text-sm font-medium text-[#111111] mt-2 mb-4">
+         Clarity, hierarchy, and detail.
+        </p>
+        <p class="text-sm text-gray-400 leading-relaxed">
+         Interfaces that look sharp and drive action, balancing usability with a personality that fits your brand.
+        </p>
+       </div>
+      </div>
+      <div class="flex flex-col gap-28 border border-gray-200 rounded-lg p-6" style="opacity:0;transform:translateY(18px)">
+       <div class="flex flex-col">
+        <p class="text-xs text-gray-400">
+         003
+        </p>
+        <!--$!-->
+        <!--/$-->
+       </div>
+       <div class="flex flex-col">
+        <p class="text-xl font-medium text-[#111111]">
+         Design System
+        </p>
+        <p class="text-sm font-medium text-[#111111] mt-2 mb-4">
+         Consistency that scales.
+        </p>
+        <p class="text-sm text-gray-400 leading-relaxed">
+         Systems that let your team ship faster and stay aligned as the product grows.
+        </p>
+       </div>
+      </div>
+      <div class="flex flex-col gap-28 border border-gray-200 rounded-lg p-6" style="opacity:0;transform:translateY(18px)">
+       <div class="flex flex-col">
+        <p class="text-xs text-gray-400">
+         004
+        </p>
+        <!--$!-->
+        <!--/$-->
+       </div>
+       <div class="flex flex-col">
+        <p class="text-xl font-medium text-[#111111]">
+         Accessibility
+        </p>
+        <p class="text-sm font-medium text-[#111111] mt-2 mb-4">
+         Design for everyone.
+        </p>
+        <p class="text-sm text-gray-400 leading-relaxed">
+         Inclusive, WCAG-compliant experiences that widen your reach, so no one gets left out.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-16 md:py-24 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto" style="opacity:0;transform:translateY(18px)">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-4 mb-6 md:mb-8">
+      <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+       Work
+      </p>
+      <div>
+       <p class="text-sm leading-relaxed text-gray-500">
+        A selection of projects across product design, interfaces and design systems — built with teams that care about how things look.
+       </p>
+       <a class="inline-block mt-4 text-sm underline underline-offset-4 text-gray-400 hover:text-[#111111] transition-colors" href="/work">
+        View all
+       </a>
+      </div>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+      <a class="block group" href="/work/4fett">
+       <div class="aspect-[3/4] bg-gray-50 overflow-hidden rounded-lg relative mb-3">
+        <img alt="4fett" class="object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 330px, 33vw" src="/_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fcase-4fett.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+       </div>
+       <p class="text-sm font-medium text-[#111111]">
+        4fett
+       </p>
+       <p class="text-xs text-gray-400 mt-0.5">
+        Web app
+       </p>
+      </a>
+      <a class="block group" href="/work/togevent">
+       <div class="aspect-[3/4] bg-gray-100 overflow-hidden rounded-lg relative mb-3">
+        <img alt="Togevent" class="object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 330px, 33vw" src="/_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fcase-togevent.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+       </div>
+       <p class="text-sm font-medium text-[#111111]">
+        Togevent
+       </p>
+       <p class="text-xs text-gray-400 mt-0.5">
+        App, Web app
+       </p>
+      </a>
+      <div>
+       <div class="aspect-[3/4] overflow-hidden rounded-lg mb-3 grid grid-cols-2 gap-1">
+        <button class="relative overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#111111] cursor-pointer group">
+         <img alt="Exploration" class="object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 165px, 17vw" src="/_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fnapoli3.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+        </button>
+        <button class="relative overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#111111] cursor-pointer group">
+         <img alt="Exploration" class="object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 165px, 17vw" src="/_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fnapoli2.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+        </button>
+        <button class="relative overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#111111] cursor-pointer group">
+         <img alt="Exploration" class="object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 165px, 17vw" src="/_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ffantacalcio2.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+        </button>
+        <button class="relative overflow-hidden rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#111111] cursor-pointer group">
+         <img alt="Exploration" class="object-cover transition-transform duration-500 group-hover:scale-[1.02]" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 165px, 17vw" src="/_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ffantacalcio3.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+        </button>
+       </div>
+       <p class="text-sm font-medium text-[#111111]">
+        Explorations
+       </p>
+       <p class="text-xs text-gray-400 mt-0.5">
+        Design passions &amp; experiments
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="py-16 md:py-24 border-t border-gray-100 overflow-hidden">
+    <div class="px-4">
+    </div>
+    <div class="marquee-mask overflow-hidden">
+     <div class="animate-marquee flex w-max items-center gap-5 hover:[animation-play-state:paused]">
+      <img alt="Talent Garden" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Sketchin" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fsketchin.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fsketchin.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Tangity" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftangity.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftangity.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="The Wave" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fthewave.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fthewave.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Kiwi" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fkiwi.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fkiwi.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Poste Italiane" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fposte.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fposte.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Barilla" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fbarilla.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbarilla.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Giro d'Italia" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="E.ON" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Feon.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Feon.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Feon.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Feon.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Feon.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Feon.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Feon.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Feon.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Feon.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Feon.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Feon.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Feon.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Feon.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Enel" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fenel.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fenel.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Prada" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fprada.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fprada.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Costa" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fcosta.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fcosta.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="BPER" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fbper.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbper.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Sanofi" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fsanofi.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fsanofi.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="DHL" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fdhl.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fdhl.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Brembo" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fbrembo.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbrembo.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Mottura" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fmottura.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fmottura.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Monogrid" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Tangible" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftangible.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftangible.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Togevent" aria-hidden="false" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftogevent.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftogevent.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Talent Garden" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftalentgarden.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Sketchin" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fsketchin.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fsketchin.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fsketchin.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Tangity" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftangity.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftangity.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftangity.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="The Wave" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fthewave.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fthewave.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fthewave.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Kiwi" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fkiwi.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fkiwi.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fkiwi.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Poste Italiane" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fposte.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fposte.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fposte.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Barilla" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fbarilla.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbarilla.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbarilla.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Giro d'Italia" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fgiroditalia.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="E.ON" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Feon.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Feon.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Feon.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Feon.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Feon.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Feon.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Feon.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Feon.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Feon.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Feon.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Feon.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Feon.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Feon.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Feon.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Enel" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fenel.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fenel.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fenel.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Prada" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fprada.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fprada.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fprada.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Costa" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fcosta.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fcosta.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fcosta.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="BPER" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fbper.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbper.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbper.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Sanofi" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fsanofi.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fsanofi.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fsanofi.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="DHL" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fdhl.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fdhl.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fdhl.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Brembo" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fbrembo.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fbrembo.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fbrembo.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Mottura" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fmottura.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fmottura.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fmottura.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Monogrid" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Fmonogrid.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Tangible" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftangible.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftangible.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftangible.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+      <img alt="Togevent" aria-hidden="true" class="h-12 md:h-20 w-auto object-contain shrink-0" data-nimg="1" decoding="async" height="0" loading="lazy" sizes="240px" src="/_next/image?url=%2Fimages%2Ftogevent.png&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2Ftogevent.png&amp;w=32&amp;q=90 32w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=48&amp;q=90 48w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=64&amp;q=90 64w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=96&amp;q=90 96w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=128&amp;q=90 128w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=256&amp;q=90 256w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Ftogevent.png&amp;w=3840&amp;q=90 3840w" style="color:transparent" width="0"/>
+     </div>
+    </div>
+   </section>
+   <!--$-->
+   <!--/$-->
+  </main>
+  <footer class="bg-gray-100 px-4 pt-10 md:pt-16 pb-10 md:pb-12" id="contact">
+   <div class="max-w-5xl mx-auto flex flex-col gap-16 md:gap-64">
+    <div>
+     <h2 class="text-2xl font-light leading-[1.1] tracking-[-2px] md:tracking-[-2.56px] text-[#111111]">
+      Connect, collaborate,
+      <br/>
+      or just say hello
+     </h2>
+     <a class="hidden md:block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      ciao@arturospatino.com
+     </a>
+     <a class="block md:hidden text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      Email
+     </a>
+    </div>
+    <a aria-label="Arturo Spatino on LinkedIn (opens in new tab)" class="block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="https://www.linkedin.com/in/arturo-spatino/" rel="noopener noreferrer" target="_blank">
+     LinkedIn
+    </a>
+   </div>
+  </footer>
+  <!--$!-->
+  <!--/$-->
+  <!--$!-->
+  <!--/$-->
+ </body>
+</html>

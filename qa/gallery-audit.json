@@ -1,0 +1,302 @@
+[
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 568,
+    "stageWidth": 288,
+    "width": 320
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 740,
+    "stageWidth": 328,
+    "width": 360
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 844,
+    "stageWidth": 358,
+    "width": 390
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 900,
+    "stageWidth": 608,
+    "width": 640
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 900,
+    "stageWidth": 735,
+    "width": 767
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 1024,
+    "stageWidth": 576,
+    "width": 768
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 1180,
+    "stageWidth": 628,
+    "width": 820
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 390,
+    "stageWidth": 652,
+    "width": 844
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 768,
+    "stageWidth": 832,
+    "width": 1024
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 800,
+    "stageWidth": 1088,
+    "width": 1280
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 900,
+    "stageWidth": 1248,
+    "width": 1440
+  },
+  {
+    "controls": [
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Close",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Previous",
+        "width": 44
+      },
+      {
+        "height": 44,
+        "inViewport": true,
+        "label": "Next",
+        "width": 44
+      }
+    ],
+    "height": 1080,
+    "stageWidth": 1728,
+    "width": 1920
+  }
+]

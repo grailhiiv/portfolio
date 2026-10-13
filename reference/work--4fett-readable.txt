@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="geist_dbbf8c4b-module__5qCx7q__variable antialiased" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="font" crossorigin="" href="/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2" rel="preload" type="font/woff2"/>
+  <link as="image" imagesizes="(min-width: 1024px) 1024px, 100vw" imagesrcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=3840&amp;q=90 3840w" rel="preload"/>
+  <link data-precedence="next" href="/_next/static/chunks/0h8hoyqlcq14w.css" rel="stylesheet"/>
+  <link as="script" fetchpriority="low" href="/_next/static/chunks/070.9.ep.fny7.js" rel="preload"/>
+  <meta content="" name="next-size-adjust"/>
+  <title>
+   4fett Case Study — Arturo Spatino
+  </title>
+  <meta content="Product design and development for 4fett — a web app for Italian freelancers on the forfettario regime." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <link href="https://arturospatino.com/work/4fett" rel="canonical"/>
+  <meta content="4fett — Arturo Spatino" property="og:title"/>
+  <meta content="Product design and development for 4fett — a web app for Italian freelancers on the forfettario regime." property="og:description"/>
+  <meta content="https://arturospatino.com/images/4fett/4fett-hero.webp" property="og:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Arturo Spatino — Product Designer" name="twitter:title"/>
+  <meta content="Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments." name="twitter:description"/>
+  <meta content="https://arturospatino.com/images/home-hero-left.png" name="twitter:image"/>
+  <link href="/icon.png?icon.04fpt~f~xn4fs.png" rel="icon" sizes="264x264" type="image/png"/>
+ </head>
+ <body class="min-h-screen bg-white text-[#111111] font-sans">
+  <div hidden="">
+   <!--$-->
+   <!--/$-->
+  </div>
+  <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-white focus:text-[#111111] focus:rounded-lg focus:shadow-lg" href="#main-content">
+   Skip to content
+  </a>
+  <!--$!-->
+  <!--/$-->
+  <header class="px-4 py-4 border-b border-gray-100">
+   <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start md:items-end justify-between gap-4">
+    <div class="flex flex-col">
+     <p class="text-md font-medium leading-none">
+      Design by Art.
+     </p>
+     <p class="block text-sm text-gray-400 mt-1">
+      —
+      <!-- -->
+      Catania, IT
+     </p>
+    </div>
+    <div class="md:justify-end flex">
+     <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/">
+       Home
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/about">
+       About
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+       Work
+      </a>
+      <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+       Contact
+      </a>
+     </nav>
+    </div>
+   </div>
+  </header>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 px-4 py-4" style="transform:translateY(-100%)">
+   <div class="max-w-5xl mx-auto flex-col md:flex-row flex md:items-center gap-2 justify-between">
+    <p class="text-md font-medium">
+     Design by Art.
+    </p>
+    <nav aria-label="Main navigation" class="flex gap-4 md:gap-5 shrink-0">
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/">
+      Home
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/about">
+      About
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="/work">
+      Work
+     </a>
+     <a class="transition-colors text-sm md:text-md text-gray-400 hover:text-[#111111]" href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main id="main-content">
+   <section class="px-4 pt-10 md:pt-14 pb-10 md:pb-14">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-8">
+     <div class="hidden md:block">
+     </div>
+     <div>
+      <h1 class="text-2xl leading-[1.05] tracking-[-2.56px] text-[#111111] mb-8">
+       <span style="display:inline-block;white-space:nowrap">
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         4
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         f
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         e
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+        <span class="" style="display:inline-block;opacity:0;transform:translateY(18px)">
+         t
+        </span>
+       </span>
+      </h1>
+      <div class="flex flex-wrap gap-x-8 gap-y-5">
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Year
+        </p>
+        <p class="text-sm text-[#111111]">
+         2026
+        </p>
+       </div>
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Role
+        </p>
+        <p class="text-sm text-[#111111]">
+         Founder · Product Design &amp; Development
+        </p>
+       </div>
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Type
+        </p>
+        <p class="text-sm text-[#111111]">
+         Web App
+        </p>
+       </div>
+       <div style="opacity:0;transform:translateY(18px)">
+        <p class="text-xs text-gray-400 mb-1">
+         Link
+        </p>
+        <a class="text-sm text-[#111111] underline underline-offset-4 hover:text-gray-500 transition-colors" href="https://4fett.com" rel="noopener noreferrer" target="_blank">
+         Visit site
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4">
+     <div class="max-w-5xl mx-auto aspect-[10/7] rounded-lg relative bg-gray-100 overflow-hidden">
+      <img alt="4fett web app" class="object-cover" data-nimg="fill" decoding="async" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-hero.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <section class="px-4 py-10 md:py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1">
+     <div>
+     </div>
+     <div class="space-y-4 text-md leading-relaxed text-gray-500" style="opacity:0;transform:translateY(18px)">
+      <p>
+       4fett is a web app I designed and built from scratch to manage the financial side of working as a freelance on the Italian forfettario regime.
+      </p>
+      <p>
+       Most existing tools are either too generic or too complex — built for accountants, not for freelancers who just need to know how much they've earned, how much to set aside, and how much they can still invoice before hitting the annual limit. 4fett does exactly that, nothing more.
+      </p>
+      <p>
+       The product combines three things: a clean financial dashboard with real-time visibility on income, collected payments, and tax provisions; a time-tracking and consuntivazione view that connects work done to revenue; and an AI assistant that understands your specific fiscal situation and answers questions about it.
+      </p>
+      <p>
+       The design priority was clarity over completeness — every number visible at a glance, no setup overhead, no features that require an accountant to interpret.
+      </p>
+     </div>
+    </div>
+   </section>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4 mb-4">
+     <div class="max-w-5xl mx-auto aspect-[10/6] relative rounded-lg overflow-hidden bg-gray-100">
+      <img alt="4fett app screens" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-1.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <section class="px-4 py-10 md:py-12 border-t border-gray-100">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-4">
+     <p class="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+      Design Goals
+     </p>
+     <div style="opacity:0;transform:translateY(18px)">
+      <div>
+       <p class="text-md leading-relaxed text-gray-500">
+        The challenge was making something inherently complex — Italian fiscal rules, tax brackets, INPS contributions — feel simple and immediate. The goals were straightforward: surface the numbers that actually matter on a single screen, make consuntivazione fast enough to become a daily habit, and build an AI layer that gives useful answers without pretending to be a commercialista. The visual language follows the same logic — clean, minimal, no noise.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="px-4 py-12 md:py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-2 gap-1" style="opacity:0;transform:translateY(18px)">
+     <div class="aspect-[4/3] relative overflow-hidden rounded-lg">
+      <img alt="4fett screen 1" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-2.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+     <div class="aspect-[4/3] relative overflow-hidden rounded-lg">
+      <img alt="4fett screen 2" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-3.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+     <div class="aspect-[4/3] relative overflow-hidden rounded-lg">
+      <img alt="4fett screen 3" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-4.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+     <div class="aspect-[4/3] relative overflow-hidden rounded-lg">
+      <img alt="4fett screen 4" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 512px, 50vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=384&amp;q=90 384w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-5.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </div>
+   </section>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4 mb-4">
+     <div class="max-w-5xl mx-auto aspect-[10/6] relative rounded-lg overflow-hidden bg-gray-100">
+      <img alt="4fett" class="object-cover" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-6.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <div style="opacity:0;transform:translateY(18px)">
+    <section class="px-4 mb-4">
+     <div class="max-w-5xl mx-auto aspect-[10/6] relative rounded-lg overflow-hidden bg-gray-100">
+      <img alt="4fett" class="object-contain" data-nimg="fill" decoding="async" loading="lazy" sizes="(min-width: 1024px) 1024px, 100vw" src="/_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=3840&amp;q=90" srcset="/_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2F4fett%2F4fett-7.webp&amp;w=3840&amp;q=90 3840w" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"/>
+     </div>
+    </section>
+   </div>
+   <a class="block bg-[#ffffff] border-t border-gray-100 px-4 py-8 md:py-10 hover:bg-gray-50 transition-colors" href="/work/kiwi">
+    <div class="max-w-5xl mx-auto flex items-end justify-between">
+     <div>
+      <p class="text-xs text-gray-800 mb-1">
+       Next project
+      </p>
+      <p class="text-2xl tracking-[-2.56px] text-black">
+       Kiwi
+      </p>
+     </div>
+     <span class="text-sm pb-4 text-black">
+      Visualizza →
+     </span>
+    </div>
+   </a>
+   <!--$-->
+   <!--/$-->
+  </main>
+  <footer class="bg-gray-100 px-4 pt-10 md:pt-16 pb-10 md:pb-12" id="contact">
+   <div class="max-w-5xl mx-auto flex flex-col gap-16 md:gap-64">
+    <div>
+     <h2 class="text-2xl font-light leading-[1.1] tracking-[-2px] md:tracking-[-2.56px] text-[#111111]">
+      Connect, collaborate,
+      <br/>
+      or just say hello
+     </h2>
+     <a class="hidden md:block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      ciao@arturospatino.com
+     </a>
+     <a class="block md:hidden text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="mailto:ciao@arturospatino.com">
+      Email
+     </a>
+    </div>
+    <a aria-label="Arturo Spatino on LinkedIn (opens in new tab)" class="block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors" href="https://www.linkedin.com/in/arturo-spatino/" rel="noopener noreferrer" target="_blank">
+     LinkedIn
+    </a>
+   </div>
+  </footer>
+  <!--$!-->
+  <!--/$-->
+  <!--$!-->
+  <!--/$-->
+ </body>
+</html>

@@ -1,0 +1,149 @@
+/* The reference's compiled Tailwind rules are in reference.css.
+   Keep new project-specific styles here so the captured baseline stays reviewable. */
+.gallery-dialog {
+  overscroll-behavior: contain;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  width: 100vw;
+  height: 100dvh;
+  background: transparent;
+  color: white;
+  overflow: hidden;
+}
+.gallery-dialog::backdrop {
+  background: rgb(0 0 0 / 0.9);
+}
+.gallery-stage {
+  position: absolute;
+  inset: 0 64px;
+}
+.gallery-control {
+  position: absolute;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.1);
+  transition: background-color 0.2s;
+}
+.gallery-control:hover {
+  background: rgb(255 255 255 / 0.2);
+}
+.gallery-control:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+.gallery-close {
+  top: 16px;
+  right: 16px;
+}
+.gallery-previous {
+  top: calc(50% - 20px);
+  left: 16px;
+}
+.gallery-next {
+  top: calc(50% - 20px);
+  right: 16px;
+}
+.gallery-count {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255 255 255 / 0.4);
+}
+@media (min-width: 768px) {
+  .gallery-stage {
+    inset: 0 96px;
+  }
+}
+body:has(dialog[open]) > .portfolio-cursor {
+  visibility: hidden;
+}
+@media (pointer: coarse) {
+  .portfolio-cursor {
+    display: none;
+  }
+}
+@media (pointer: fine) {
+  html[data-portfolio-pointer="ready"] *,
+  html[data-portfolio-pointer="ready"] *::before,
+  html[data-portfolio-pointer="ready"] *::after {
+    cursor: none !important;
+  }
+}
+@media (forced-colors: active) {
+  html[data-portfolio-pointer="ready"] * {
+    cursor: revert !important;
+  }
+  .portfolio-cursor {
+    display: none;
+  }
+}
+@media (max-width: 767px) and (min-height: 500px) {
+  .gallery-stage {
+    inset: max(56px, env(safe-area-inset-top)) 16px
+      calc(72px + env(safe-area-inset-bottom));
+  }
+  .gallery-previous {
+    top: auto;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    left: calc(50% - 88px);
+  }
+  .gallery-next {
+    top: auto;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    right: calc(50% - 88px);
+  }
+  .gallery-count {
+    bottom: calc(28px + env(safe-area-inset-bottom));
+  }
+}
+.gallery-control {
+  min-width: 44px;
+  min-height: 44px;
+  touch-action: manipulation;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+footer:focus {
+  outline: none;
+}
+main {
+  scroll-margin-top: 88px;
+}
+@media (max-width: 767px) {
+  .work-case-heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+.home-hero-heading {
+  container-type: inline-size;
+}
+
+.home-hero-heading > span {
+  font-size: min(1em, 9.5cqi);
+}

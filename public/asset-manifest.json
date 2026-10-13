@@ -1,0 +1,392 @@
+[
+  {
+    "source": "https://www.arturospatino.com/_next/static/media/53b9e256198e5412-s.0-wfv7uh4i7h9.woff2",
+    "local": "public/fonts/53b9e256198e5412-s.0-wfv7uh4i7h9.woff2",
+    "bytes": 7968
+  },
+  {
+    "source": "https://www.arturospatino.com/_next/static/media/7178b3e590c64307-s.0nx0ww8fni_q3.woff2",
+    "local": "public/fonts/7178b3e590c64307-s.0nx0ww8fni_q3.woff2",
+    "bytes": 16540
+  },
+  {
+    "source": "https://www.arturospatino.com/_next/static/media/8a480f0b521d4e75-s.0jzbimsg8vl84.woff2",
+    "local": "public/fonts/8a480f0b521d4e75-s.0jzbimsg8vl84.woff2",
+    "bytes": 14900
+  },
+  {
+    "source": "https://www.arturospatino.com/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2",
+    "local": "public/fonts/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2",
+    "bytes": 29288
+  },
+  {
+    "source": "https://www.arturospatino.com/_next/static/media/fef07dbb0973bf53-s.12tyk43_3sh9u.woff2",
+    "local": "public/fonts/fef07dbb0973bf53-s.12tyk43_3sh9u.woff2",
+    "bytes": 7252
+  },
+  {
+    "source": "https://www.arturospatino.com/icon.png",
+    "local": "public/icon.png",
+    "bytes": 3004
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-1.webp",
+    "local": "public/images/4fett/4fett-1.webp",
+    "bytes": 116550
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-2.webp",
+    "local": "public/images/4fett/4fett-2.webp",
+    "bytes": 21880
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-3.webp",
+    "local": "public/images/4fett/4fett-3.webp",
+    "bytes": 28276
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-4.webp",
+    "local": "public/images/4fett/4fett-4.webp",
+    "bytes": 29352
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-5.webp",
+    "local": "public/images/4fett/4fett-5.webp",
+    "bytes": 22150
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-6.webp",
+    "local": "public/images/4fett/4fett-6.webp",
+    "bytes": 478664
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-7.webp",
+    "local": "public/images/4fett/4fett-7.webp",
+    "bytes": 95010
+  },
+  {
+    "source": "https://www.arturospatino.com/images/4fett/4fett-hero.webp",
+    "local": "public/images/4fett/4fett-hero.webp",
+    "bytes": 124010
+  },
+  {
+    "source": "user-provided:about-hero.webp",
+    "local": "public/images/about-hero.webp",
+    "bytes": 1378036
+  },
+  {
+    "source": "https://www.arturospatino.com/images/barilla.png",
+    "local": "public/images/barilla.png",
+    "bytes": 2949
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bipred.png",
+    "local": "public/images/bipred.png",
+    "bytes": 10948
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-1.png",
+    "local": "public/images/bounty-hunters/bh-1.png",
+    "bytes": 912751
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-2.png",
+    "local": "public/images/bounty-hunters/bh-2.png",
+    "bytes": 73603
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-3.png",
+    "local": "public/images/bounty-hunters/bh-3.png",
+    "bytes": 371684
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-4.png",
+    "local": "public/images/bounty-hunters/bh-4.png",
+    "bytes": 259138
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-5.png",
+    "local": "public/images/bounty-hunters/bh-5.png",
+    "bytes": 2249543
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-6.png",
+    "local": "public/images/bounty-hunters/bh-6.png",
+    "bytes": 759676
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-hero.png",
+    "local": "public/images/bounty-hunters/bh-hero.png",
+    "bytes": 4478075
+  },
+  {
+    "source": "https://www.arturospatino.com/images/bper.png",
+    "local": "public/images/bper.png",
+    "bytes": 1910
+  },
+  {
+    "source": "https://www.arturospatino.com/images/brembo.png",
+    "local": "public/images/brembo.png",
+    "bytes": 3060
+  },
+  {
+    "source": "https://www.arturospatino.com/images/case-4fett.webp",
+    "local": "public/images/case-4fett.webp",
+    "bytes": 48448
+  },
+  {
+    "source": "https://www.arturospatino.com/images/case-bh.png",
+    "local": "public/images/case-bh.png",
+    "bytes": 1008882
+  },
+  {
+    "source": "https://www.arturospatino.com/images/case-kiwi.webp",
+    "local": "public/images/case-kiwi.webp",
+    "bytes": 20728
+  },
+  {
+    "source": "https://www.arturospatino.com/images/case-togevent.webp",
+    "local": "public/images/case-togevent.webp",
+    "bytes": 129478
+  },
+  {
+    "source": "https://www.arturospatino.com/images/costa.png",
+    "local": "public/images/costa.png",
+    "bytes": 1503
+  },
+  {
+    "source": "https://www.arturospatino.com/images/dhl.png",
+    "local": "public/images/dhl.png",
+    "bytes": 1771
+  },
+  {
+    "source": "https://www.arturospatino.com/images/enel.png",
+    "local": "public/images/enel.png",
+    "bytes": 1531
+  },
+  {
+    "source": "https://www.arturospatino.com/images/eon.png",
+    "local": "public/images/eon.png",
+    "bytes": 1446
+  },
+  {
+    "source": "https://www.arturospatino.com/images/fantacalcio1.webp",
+    "local": "public/images/fantacalcio1.webp",
+    "bytes": 179970
+  },
+  {
+    "source": "https://www.arturospatino.com/images/fantacalcio2.webp",
+    "local": "public/images/fantacalcio2.webp",
+    "bytes": 224998
+  },
+  {
+    "source": "https://www.arturospatino.com/images/fantacalcio3.webp",
+    "local": "public/images/fantacalcio3.webp",
+    "bytes": 207354
+  },
+  {
+    "source": "https://www.arturospatino.com/images/giroditalia.png",
+    "local": "public/images/giroditalia.png",
+    "bytes": 1908
+  },
+  {
+    "source": "https://www.arturospatino.com/images/home-hero-left.webp",
+    "local": "public/images/home-hero-left.webp",
+    "bytes": 1605622
+  },
+  {
+    "source": "https://www.arturospatino.com/images/home-hero-right-img.webp",
+    "local": "public/images/home-hero-right-img.webp",
+    "bytes": 287454
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi.png",
+    "local": "public/images/kiwi.png",
+    "bytes": 961
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-1.webp",
+    "local": "public/images/kiwi/kiwi-1.webp",
+    "bytes": 120940
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-2.webp",
+    "local": "public/images/kiwi/kiwi-2.webp",
+    "bytes": 24604
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-3.webp",
+    "local": "public/images/kiwi/kiwi-3.webp",
+    "bytes": 32784
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-4.webp",
+    "local": "public/images/kiwi/kiwi-4.webp",
+    "bytes": 32412
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-5.webp",
+    "local": "public/images/kiwi/kiwi-5.webp",
+    "bytes": 21736
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-6.webp",
+    "local": "public/images/kiwi/kiwi-6.webp",
+    "bytes": 97768
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-ds.webp",
+    "local": "public/images/kiwi/kiwi-ds.webp",
+    "bytes": 52866
+  },
+  {
+    "source": "https://www.arturospatino.com/images/kiwi/kiwi-hero.webp",
+    "local": "public/images/kiwi/kiwi-hero.webp",
+    "bytes": 203396
+  },
+  {
+    "source": "https://www.arturospatino.com/images/lumina1.webp",
+    "local": "public/images/lumina1.webp",
+    "bytes": 109170
+  },
+  {
+    "source": "https://www.arturospatino.com/images/lumina2.webp",
+    "local": "public/images/lumina2.webp",
+    "bytes": 86282
+  },
+  {
+    "source": "https://www.arturospatino.com/images/monogrid.png",
+    "local": "public/images/monogrid.png",
+    "bytes": 1871
+  },
+  {
+    "source": "https://www.arturospatino.com/images/mottura.png",
+    "local": "public/images/mottura.png",
+    "bytes": 1404
+  },
+  {
+    "source": "https://www.arturospatino.com/images/napoli1.webp",
+    "local": "public/images/napoli1.webp",
+    "bytes": 299308
+  },
+  {
+    "source": "https://www.arturospatino.com/images/napoli2.webp",
+    "local": "public/images/napoli2.webp",
+    "bytes": 245416
+  },
+  {
+    "source": "https://www.arturospatino.com/images/napoli3.webp",
+    "local": "public/images/napoli3.webp",
+    "bytes": 306736
+  },
+  {
+    "source": "https://www.arturospatino.com/images/nebula.png",
+    "local": "public/images/nebula.png",
+    "bytes": 17012
+  },
+  {
+    "source": "https://www.arturospatino.com/images/poste.png",
+    "local": "public/images/poste.png",
+    "bytes": 2790
+  },
+  {
+    "source": "https://www.arturospatino.com/images/prada.png",
+    "local": "public/images/prada.png",
+    "bytes": 1508
+  },
+  {
+    "source": "https://www.arturospatino.com/images/sanofi.png",
+    "local": "public/images/sanofi.png",
+    "bytes": 2611
+  },
+  {
+    "source": "https://www.arturospatino.com/images/seotesteronline.png",
+    "local": "public/images/seotesteronline.png",
+    "bytes": 9033
+  },
+  {
+    "source": "https://www.arturospatino.com/images/sketchin.png",
+    "local": "public/images/sketchin.png",
+    "bytes": 1363
+  },
+  {
+    "source": "https://www.arturospatino.com/images/talentgarden.png",
+    "local": "public/images/talentgarden.png",
+    "bytes": 2078
+  },
+  {
+    "source": "https://www.arturospatino.com/images/tangible.png",
+    "local": "public/images/tangible.png",
+    "bytes": 2662
+  },
+  {
+    "source": "https://www.arturospatino.com/images/tangity.png",
+    "local": "public/images/tangity.png",
+    "bytes": 1306
+  },
+  {
+    "source": "https://www.arturospatino.com/images/thewave.png",
+    "local": "public/images/thewave.png",
+    "bytes": 1129
+  },
+  {
+    "source": "https://www.arturospatino.com/images/thewavestudio.png",
+    "local": "public/images/thewavestudio.png",
+    "bytes": 10595
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent.png",
+    "local": "public/images/togevent.png",
+    "bytes": 1458
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-1.webp",
+    "local": "public/images/togevent/tog-1.webp",
+    "bytes": 194818
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-2.webp",
+    "local": "public/images/togevent/tog-2.webp",
+    "bytes": 135206
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-3.webp",
+    "local": "public/images/togevent/tog-3.webp",
+    "bytes": 21950
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-4.webp",
+    "local": "public/images/togevent/tog-4.webp",
+    "bytes": 37902
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-5.webp",
+    "local": "public/images/togevent/tog-5.webp",
+    "bytes": 7354
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-6.webp",
+    "local": "public/images/togevent/tog-6.webp",
+    "bytes": 60736
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-7.webp",
+    "local": "public/images/togevent/tog-7.webp",
+    "bytes": 251134
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-8.webp",
+    "local": "public/images/togevent/tog-8.webp",
+    "bytes": 247366
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-ds.webp",
+    "local": "public/images/togevent/tog-ds.webp",
+    "bytes": 160560
+  },
+  {
+    "source": "https://www.arturospatino.com/images/togevent/tog-hero.webp",
+    "local": "public/images/togevent/tog-hero.webp",
+    "bytes": 77740
+  }
+]

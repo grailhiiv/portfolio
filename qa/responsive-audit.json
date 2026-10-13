@@ -1,0 +1,2331 @@
+{
+  "before": [
+    {
+      "clientWidth": 305,
+      "headings": [
+        {
+          "right": 289,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 273
+        },
+        {
+          "right": 289,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 305,
+      "tinyTargets": 0,
+      "width": 320
+    },
+    {
+      "clientWidth": 345,
+      "headings": [
+        {
+          "right": 329,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 313
+        },
+        {
+          "right": 329,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 313
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 345,
+      "tinyTargets": 0,
+      "width": 360
+    },
+    {
+      "clientWidth": 375,
+      "headings": [
+        {
+          "right": 359,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 343
+        },
+        {
+          "right": 359,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 375,
+      "tinyTargets": 0,
+      "width": 390
+    },
+    {
+      "clientWidth": 625,
+      "headings": [
+        {
+          "right": 609,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 593
+        },
+        {
+          "right": 609,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 593
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 625,
+      "tinyTargets": 0,
+      "width": 640
+    },
+    {
+      "clientWidth": 752,
+      "headings": [
+        {
+          "right": 736,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 720
+        },
+        {
+          "right": 736,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 752,
+      "tinyTargets": 0,
+      "width": 767
+    },
+    {
+      "clientWidth": 753,
+      "headings": [
+        {
+          "right": 374.5,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 358.5
+        },
+        {
+          "right": 737,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 721
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 753,
+      "tinyTargets": 0,
+      "width": 768
+    },
+    {
+      "clientWidth": 805,
+      "headings": [
+        {
+          "right": 400.5,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 384.5
+        },
+        {
+          "right": 789,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 773
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 805,
+      "tinyTargets": 0,
+      "width": 820
+    },
+    {
+      "clientWidth": 1009,
+      "headings": [
+        {
+          "right": 502.5,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 486.5
+        },
+        {
+          "right": 993,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 977
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 1009,
+      "tinyTargets": 0,
+      "width": 1024
+    },
+    {
+      "clientWidth": 1265,
+      "headings": [
+        {
+          "right": 556,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 540
+        },
+        {
+          "right": 1249,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1233
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 1265,
+      "tinyTargets": 0,
+      "width": 1280
+    },
+    {
+      "clientWidth": 1425,
+      "headings": [
+        {
+          "right": 556,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 540
+        },
+        {
+          "right": 1409,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1393
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 1425,
+      "tinyTargets": 0,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1905,
+      "headings": [
+        {
+          "right": 772.5,
+          "text": "Designer crafting digital experiences from UX to UI systems.",
+          "width": 540
+        },
+        {
+          "right": 1672.5,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1440
+        }
+      ],
+      "overflow": false,
+      "path": "/",
+      "scrollWidth": 1905,
+      "tinyTargets": 0,
+      "width": 1920
+    },
+    {
+      "clientWidth": 305,
+      "headings": [
+        {
+          "right": 289,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 305,
+      "tinyTargets": 0,
+      "width": 320
+    },
+    {
+      "clientWidth": 345,
+      "headings": [
+        {
+          "right": 329,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 313
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 345,
+      "tinyTargets": 0,
+      "width": 360
+    },
+    {
+      "clientWidth": 375,
+      "headings": [
+        {
+          "right": 359,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 375,
+      "tinyTargets": 0,
+      "width": 390
+    },
+    {
+      "clientWidth": 625,
+      "headings": [
+        {
+          "right": 609,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 593
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 625,
+      "tinyTargets": 0,
+      "width": 640
+    },
+    {
+      "clientWidth": 752,
+      "headings": [
+        {
+          "right": 736,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 752,
+      "tinyTargets": 0,
+      "width": 767
+    },
+    {
+      "clientWidth": 753,
+      "headings": [
+        {
+          "right": 737,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 721
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 753,
+      "tinyTargets": 0,
+      "width": 768
+    },
+    {
+      "clientWidth": 805,
+      "headings": [
+        {
+          "right": 789,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 773
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 805,
+      "tinyTargets": 0,
+      "width": 820
+    },
+    {
+      "clientWidth": 1009,
+      "headings": [
+        {
+          "right": 993,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 977
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 1009,
+      "tinyTargets": 0,
+      "width": 1024
+    },
+    {
+      "clientWidth": 1265,
+      "headings": [
+        {
+          "right": 1249,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1233
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 1265,
+      "tinyTargets": 0,
+      "width": 1280
+    },
+    {
+      "clientWidth": 1425,
+      "headings": [
+        {
+          "right": 1409,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1393
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 1425,
+      "tinyTargets": 0,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1905,
+      "headings": [
+        {
+          "right": 1672.5,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1440
+        }
+      ],
+      "overflow": false,
+      "path": "/about",
+      "scrollWidth": 1905,
+      "tinyTargets": 0,
+      "width": 1920
+    },
+    {
+      "clientWidth": 305,
+      "headings": [
+        {
+          "right": 289,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 273
+        },
+        {
+          "right": 289,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 305,
+      "tinyTargets": 0,
+      "width": 320
+    },
+    {
+      "clientWidth": 345,
+      "headings": [
+        {
+          "right": 329,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 313
+        },
+        {
+          "right": 329,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 313
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 345,
+      "tinyTargets": 0,
+      "width": 360
+    },
+    {
+      "clientWidth": 375,
+      "headings": [
+        {
+          "right": 359,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 343
+        },
+        {
+          "right": 359,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 375,
+      "tinyTargets": 0,
+      "width": 390
+    },
+    {
+      "clientWidth": 625,
+      "headings": [
+        {
+          "right": 609,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 593
+        },
+        {
+          "right": 609,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 593
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 625,
+      "tinyTargets": 0,
+      "width": 640
+    },
+    {
+      "clientWidth": 752,
+      "headings": [
+        {
+          "right": 736,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 720
+        },
+        {
+          "right": 736,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 752,
+      "tinyTargets": 0,
+      "width": 767
+    },
+    {
+      "clientWidth": 753,
+      "headings": [
+        {
+          "right": 737,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 358.5
+        },
+        {
+          "right": 737,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 721
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 753,
+      "tinyTargets": 0,
+      "width": 768
+    },
+    {
+      "clientWidth": 805,
+      "headings": [
+        {
+          "right": 789,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 384.5
+        },
+        {
+          "right": 789,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 773
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 805,
+      "tinyTargets": 0,
+      "width": 820
+    },
+    {
+      "clientWidth": 1009,
+      "headings": [
+        {
+          "right": 993,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 486.5
+        },
+        {
+          "right": 993,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 977
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 1009,
+      "tinyTargets": 0,
+      "width": 1024
+    },
+    {
+      "clientWidth": 1265,
+      "headings": [
+        {
+          "right": 1249,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 614.5
+        },
+        {
+          "right": 1249,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1233
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 1265,
+      "tinyTargets": 0,
+      "width": 1280
+    },
+    {
+      "clientWidth": 1425,
+      "headings": [
+        {
+          "right": 1409,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 694.5
+        },
+        {
+          "right": 1409,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1393
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 1425,
+      "tinyTargets": 0,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1905,
+      "headings": [
+        {
+          "right": 1672.5,
+          "text": "A collection of projects, explorations and details. Some are case studies. Some are just good work.",
+          "width": 718
+        },
+        {
+          "right": 1672.5,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1440
+        }
+      ],
+      "overflow": false,
+      "path": "/work",
+      "scrollWidth": 1905,
+      "tinyTargets": 0,
+      "width": 1920
+    },
+    {
+      "clientWidth": 305,
+      "headings": [
+        {
+          "right": 289,
+          "text": "4fett",
+          "width": 273
+        },
+        {
+          "right": 289,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 305,
+      "tinyTargets": 0,
+      "width": 320
+    },
+    {
+      "clientWidth": 345,
+      "headings": [
+        {
+          "right": 329,
+          "text": "4fett",
+          "width": 313
+        },
+        {
+          "right": 329,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 313
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 345,
+      "tinyTargets": 0,
+      "width": 360
+    },
+    {
+      "clientWidth": 375,
+      "headings": [
+        {
+          "right": 359,
+          "text": "4fett",
+          "width": 343
+        },
+        {
+          "right": 359,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 375,
+      "tinyTargets": 0,
+      "width": 390
+    },
+    {
+      "clientWidth": 625,
+      "headings": [
+        {
+          "right": 609,
+          "text": "4fett",
+          "width": 593
+        },
+        {
+          "right": 609,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 593
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 625,
+      "tinyTargets": 0,
+      "width": 640
+    },
+    {
+      "clientWidth": 752,
+      "headings": [
+        {
+          "right": 736,
+          "text": "4fett",
+          "width": 720
+        },
+        {
+          "right": 736,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 752,
+      "tinyTargets": 0,
+      "width": 767
+    },
+    {
+      "clientWidth": 753,
+      "headings": [
+        {
+          "right": 737,
+          "text": "4fett",
+          "width": 358.5
+        },
+        {
+          "right": 737,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 721
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 753,
+      "tinyTargets": 0,
+      "width": 768
+    },
+    {
+      "clientWidth": 805,
+      "headings": [
+        {
+          "right": 789,
+          "text": "4fett",
+          "width": 384.5
+        },
+        {
+          "right": 789,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 773
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 805,
+      "tinyTargets": 0,
+      "width": 820
+    },
+    {
+      "clientWidth": 1009,
+      "headings": [
+        {
+          "right": 993,
+          "text": "4fett",
+          "width": 486.5
+        },
+        {
+          "right": 993,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 977
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 1009,
+      "tinyTargets": 0,
+      "width": 1024
+    },
+    {
+      "clientWidth": 1265,
+      "headings": [
+        {
+          "right": 1249,
+          "text": "4fett",
+          "width": 614.5
+        },
+        {
+          "right": 1249,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1233
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 1265,
+      "tinyTargets": 0,
+      "width": 1280
+    },
+    {
+      "clientWidth": 1425,
+      "headings": [
+        {
+          "right": 1409,
+          "text": "4fett",
+          "width": 694.5
+        },
+        {
+          "right": 1409,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1393
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 1425,
+      "tinyTargets": 0,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1905,
+      "headings": [
+        {
+          "right": 1672.5,
+          "text": "4fett",
+          "width": 718
+        },
+        {
+          "right": 1672.5,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1440
+        }
+      ],
+      "overflow": false,
+      "path": "/work/4fett",
+      "scrollWidth": 1905,
+      "tinyTargets": 0,
+      "width": 1920
+    },
+    {
+      "clientWidth": 305,
+      "headings": [
+        {
+          "right": 289,
+          "text": "Kiwi",
+          "width": 273
+        },
+        {
+          "right": 289,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 305,
+      "tinyTargets": 0,
+      "width": 320
+    },
+    {
+      "clientWidth": 345,
+      "headings": [
+        {
+          "right": 329,
+          "text": "Kiwi",
+          "width": 313
+        },
+        {
+          "right": 329,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 313
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 345,
+      "tinyTargets": 0,
+      "width": 360
+    },
+    {
+      "clientWidth": 375,
+      "headings": [
+        {
+          "right": 359,
+          "text": "Kiwi",
+          "width": 343
+        },
+        {
+          "right": 359,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 375,
+      "tinyTargets": 0,
+      "width": 390
+    },
+    {
+      "clientWidth": 625,
+      "headings": [
+        {
+          "right": 609,
+          "text": "Kiwi",
+          "width": 593
+        },
+        {
+          "right": 609,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 593
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 625,
+      "tinyTargets": 0,
+      "width": 640
+    },
+    {
+      "clientWidth": 752,
+      "headings": [
+        {
+          "right": 736,
+          "text": "Kiwi",
+          "width": 720
+        },
+        {
+          "right": 736,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 752,
+      "tinyTargets": 0,
+      "width": 767
+    },
+    {
+      "clientWidth": 753,
+      "headings": [
+        {
+          "right": 737,
+          "text": "Kiwi",
+          "width": 358.5
+        },
+        {
+          "right": 737,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 721
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 753,
+      "tinyTargets": 0,
+      "width": 768
+    },
+    {
+      "clientWidth": 805,
+      "headings": [
+        {
+          "right": 789,
+          "text": "Kiwi",
+          "width": 384.5
+        },
+        {
+          "right": 789,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 773
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 805,
+      "tinyTargets": 0,
+      "width": 820
+    },
+    {
+      "clientWidth": 1009,
+      "headings": [
+        {
+          "right": 993,
+          "text": "Kiwi",
+          "width": 486.5
+        },
+        {
+          "right": 993,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 977
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 1009,
+      "tinyTargets": 0,
+      "width": 1024
+    },
+    {
+      "clientWidth": 1265,
+      "headings": [
+        {
+          "right": 1249,
+          "text": "Kiwi",
+          "width": 614.5
+        },
+        {
+          "right": 1249,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1233
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 1265,
+      "tinyTargets": 0,
+      "width": 1280
+    },
+    {
+      "clientWidth": 1425,
+      "headings": [
+        {
+          "right": 1409,
+          "text": "Kiwi",
+          "width": 694.5
+        },
+        {
+          "right": 1409,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1393
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 1425,
+      "tinyTargets": 0,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1905,
+      "headings": [
+        {
+          "right": 1672.5,
+          "text": "Kiwi",
+          "width": 718
+        },
+        {
+          "right": 1672.5,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1440
+        }
+      ],
+      "overflow": false,
+      "path": "/work/kiwi",
+      "scrollWidth": 1905,
+      "tinyTargets": 0,
+      "width": 1920
+    },
+    {
+      "clientWidth": 305,
+      "headings": [
+        {
+          "right": 289,
+          "text": "Togevent",
+          "width": 273
+        },
+        {
+          "right": 289,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 305,
+      "tinyTargets": 0,
+      "width": 320
+    },
+    {
+      "clientWidth": 345,
+      "headings": [
+        {
+          "right": 329,
+          "text": "Togevent",
+          "width": 313
+        },
+        {
+          "right": 329,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 313
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 345,
+      "tinyTargets": 0,
+      "width": 360
+    },
+    {
+      "clientWidth": 375,
+      "headings": [
+        {
+          "right": 359,
+          "text": "Togevent",
+          "width": 343
+        },
+        {
+          "right": 359,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 375,
+      "tinyTargets": 0,
+      "width": 390
+    },
+    {
+      "clientWidth": 625,
+      "headings": [
+        {
+          "right": 609,
+          "text": "Togevent",
+          "width": 593
+        },
+        {
+          "right": 609,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 593
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 625,
+      "tinyTargets": 0,
+      "width": 640
+    },
+    {
+      "clientWidth": 752,
+      "headings": [
+        {
+          "right": 736,
+          "text": "Togevent",
+          "width": 720
+        },
+        {
+          "right": 736,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 752,
+      "tinyTargets": 0,
+      "width": 767
+    },
+    {
+      "clientWidth": 753,
+      "headings": [
+        {
+          "right": 737,
+          "text": "Togevent",
+          "width": 358.5
+        },
+        {
+          "right": 737,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 721
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 753,
+      "tinyTargets": 0,
+      "width": 768
+    },
+    {
+      "clientWidth": 805,
+      "headings": [
+        {
+          "right": 789,
+          "text": "Togevent",
+          "width": 384.5
+        },
+        {
+          "right": 789,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 773
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 805,
+      "tinyTargets": 0,
+      "width": 820
+    },
+    {
+      "clientWidth": 1009,
+      "headings": [
+        {
+          "right": 993,
+          "text": "Togevent",
+          "width": 486.5
+        },
+        {
+          "right": 993,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 977
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 1009,
+      "tinyTargets": 0,
+      "width": 1024
+    },
+    {
+      "clientWidth": 1265,
+      "headings": [
+        {
+          "right": 1249,
+          "text": "Togevent",
+          "width": 614.5
+        },
+        {
+          "right": 1249,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1233
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 1265,
+      "tinyTargets": 0,
+      "width": 1280
+    },
+    {
+      "clientWidth": 1425,
+      "headings": [
+        {
+          "right": 1409,
+          "text": "Togevent",
+          "width": 694.5
+        },
+        {
+          "right": 1409,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1393
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 1425,
+      "tinyTargets": 0,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1905,
+      "headings": [
+        {
+          "right": 1672.5,
+          "text": "Togevent",
+          "width": 718
+        },
+        {
+          "right": 1672.5,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1440
+        }
+      ],
+      "overflow": false,
+      "path": "/work/togevent",
+      "scrollWidth": 1905,
+      "tinyTargets": 0,
+      "width": 1920
+    },
+    {
+      "clientWidth": 305,
+      "headings": [
+        {
+          "right": 289,
+          "text": "Bounty Hunters",
+          "width": 273
+        },
+        {
+          "right": 289,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 305,
+      "tinyTargets": 0,
+      "width": 320
+    },
+    {
+      "clientWidth": 345,
+      "headings": [
+        {
+          "right": 329,
+          "text": "Bounty Hunters",
+          "width": 313
+        },
+        {
+          "right": 329,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 313
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 345,
+      "tinyTargets": 0,
+      "width": 360
+    },
+    {
+      "clientWidth": 375,
+      "headings": [
+        {
+          "right": 359,
+          "text": "Bounty Hunters",
+          "width": 343
+        },
+        {
+          "right": 359,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 375,
+      "tinyTargets": 0,
+      "width": 390
+    },
+    {
+      "clientWidth": 625,
+      "headings": [
+        {
+          "right": 609,
+          "text": "Bounty Hunters",
+          "width": 593
+        },
+        {
+          "right": 609,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 593
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 625,
+      "tinyTargets": 0,
+      "width": 640
+    },
+    {
+      "clientWidth": 752,
+      "headings": [
+        {
+          "right": 736,
+          "text": "Bounty Hunters",
+          "width": 720
+        },
+        {
+          "right": 736,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 720
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 752,
+      "tinyTargets": 0,
+      "width": 767
+    },
+    {
+      "clientWidth": 753,
+      "headings": [
+        {
+          "right": 737,
+          "text": "Bounty Hunters",
+          "width": 358.5
+        },
+        {
+          "right": 737,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 721
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 753,
+      "tinyTargets": 0,
+      "width": 768
+    },
+    {
+      "clientWidth": 805,
+      "headings": [
+        {
+          "right": 789,
+          "text": "Bounty Hunters",
+          "width": 384.5
+        },
+        {
+          "right": 789,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 773
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 805,
+      "tinyTargets": 0,
+      "width": 820
+    },
+    {
+      "clientWidth": 1009,
+      "headings": [
+        {
+          "right": 993,
+          "text": "Bounty Hunters",
+          "width": 486.5
+        },
+        {
+          "right": 993,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 977
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 1009,
+      "tinyTargets": 0,
+      "width": 1024
+    },
+    {
+      "clientWidth": 1265,
+      "headings": [
+        {
+          "right": 1249,
+          "text": "Bounty Hunters",
+          "width": 614.5
+        },
+        {
+          "right": 1249,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1233
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 1265,
+      "tinyTargets": 0,
+      "width": 1280
+    },
+    {
+      "clientWidth": 1425,
+      "headings": [
+        {
+          "right": 1409,
+          "text": "Bounty Hunters",
+          "width": 694.5
+        },
+        {
+          "right": 1409,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1393
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 1425,
+      "tinyTargets": 0,
+      "width": 1440
+    },
+    {
+      "clientWidth": 1905,
+      "headings": [
+        {
+          "right": 1672.5,
+          "text": "Bounty Hunters",
+          "width": 718
+        },
+        {
+          "right": 1672.5,
+          "text": "Connect, collaborate,  or just say hello",
+          "width": 1440
+        }
+      ],
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "scrollWidth": 1905,
+      "tinyTargets": 0,
+      "width": 1920
+    }
+  ],
+  "after": [
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 568,
+      "overflow": false,
+      "path": "/",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 740,
+      "overflow": false,
+      "path": "/",
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 844,
+      "overflow": false,
+      "path": "/",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/",
+      "width": 640
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/",
+      "width": 767
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 1024,
+      "overflow": false,
+      "path": "/",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 1180,
+      "overflow": false,
+      "path": "/",
+      "width": 820
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 390,
+      "overflow": false,
+      "path": "/",
+      "width": 844
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 768,
+      "overflow": false,
+      "path": "/",
+      "width": 1024
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 800,
+      "overflow": false,
+      "path": "/",
+      "width": 1280
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/",
+      "headings": 1,
+      "height": 1080,
+      "overflow": false,
+      "path": "/",
+      "width": 1920
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 568,
+      "overflow": false,
+      "path": "/about",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 740,
+      "overflow": false,
+      "path": "/about",
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 844,
+      "overflow": false,
+      "path": "/about",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/about",
+      "width": 640
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/about",
+      "width": 767
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 1024,
+      "overflow": false,
+      "path": "/about",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 1180,
+      "overflow": false,
+      "path": "/about",
+      "width": 820
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 390,
+      "overflow": false,
+      "path": "/about",
+      "width": 844
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 768,
+      "overflow": false,
+      "path": "/about",
+      "width": 1024
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 800,
+      "overflow": false,
+      "path": "/about",
+      "width": 1280
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/about",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/about",
+      "headings": 1,
+      "height": 1080,
+      "overflow": false,
+      "path": "/about",
+      "width": 1920
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 568,
+      "overflow": false,
+      "path": "/work",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 740,
+      "overflow": false,
+      "path": "/work",
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 844,
+      "overflow": false,
+      "path": "/work",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work",
+      "width": 640
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work",
+      "width": 767
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1024,
+      "overflow": false,
+      "path": "/work",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1180,
+      "overflow": false,
+      "path": "/work",
+      "width": 820
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 390,
+      "overflow": false,
+      "path": "/work",
+      "width": 844
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 768,
+      "overflow": false,
+      "path": "/work",
+      "width": 1024
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 800,
+      "overflow": false,
+      "path": "/work",
+      "width": 1280
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1080,
+      "overflow": false,
+      "path": "/work",
+      "width": 1920
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 568,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 740,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 844,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 640
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 767
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1024,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1180,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 820
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 390,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 844
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 768,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 1024
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 800,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 1280
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1080,
+      "overflow": false,
+      "path": "/work/4fett",
+      "width": 1920
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 568,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 740,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 844,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 640
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 767
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1024,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1180,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 820
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 390,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 844
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 768,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 1024
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 800,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 1280
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1080,
+      "overflow": false,
+      "path": "/work/kiwi",
+      "width": 1920
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 568,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 740,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 844,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 640
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 767
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1024,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1180,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 820
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 390,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 844
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 768,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 1024
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 800,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 1280
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1080,
+      "overflow": false,
+      "path": "/work/togevent",
+      "width": 1920
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 568,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 320
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 740,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 360
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 844,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 640
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 767
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1024,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 768
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1180,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 820
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 390,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 844
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 768,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 1024
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 800,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 1280
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 900,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "clippedText": [],
+      "currentLink": "/work",
+      "headings": 1,
+      "height": 1080,
+      "overflow": false,
+      "path": "/work/bounty-hunters",
+      "width": 1920
+    }
+  ]
+}
