@@ -21,7 +21,7 @@ export default function Cursor({ primary = true }: { primary?: boolean }) {
     const pointer = window.matchMedia("(pointer: fine)");
     const move = (event: MouseEvent) => {
       if (!pointer.matches) return;
-      if (primary) document.documentElement.dataset.portfolioPointer = "ready";
+      if (primary) document.documentElement.dataset.pointer = "ready";
       x.set(event.clientX);
       y.set(event.clientY);
       setVisible(true);
@@ -34,7 +34,7 @@ export default function Cursor({ primary = true }: { primary?: boolean }) {
     };
     const leave = () => {
       setVisible(false);
-      if (primary) delete document.documentElement.dataset.portfolioPointer;
+      if (primary) delete document.documentElement.dataset.pointer;
     };
     const keyboard = (event: KeyboardEvent) => {
       if (event.key === "Tab") leave();
@@ -50,13 +50,13 @@ export default function Cursor({ primary = true }: { primary?: boolean }) {
       window.removeEventListener("blur", leave);
       window.removeEventListener("keydown", keyboard);
       pointer.removeEventListener("change", leave);
-      if (primary) delete document.documentElement.dataset.portfolioPointer;
+      if (primary) delete document.documentElement.dataset.pointer;
     };
   }, [x, y, primary]);
 
   return (
     <div
-      className="portfolio-cursor fixed inset-0 pointer-events-none z-[9999]"
+      className="cursor fixed inset-0 pointer-events-none z-[9999]"
       style={{ mixBlendMode: "exclusion" }}
     >
       <motion.div

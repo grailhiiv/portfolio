@@ -1,392 +1,378 @@
 [
   {
-    "source": "https://www.arturospatino.com/_next/static/media/53b9e256198e5412-s.0-wfv7uh4i7h9.woff2",
     "local": "public/fonts/53b9e256198e5412-s.0-wfv7uh4i7h9.woff2",
-    "bytes": 7968
+    "bytes": 7968,
+    "sha256": "f689f638f29fff460a2d5749edb5d5c38d7bef0389f32032d871f23fc6ebb008"
   },
   {
-    "source": "https://www.arturospatino.com/_next/static/media/7178b3e590c64307-s.0nx0ww8fni_q3.woff2",
     "local": "public/fonts/7178b3e590c64307-s.0nx0ww8fni_q3.woff2",
-    "bytes": 16540
+    "bytes": 16540,
+    "sha256": "58a6b173d5ca1dec92166ea3c6cb1a84a4144556d10928ac14e8e6b40e4787bd"
   },
   {
-    "source": "https://www.arturospatino.com/_next/static/media/8a480f0b521d4e75-s.0jzbimsg8vl84.woff2",
     "local": "public/fonts/8a480f0b521d4e75-s.0jzbimsg8vl84.woff2",
-    "bytes": 14900
+    "bytes": 14900,
+    "sha256": "6129fc8571c3e0cb0a4c41f5160c974a843b055009dc4ad8858bd808e18a2d86"
   },
   {
-    "source": "https://www.arturospatino.com/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2",
     "local": "public/fonts/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2",
-    "bytes": 29288
+    "bytes": 29288,
+    "sha256": "9b6f5ff45b278c744b5f379a2c4ecbaf858a842b8eaf82ac8d21b699ca16c608"
   },
   {
-    "source": "https://www.arturospatino.com/_next/static/media/fef07dbb0973bf53-s.12tyk43_3sh9u.woff2",
     "local": "public/fonts/fef07dbb0973bf53-s.12tyk43_3sh9u.woff2",
-    "bytes": 7252
+    "bytes": 7252,
+    "sha256": "b7a545bbb08256bd809f11cfe66d88da3e22d169ea4407737b1ef0ec1ed3d791"
   },
   {
-    "source": "https://www.arturospatino.com/icon.png",
     "local": "public/icon.png",
-    "bytes": 3004
+    "bytes": 14984,
+    "sha256": "fb864f0c433d7015e50ea059cd4123b98414be7c04a84cf113d4e3c7f7e8ec10"
   },
   {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-1.webp",
-    "local": "public/images/4fett/4fett-1.webp",
-    "bytes": 116550
-  },
-  {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-2.webp",
-    "local": "public/images/4fett/4fett-2.webp",
-    "bytes": 21880
-  },
-  {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-3.webp",
-    "local": "public/images/4fett/4fett-3.webp",
-    "bytes": 28276
-  },
-  {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-4.webp",
-    "local": "public/images/4fett/4fett-4.webp",
-    "bytes": 29352
-  },
-  {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-5.webp",
-    "local": "public/images/4fett/4fett-5.webp",
-    "bytes": 22150
-  },
-  {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-6.webp",
-    "local": "public/images/4fett/4fett-6.webp",
-    "bytes": 478664
-  },
-  {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-7.webp",
-    "local": "public/images/4fett/4fett-7.webp",
-    "bytes": 95010
-  },
-  {
-    "source": "https://www.arturospatino.com/images/4fett/4fett-hero.webp",
-    "local": "public/images/4fett/4fett-hero.webp",
-    "bytes": 124010
-  },
-  {
-    "source": "user-provided:about-hero.webp",
     "local": "public/images/about-hero.webp",
-    "bytes": 1378036
+    "bytes": 1378036,
+    "sha256": "e67af72395820578ea0e8e87dc0c744434ad1a2db38ba82be20b9ed888fb4a2c",
+    "source": "user-provided:about-hero.webp"
   },
   {
-    "source": "https://www.arturospatino.com/images/barilla.png",
-    "local": "public/images/barilla.png",
-    "bytes": 2949
+    "local": "public/images/analytics.png",
+    "bytes": 2537,
+    "sha256": "a4e3fb3a4ec4e9ab102e1bd13128970155b9d0bef5e5d95a63fcd4297c54ea0c"
   },
   {
-    "source": "https://www.arturospatino.com/images/bipred.png",
-    "local": "public/images/bipred.png",
-    "bytes": 10948
+    "local": "public/images/atlas/atlas-post-1.webp",
+    "bytes": 111090,
+    "sha256": "f564228ef093b2d157800c5c7794f1b0f7fdbbac62b9336fbbb42fbaca83e3ce"
   },
   {
-    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-1.png",
-    "local": "public/images/bounty-hunters/bh-1.png",
-    "bytes": 912751
+    "local": "public/images/atlas/atlas-post-2.webp",
+    "bytes": 99936,
+    "sha256": "039e8e3ecb55e40477d9fc1a0f545840e6c1018511ce39844eecb445310a798d"
   },
   {
-    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-2.png",
-    "local": "public/images/bounty-hunters/bh-2.png",
-    "bytes": 73603
+    "local": "public/images/atlas/atlas-post-3.webp",
+    "bytes": 63688,
+    "sha256": "44c268400a3e1afddb41c7678d6b86fd5c674d3196a3bf2a1717100034aaba5e"
   },
   {
-    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-3.png",
-    "local": "public/images/bounty-hunters/bh-3.png",
-    "bytes": 371684
+    "local": "public/images/atlas/atlas-post-4.webp",
+    "bytes": 79130,
+    "sha256": "f11ea6b4aa2d9df6937789bf06b3af0362ff6a5883ccba1aca4ac1ebed1d0a72"
   },
   {
-    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-4.png",
-    "local": "public/images/bounty-hunters/bh-4.png",
-    "bytes": 259138
+    "local": "public/images/atlas/atlas-post-5.webp",
+    "bytes": 187640,
+    "sha256": "2091312dcf837cdb26e17ab99b9d4702f6cf315c1c812f70a800b8ff3900bd12"
   },
   {
-    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-5.png",
-    "local": "public/images/bounty-hunters/bh-5.png",
-    "bytes": 2249543
+    "local": "public/images/atlas/atlas-post-6.webp",
+    "bytes": 159334,
+    "sha256": "bdefd1f13eb64e8debb2f94c9898c3bf3f1df39b3a3d1d106ad056438e0010de"
   },
   {
-    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-6.png",
-    "local": "public/images/bounty-hunters/bh-6.png",
-    "bytes": 759676
+    "local": "public/images/atlas/atlas-post-7.webp",
+    "bytes": 228102,
+    "sha256": "c6b55b6250af132637d070d7aef23a243d11fb5d06d98be9d7ad9b10bc905cb1"
   },
   {
-    "source": "https://www.arturospatino.com/images/bounty-hunters/bh-hero.png",
-    "local": "public/images/bounty-hunters/bh-hero.png",
-    "bytes": 4478075
+    "local": "public/images/atlas/atlas-post-8.jpg",
+    "bytes": 465413,
+    "sha256": "4cbb1ffa8a2f9f360500ed00009d5cc466e44bce0442e385cd179a7fa4d06df0"
   },
   {
-    "source": "https://www.arturospatino.com/images/bper.png",
-    "local": "public/images/bper.png",
-    "bytes": 1910
+    "local": "public/images/atlas/atlas-video-1-poster.webp",
+    "bytes": 21524,
+    "sha256": "26bc558f832035199eff77ce9de0aea743f2f7b5dfeb53d98d95ce2f293b04f0"
   },
   {
-    "source": "https://www.arturospatino.com/images/brembo.png",
-    "local": "public/images/brembo.png",
-    "bytes": 3060
+    "local": "public/images/atlas/atlas-video-2-poster.webp",
+    "bytes": 24302,
+    "sha256": "b5f6a8392d1e964ac19a9bd6f8d82b5d7666b9c990210a5fd69dd4c159cdec55"
   },
   {
-    "source": "https://www.arturospatino.com/images/case-4fett.webp",
-    "local": "public/images/case-4fett.webp",
-    "bytes": 48448
+    "local": "public/images/attio.png",
+    "bytes": 2188,
+    "sha256": "d6aaeb6089be69897dbae343c8b9629a73a8162bbe5a6fc6702af331e1bd81d3"
   },
   {
-    "source": "https://www.arturospatino.com/images/case-bh.png",
-    "local": "public/images/case-bh.png",
-    "bytes": 1008882
+    "local": "public/images/buffer.png",
+    "bytes": 3342,
+    "sha256": "4dd6771063ce774e79ff13288c8a27da3050523a67bebba3dda0281b34e759c2"
   },
   {
-    "source": "https://www.arturospatino.com/images/case-kiwi.webp",
-    "local": "public/images/case-kiwi.webp",
-    "bytes": 20728
+    "local": "public/images/canva.png",
+    "bytes": 4415,
+    "sha256": "65e96d3fbff984d1fa5c1cc7a40e5b6bda8438f499f71d0387c6327ce4ba6a02"
   },
   {
-    "source": "https://www.arturospatino.com/images/case-togevent.webp",
-    "local": "public/images/case-togevent.webp",
-    "bytes": 129478
+    "local": "public/images/caroline/caroline-post-1.webp",
+    "bytes": 199692,
+    "sha256": "640ae060db6fa0c1c3a5a3a89b94808779d560bb9c1e652c7ee4fd3f275f3854"
   },
   {
-    "source": "https://www.arturospatino.com/images/costa.png",
-    "local": "public/images/costa.png",
-    "bytes": 1503
+    "local": "public/images/caroline/caroline-post-2.webp",
+    "bytes": 190266,
+    "sha256": "3a3c96ba04506c3711da623bfeb423ba2c225b520389eac3ae46489db95a093b"
   },
   {
-    "source": "https://www.arturospatino.com/images/dhl.png",
-    "local": "public/images/dhl.png",
-    "bytes": 1771
+    "local": "public/images/caroline/caroline-post-3.webp",
+    "bytes": 251360,
+    "sha256": "f6a2b844e6e18110d4a86bc72bc6f86850a17ebc117205cfcdf70760d742c293"
   },
   {
-    "source": "https://www.arturospatino.com/images/enel.png",
-    "local": "public/images/enel.png",
-    "bytes": 1531
+    "local": "public/images/caroline/caroline-post-4.webp",
+    "bytes": 165390,
+    "sha256": "6d5a925fa648e7344b34a92468385ac86123d84660e62dec631d923482cd35dc"
   },
   {
-    "source": "https://www.arturospatino.com/images/eon.png",
-    "local": "public/images/eon.png",
-    "bytes": 1446
+    "local": "public/images/caroline/caroline-post-5.webp",
+    "bytes": 124038,
+    "sha256": "b0ac815bc3f1e18afeb918dca18d8214c89a92e3d48e9cfe9cfee26d00facbbf"
   },
   {
-    "source": "https://www.arturospatino.com/images/fantacalcio1.webp",
-    "local": "public/images/fantacalcio1.webp",
-    "bytes": 179970
+    "local": "public/images/caroline/caroline-video-1-poster.webp",
+    "bytes": 44018,
+    "sha256": "b71df4fddf42ae7e429c5849cdd86daafce9725782061c54e77d480d5af57d1c"
   },
   {
-    "source": "https://www.arturospatino.com/images/fantacalcio2.webp",
-    "local": "public/images/fantacalcio2.webp",
-    "bytes": 224998
+    "local": "public/images/caroline/caroline-video-2-poster.webp",
+    "bytes": 35814,
+    "sha256": "fe77173da94adb8309f5ca95c2fca984b56af578b6510d2520d92529b34c8558"
   },
   {
-    "source": "https://www.arturospatino.com/images/fantacalcio3.webp",
-    "local": "public/images/fantacalcio3.webp",
-    "bytes": 207354
+    "local": "public/images/case-atlas.webp",
+    "bytes": 153886,
+    "sha256": "52e17b9149e3269a7699d60d17abab73399f1d17c89eedeb2cea4242da40f828"
   },
   {
-    "source": "https://www.arturospatino.com/images/giroditalia.png",
-    "local": "public/images/giroditalia.png",
-    "bytes": 1908
+    "local": "public/images/case-caroline.webp",
+    "bytes": 160858,
+    "sha256": "170967b66d2b52840ebdaa0d4d398e71cac3725d7a95d377b23f6508bcfac32c"
   },
   {
-    "source": "https://www.arturospatino.com/images/home-hero-left.webp",
-    "local": "public/images/home-hero-left.webp",
-    "bytes": 1605622
+    "local": "public/images/case-daniel.webp",
+    "bytes": 126342,
+    "sha256": "f0d15ed63067121a54acb3e7c1118d854f97abc2f0d10e5b8f097a445b54b44f"
   },
   {
-    "source": "https://www.arturospatino.com/images/home-hero-right-img.webp",
-    "local": "public/images/home-hero-right-img.webp",
-    "bytes": 287454
+    "local": "public/images/case-melissa.webp",
+    "bytes": 128732,
+    "sha256": "1feca1bd8df1df46fb972461f726e12c588f370fc0a11d6c83cbd4c38f300798"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi.png",
-    "local": "public/images/kiwi.png",
-    "bytes": 961
+    "local": "public/images/chatgpt.png",
+    "bytes": 3880,
+    "sha256": "08d8ae97555b25d1e1efb3f8a2b240b74c33f1d18b8c58253047a5ce5d015188"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-1.webp",
-    "local": "public/images/kiwi/kiwi-1.webp",
-    "bytes": 120940
+    "local": "public/images/claude.png",
+    "bytes": 1549,
+    "sha256": "bcb26b2aa5426e7d6ef4d1f900e31971abb69582e4c56659b23e6ed4e0d43bae"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-2.webp",
-    "local": "public/images/kiwi/kiwi-2.webp",
-    "bytes": 24604
+    "local": "public/images/daniel/daniel-post-1.webp",
+    "bytes": 222862,
+    "sha256": "9f457b4bd81b41dd9fe4180cbbae629a881dae040fe07e5427f8cb3f18162abf"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-3.webp",
-    "local": "public/images/kiwi/kiwi-3.webp",
-    "bytes": 32784
+    "local": "public/images/daniel/daniel-post-2.webp",
+    "bytes": 330220,
+    "sha256": "c584091e26b331fe1f6a39d96c1ea8dafbcfdc0b7917109a9775b758bbb06def"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-4.webp",
-    "local": "public/images/kiwi/kiwi-4.webp",
-    "bytes": 32412
+    "local": "public/images/daniel/daniel-post-3.webp",
+    "bytes": 383548,
+    "sha256": "0b66815d8ed7b62054d71b0c205c309c57bc338111105aa6bb7e5209c36faeba"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-5.webp",
-    "local": "public/images/kiwi/kiwi-5.webp",
-    "bytes": 21736
+    "local": "public/images/daniel/daniel-post-4.webp",
+    "bytes": 358312,
+    "sha256": "02f824c852079be8307b82d3f58a62c797f8d9c96ade48c9869f62de038e2fb6"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-6.webp",
-    "local": "public/images/kiwi/kiwi-6.webp",
-    "bytes": 97768
+    "local": "public/images/daniel/daniel-post-5.webp",
+    "bytes": 563416,
+    "sha256": "8fdceb75b1cf7101c6eb80b29f22199353f33b9fd23ae5dc06ba86257361d752"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-ds.webp",
-    "local": "public/images/kiwi/kiwi-ds.webp",
-    "bytes": 52866
+    "local": "public/images/daniel/daniel-post-6.webp",
+    "bytes": 83174,
+    "sha256": "1eecbc486622c490d218d3209170b39b75290b33712994bdac23bf536bb14211"
   },
   {
-    "source": "https://www.arturospatino.com/images/kiwi/kiwi-hero.webp",
-    "local": "public/images/kiwi/kiwi-hero.webp",
-    "bytes": 203396
+    "local": "public/images/daniel/daniel-post-7.webp",
+    "bytes": 86212,
+    "sha256": "c763a52a692541d4f82f1a0479f02a26b7c46c834cf6b84044dd5a6ac0f9b000"
   },
   {
-    "source": "https://www.arturospatino.com/images/lumina1.webp",
-    "local": "public/images/lumina1.webp",
-    "bytes": 109170
+    "local": "public/images/daniel/daniel-video-1-poster.webp",
+    "bytes": 28496,
+    "sha256": "e65ddabba999ad8e9b1de6f1ae10110459b97e474595c5e64c1e40adf492d837"
   },
   {
-    "source": "https://www.arturospatino.com/images/lumina2.webp",
-    "local": "public/images/lumina2.webp",
-    "bytes": 86282
+    "local": "public/images/daniel/daniel-video-2-poster.webp",
+    "bytes": 24330,
+    "sha256": "28fdfd5ee327dbd6b4b3308eb7279b214b3ba0cc451926a18289b7080fab335b"
   },
   {
-    "source": "https://www.arturospatino.com/images/monogrid.png",
-    "local": "public/images/monogrid.png",
-    "bytes": 1871
+    "local": "public/images/grailhiiv-logo.svg",
+    "bytes": 5310,
+    "sha256": "d7d756654867306b2575534f92fd87347b1ad128f5f10e22a51c855b9341ab24"
   },
   {
-    "source": "https://www.arturospatino.com/images/mottura.png",
-    "local": "public/images/mottura.png",
-    "bytes": 1404
+    "local": "public/images/graywolf.png",
+    "bytes": 11767,
+    "sha256": "68f4af208a7a0cd8a326a532a44727014bafcfbcbee02ca39dc1f6cab7ca3d16"
   },
   {
-    "source": "https://www.arturospatino.com/images/napoli1.webp",
-    "local": "public/images/napoli1.webp",
-    "bytes": 299308
+    "local": "public/images/home-hero-social-media.webp",
+    "bytes": 199620,
+    "sha256": "17547cbd67560059afc8d4c15230e64653b5d0bb7ae4517fa890347265162761"
   },
   {
-    "source": "https://www.arturospatino.com/images/napoli2.webp",
-    "local": "public/images/napoli2.webp",
-    "bytes": 245416
+    "local": "public/images/icon.png",
+    "bytes": 7510,
+    "sha256": "160b75a5b466d9738cc329bc4b51b7980870dcd1eba96315a3ad3df4b27cb58e"
   },
   {
-    "source": "https://www.arturospatino.com/images/napoli3.webp",
-    "local": "public/images/napoli3.webp",
-    "bytes": 306736
+    "local": "public/images/macmillan.png",
+    "bytes": 7950,
+    "sha256": "2296f0caf26a892b1abe7531b81ec1d3a284acb093834a0daf54b243a842d81b"
   },
   {
-    "source": "https://www.arturospatino.com/images/nebula.png",
-    "local": "public/images/nebula.png",
-    "bytes": 17012
+    "local": "public/images/mailchimp.png",
+    "bytes": 4845,
+    "sha256": "4e02f2b738a9e14663c6fa4c3ed772d4c18b7da6dc49f2cb5891080ee82eee84"
   },
   {
-    "source": "https://www.arturospatino.com/images/poste.png",
-    "local": "public/images/poste.png",
-    "bytes": 2790
+    "local": "public/images/melissa/melissa-post-1.webp",
+    "bytes": 158232,
+    "sha256": "ce5fa4e48e1751a427160a5003b41db178206469ce97d545b64364583b2d9d71"
   },
   {
-    "source": "https://www.arturospatino.com/images/prada.png",
-    "local": "public/images/prada.png",
-    "bytes": 1508
+    "local": "public/images/melissa/melissa-post-2.webp",
+    "bytes": 58028,
+    "sha256": "845d1896611c575345988b9bda4f5901a0cd07eb46eaa445d435b8b5646df46a"
   },
   {
-    "source": "https://www.arturospatino.com/images/sanofi.png",
-    "local": "public/images/sanofi.png",
-    "bytes": 2611
+    "local": "public/images/melissa/melissa-post-3.webp",
+    "bytes": 87434,
+    "sha256": "60988514a4994de99c719aa3c2c2d5570d82a7e239ae6292b7e51726a3781db9"
   },
   {
-    "source": "https://www.arturospatino.com/images/seotesteronline.png",
-    "local": "public/images/seotesteronline.png",
-    "bytes": 9033
+    "local": "public/images/melissa/melissa-post-4.webp",
+    "bytes": 61640,
+    "sha256": "079f5c1d9ee3efc70e8d3e644f2aa8a2c74aef83579a2e50828e84194257115d"
   },
   {
-    "source": "https://www.arturospatino.com/images/sketchin.png",
-    "local": "public/images/sketchin.png",
-    "bytes": 1363
+    "local": "public/images/melissa/melissa-post-5.webp",
+    "bytes": 81368,
+    "sha256": "bb3d814344a199c8f927c5674eed6a3d56079570c7dd2c90d31470972a0042e4"
   },
   {
-    "source": "https://www.arturospatino.com/images/talentgarden.png",
-    "local": "public/images/talentgarden.png",
-    "bytes": 2078
+    "local": "public/images/melissa/melissa-post-6.webp",
+    "bytes": 56300,
+    "sha256": "e7ddd19b366fefd2ab4d0a077a35a2be15c2f102111f09644611ed826b04c74d"
   },
   {
-    "source": "https://www.arturospatino.com/images/tangible.png",
-    "local": "public/images/tangible.png",
-    "bytes": 2662
+    "local": "public/images/melissa/melissa-video-1-poster.webp",
+    "bytes": 8682,
+    "sha256": "5833de5fba4c199ca553cdc0685dd0310d884fd4789129460f85efd8b3f168e5"
   },
   {
-    "source": "https://www.arturospatino.com/images/tangity.png",
-    "local": "public/images/tangity.png",
-    "bytes": 1306
+    "local": "public/images/melissa/melissa-video-2-poster.webp",
+    "bytes": 12108,
+    "sha256": "259d109ed1be661f076655fc601164e92bf4d49e868cdf3a06d8e006316dd411"
   },
   {
-    "source": "https://www.arturospatino.com/images/thewave.png",
-    "local": "public/images/thewave.png",
-    "bytes": 1129
+    "local": "public/images/meta.png",
+    "bytes": 4507,
+    "sha256": "0342d634beb7126338998bcf2ddeabda436d3cceeb39b455ac533574dffc8039"
   },
   {
-    "source": "https://www.arturospatino.com/images/thewavestudio.png",
-    "local": "public/images/thewavestudio.png",
-    "bytes": 10595
+    "local": "public/images/penguin.png",
+    "bytes": 8954,
+    "sha256": "15d4e147a3b3caa9269e6e2aefc5fc366f04638a2395563a7434b371946befcd"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent.png",
-    "local": "public/images/togevent.png",
-    "bytes": 1458
+    "local": "public/images/pipedrive.png",
+    "bytes": 2344,
+    "sha256": "2746b19441fb7d058557731c56524b9439b998b9409ff238ff535ac323a70802"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-1.webp",
-    "local": "public/images/togevent/tog-1.webp",
-    "bytes": 194818
+    "local": "public/images/sitebulb.png",
+    "bytes": 3232,
+    "sha256": "835a4d5078ffff4ba3e22da9b18e5ae9bbea954476263c4ae99d6cac31c871e7"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-2.webp",
-    "local": "public/images/togevent/tog-2.webp",
-    "bytes": 135206
+    "local": "public/images/wordpress.png",
+    "bytes": 1664,
+    "sha256": "e19b04527e1675d37af524f52e898388c4b9da89e6df00415a71474b5e64ed25"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-3.webp",
-    "local": "public/images/togevent/tog-3.webp",
-    "bytes": 21950
+    "local": "public/images/zapier.png",
+    "bytes": 3908,
+    "sha256": "6e44496d4c83c8cf5f71c59401941db4f55e70996dd07a79090afadebc91423b"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-4.webp",
-    "local": "public/images/togevent/tog-4.webp",
-    "bytes": 37902
+    "local": "public/videos/atlas/atlas-video-1.mp4",
+    "bytes": 36220964,
+    "sha256": "7357c6d3120566f5efa9b4cf82f3f898b1489a42ba841168c2ff72cd4161b389"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-5.webp",
-    "local": "public/images/togevent/tog-5.webp",
-    "bytes": 7354
+    "local": "public/videos/atlas/atlas-video-2.mp4",
+    "bytes": 28615357,
+    "sha256": "bb2fe39d8fe38cdb3101a590e8df3aba089a62a77d47f09bcc32b5d15ca472af"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-6.webp",
-    "local": "public/images/togevent/tog-6.webp",
-    "bytes": 60736
+    "local": "public/videos/atlas/case-atlas.mp4",
+    "bytes": 19952003,
+    "sha256": "4553c9f33bd88516681ef155fad0c7d2a50dcffb954845666a252d75c23fac65"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-7.webp",
-    "local": "public/images/togevent/tog-7.webp",
-    "bytes": 251134
+    "local": "public/videos/caroline/caroline-case.mp4",
+    "bytes": 33599066,
+    "sha256": "2cf3db8c59299854578cd4b337c15a70d9e902ca991be225d511dc4e5a9e4472"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-8.webp",
-    "local": "public/images/togevent/tog-8.webp",
-    "bytes": 247366
+    "local": "public/videos/caroline/caroline-video-1.mp4",
+    "bytes": 1642962,
+    "sha256": "6dfa3844498c41c7403165722b2d92dd330a0726ac858d135154b003bc8ed001"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-ds.webp",
-    "local": "public/images/togevent/tog-ds.webp",
-    "bytes": 160560
+    "local": "public/videos/caroline/caroline-video-2.mp4",
+    "bytes": 1563044,
+    "sha256": "032f8dc97c609e004b90ef877f085c3578f6f6ae6d94afd9496d4da56e6f7e4c"
   },
   {
-    "source": "https://www.arturospatino.com/images/togevent/tog-hero.webp",
-    "local": "public/images/togevent/tog-hero.webp",
-    "bytes": 77740
+    "local": "public/videos/daniel/daniel-case.mp4",
+    "bytes": 31899975,
+    "sha256": "26763372e2583a803035306f63355474b94cb63959490ab37193ec33ed2832b2"
+  },
+  {
+    "local": "public/videos/daniel/daniel-video-1.mp4",
+    "bytes": 1835962,
+    "sha256": "ac118a7909e088ae20413024253332fe63f5560af429d96824bf4d3d3e0b9dee"
+  },
+  {
+    "local": "public/videos/daniel/daniel-video-2.mp4",
+    "bytes": 3393188,
+    "sha256": "c5d246c7a9d85f31fc2d72b2c359421b249acf5fd52bda7bc2a36a38232526fb"
+  },
+  {
+    "local": "public/videos/melissa/melissa-case.mp4",
+    "bytes": 31411410,
+    "sha256": "b288945d468cd1a5bb9ca5cfc1b13407675ff34cd96c2f3f7e98ec209ed9954e"
+  },
+  {
+    "local": "public/videos/melissa/melissa-video-1.mp4",
+    "bytes": 5319992,
+    "sha256": "84ad538fac892a143f8ee2e95dc686bdf277b53fc9f52f3920936a5a2819c4d9"
+  },
+  {
+    "local": "public/videos/melissa/melissa-video-2.mp4",
+    "bytes": 2048040,
+    "sha256": "a75311a54293ca5df0afe09e04663074ce1cc50ede6161d122372d4d2b70f1b6"
   }
 ]

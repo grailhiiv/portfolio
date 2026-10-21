@@ -7,7 +7,7 @@ npm.cmd install
 npm.cmd run dev
 ```
 
-Open http://127.0.0.1:3000. For a production server:
+Open [the local portfolio](http://127.0.0.1:3000). For a production server:
 
 ```powershell
 npm.cmd run build
@@ -18,21 +18,21 @@ npm.cmd start
 
 - `src/app/page.tsx`: Home
 - `src/app/about/page.tsx`: About
-- `src/app/work/page.tsx`: Work and eight-image exploration gallery
-- `src/app/work/{4fett,kiwi,togevent,bounty-hunters}/page.tsx`: four complete case studies
+- `src/app/work/page.tsx`: Work, featuring Daniel G. Miller, Melissa Castro, Caroline Montague, and Atlas Rose
+- `src/app/work/{daniel,melissa,caroline,atlas}/page.tsx`: the four case studies
 - `src/components/header.tsx`: navigation, live Philippine clock (Asia/Manila), scroll-direction header
 - `src/components/footer.tsx`: contact information
 - `src/components/animation.tsx`: letter animation and scroll reveals
-- `src/components/gallery.tsx`: image viewer with arrow keys, Escape, focus containment and focus restoration
+- `src/components/featured-work.tsx`: shared Home and Work cards with hover video previews
+- `src/components/work-showcase.tsx`: shared two-column case-study media showcase
 - `src/components/cursor.tsx`: pointer effect
 - `src/components/service-icon.tsx` and `src/data/`: four Lottie icons
-- `public/images/` and `public/fonts/`: local reference assets
-- `src/app/reference.css`: the reference's compiled Tailwind stylesheet, formatted for editing
-- `src/app/globals.css`: reconstruction-specific styles
+- `public/images/`, `public/videos/`, and `public/fonts/`: local portfolio assets
+- `src/app/global.css`: fonts, theme, utilities, shared styles, case studies, and the author showcases
 
-Stack: Next.js App Router, React, TypeScript, Motion, Lottie, and Next.js image optimization. The captured Tailwind stylesheet is included directly; a Tailwind compilation pipeline is not needed for this baseline. Add new CSS rules in `globals.css` when adding utility classes that are not in the captured stylesheet.
+Stack: Next.js App Router, React, TypeScript, Motion, Lottie, and Next.js image optimization. All CSS lives in `src/app/global.css`, imported once by the root layout. Case-study and showcase classes use prefixes to avoid global name collisions. A Tailwind compilation pipeline is not needed.
 
-`public/asset-manifest.json` records the source URLs and local files for the 78 downloaded image/font assets. The four service animation JSON files were recovered from the public page's serialized data. Links to external project sites, LinkedIn, and the original email address retain the reference's destinations.
+`public/asset-manifest.json` inventories current public files with byte sizes and SHA-256 hashes. Known original source URLs are retained as attribution; verification does not download from those sources. After intentionally adding, changing, or removing public files, run `python scripts/update-asset-manifest.py` and review the manifest diff.
 
 ## Verification
 
@@ -40,15 +40,18 @@ Stack: Next.js App Router, React, TypeScript, Motion, Lottie, and Next.js image 
 npm.cmd run typecheck
 npm.cmd run build
 python scripts/audit-regressions.py
-python scripts/verify-recreation.py
+python scripts/verify-site.py
 ```
 
-The last command requires the local server plus Python with `requests` and `beautifulsoup4`. It checks every route, local asset responses, reference text and image parity, and internal navigation destinations. Captured reference pages are included under `reference/`. Reference and QA files are tracked along with the project source. `scripts/inspect-reference.py` and the other acquisition scripts document how the public reference was inspected; they are not runtime dependencies.
+The Python verification scripts require a running local server and `requests` plus `beautifulsoup4` (`python -m pip install -r scripts/requirements.txt`). Both accept an optional base URL, for example `python scripts/verify-site.py http://127.0.0.1:3000`, and resolve project paths relative to the script location.
 
-The project remains local. Search indexing is disabled for this reference-copy baseline. The existing `.agents/`, `.codex/`, and Git history were retained; previous files deleted by the user were not restored.
+- `audit-regressions.py` checks server-rendered headings, visible HTML, current navigation, and responsive image hints.
+- `verify-site.py` discovers current static routes from `src/app`, checks internal links and fragments, image markup and source files, served scripts/styles/images, and every public file against its recorded hash and served bytes. Dynamic routes require concrete verification URLs before this checker can support them.
+- `audit-no-script-preview.py` provides an optional script-blocked local preview on port 3001.
+The maintained source in `src/` and assets in `public/` are the editing sources. Search indexing remains disabled.
 
 ## Audit fixes
 
-See `AUDIT.md` for the October 20 audit, responsive matrix, evidence, and remaining design concerns. The audit preserves the visible reference layout while adding readable server HTML, accessible headings/current navigation, a reliable cursor fallback, corrected responsive image delivery, and a wider phone image viewer. The Contact link now updates its fragment and keyboard focus, and its animation cancels on user input or route changes.
+See `AUDIT.md` for current verification scope. The Contact link updates its fragment and keyboard focus, and its animation cancels on user input or route changes.
 
-Responsive image hints are centralized in `src/lib/image-sizes.ts`. Entrance animations enhance visible HTML through the Web Animations API; JavaScript failures no longer leave the page transparent. The acquisition scripts are archival helpers and are not run by development or production builds; regenerating the original snapshot would overwrite subsequent source edits.
+Responsive image hints are centralized in `src/lib/image-sizes.ts`. Entrance animations enhance visible HTML through the Web Animations API; JavaScript failures no longer leave the page transparent.

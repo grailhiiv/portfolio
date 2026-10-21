@@ -3,9 +3,10 @@ import re
 import sys
 import requests
 from bs4 import BeautifulSoup
+from portfolio_checks import discover_routes
 
 base = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:3000"
-routes = ["/", "/about", "/work", "/work/4fett", "/work/kiwi", "/work/togevent", "/work/bounty-hunters"]
+routes = discover_routes()
 failures = []
 
 for route in routes:
@@ -13,6 +14,9 @@ for route in routes:
     response.raise_for_status()
     page = BeautifulSoup(response.content, "html.parser")
     main = page.select_one("main")
+    if main is None:
+        failures.append(f"{route}: missing main content")
+        continue
     if len(main.select("h1")) != 1:
         failures.append(f"{route}: expected one main heading")
     hidden = [el for el in main.select("[style]") if re.search(r"opacity:\s*0(?:;|$)", el["style"])]
@@ -21,13 +25,15 @@ for route in routes:
     if not page.select_one('header nav a[aria-current]'):
         failures.append(f"{route}: navigation has no current-page indication")
     if route == "/":
-        portrait = main.select_one('img[alt="Portrait"]')
-        if "512px" in portrait.get("sizes", "") or portrait.get("sizes", "").endswith("50vw"):
-            failures.append("/: portrait sizes understate full-width mobile / wide desktop layout")
+        portrait = main.select_one("section img")
+        if portrait is None:
+            failures.append("/: missing hero image")
+        elif "512px" in portrait.get("sizes", "") or portrait.get("sizes", "").endswith("50vw"):
+            failures.append("/: hero sizes understate full-width mobile / wide desktop layout")
     if route == "/work":
         cards = [img for img in main.select("img") if "case-" in img.get("src", "")]
         if any(img.get("sizes") == "100vw" for img in cards):
-            failures.append("/work: four-column cards request full-viewport images")
+            failures.append("/work: two-column cards request full-viewport images")
 
 for failure in failures:
     print("FAIL", failure)

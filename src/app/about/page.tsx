@@ -1,17 +1,97 @@
+import imageAsset0 from "../../../public/images/about-hero.webp";
+import imageAsset1 from "../../../public/images/canva.png";
+import imageAsset2 from "../../../public/images/buffer.png";
+import imageAsset3 from "../../../public/images/meta.png";
+import imageAsset4 from "../../../public/images/chatgpt.png";
+import imageAsset5 from "../../../public/images/analytics.png";
+import imageAsset6 from "../../../public/images/zapier.png";
+import imageAsset7 from "../../../public/images/mailchimp.png";
+import imageAsset8 from "../../../public/images/attio.png";
+import imageAsset9 from "../../../public/images/wordpress.png";
+import imageAsset10 from "../../../public/images/sitebulb.png";
+import imageAsset11 from "../../../public/images/pipedrive.png";
+import imageAsset12 from "../../../public/images/claude.png";
+import imageAsset13 from "../../../public/images/icon.png";
+import imageAsset14 from "../../../public/images/penguin.png";
+import imageAsset15 from "../../../public/images/macmillan.png";
+import imageAsset16 from "../../../public/images/graywolf.png";
 import { imageSizes } from "@/lib/image-sizes";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { Reveal, AnimatedHeading } from "@/components/animation";
+import { Reveal } from "@/components/animation";
 
 export const metadata: Metadata = {
-  title: "About — Grailord Antonio",
+  title: "About Grailord Antonio",
   description:
-    "Designer with 10+ years of experience across UX, UI and design systems. Based in Italy, working with startups, agencies and consulting environments.",
+    "I'm Grailord Antonio, a digital marketing specialist based in the Philippines with a background in social media management, SEO, and WordPress management.",
   robots: { index: false, follow: false },
 };
 
-export default function Page() {
+const workExperience = [
+  {
+    company: "Independent",
+    role: "Freelance and Partnerships",
+    period: null,
+    logo: imageAsset13,
+    alt: "Freelancer",
+    delay: 0,
+    paragraphs: [
+      "I work with authors and businesses on social media management, content strategy, SEO, and website management. My work includes planning content, supporting websites, and helping clients maintain a consistent online presence.",
+    ],
+  },
+  {
+    company: "Penguin Random House",
+    role: "Social Media Manager",
+    period: "2022 — 2026",
+    logo: imageAsset14,
+    alt: "Penguin Random House",
+    delay: 0.12,
+    paragraphs: [
+      "As a Social Media Manager, I managed content for author and book marketing campaigns across multiple social media profiles. I developed monthly content calendars and coordinated scheduling and publishing through Buffer.",
+      "I created platform-specific captions, branded graphics, and promotional materials to support consistent author campaigns.",
+    ],
+  },
+  {
+    company: "Pan Macmillan",
+    role: "SEO Specialist",
+    period: "2015 — 2022",
+    logo: imageAsset15,
+    alt: "Pan Macmillan",
+    delay: 0.24,
+    paragraphs: [
+      "I progressed from Junior to Senior SEO Specialist, working on technical SEO and website optimisation to support organic search visibility.",
+      "My work included technical audits, on-page optimisation, structured data, internal linking, and performance improvements. I also collaborated with development teams on website redesigns and migrations, helping maintain SEO practices during those changes.",
+    ],
+  },
+  {
+    company: "Graywolf Press",
+    role: "Lead Researcher",
+    period: "2012 — 2015",
+    logo: imageAsset16,
+    alt: "Graywolf Press",
+    delay: 0.36,
+    paragraphs: [
+      "As a Lead Researcher, I identified prospective authors and researched publications to support sales outreach. I gathered contact information, organised prospect records, and maintained research data for the outreach team.",
+    ],
+  },
+];
+
+const clientLogos = [
+  { name: "Canva", image: imageAsset1 },
+  { name: "Buffer", image: imageAsset2 },
+  { name: "Meta", image: imageAsset3 },
+  { name: "ChatGPT", image: imageAsset4 },
+  { name: "Google Analytics", image: imageAsset5 },
+  { name: "Zapier", image: imageAsset6 },
+  { name: "Mailchimp", image: imageAsset7 },
+  { name: "Attio", image: imageAsset8 },
+  { name: "WordPress", image: imageAsset9 },
+  { name: "Sitebulb", image: imageAsset10 },
+  { name: "Pipedrive", image: imageAsset11 },
+  { name: "Claude", image: imageAsset12 },
+];
+
+export default function AboutPage() {
   return (
     <main id="main-content">
       <h1 className="sr-only" data-audit-heading="true">
@@ -19,16 +99,16 @@ export default function Page() {
       </h1>
       <section className="px-4 pb-4 md:pb-14 pt-4">
         <div className="max-w-5xl mx-auto">
-          <Reveal immediate={true}>
+          <Reveal immediate>
             <div className="aspect-[3/4] md:aspect-[2/1] rounded-lg relative overflow-hidden">
               <Image
                 alt="Portrait of Grailord Antonio"
                 className="object-cover"
                 sizes={imageSizes.aboutHero}
-                src="/images/about-hero.webp"
+                src={imageAsset0}
                 quality={90}
-                fill={true}
-                preload={true}
+                fill
+                preload
               />
             </div>
           </Reveal>
@@ -36,36 +116,18 @@ export default function Page() {
       </section>
       <section className="px-4 py-10 pt-4 md:py-12 border-t border-gray-100">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6">
-          <h2 className="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
-            {"Info"}
+          <h2 className="section-heading md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+            Info
           </h2>
-          <Reveal
-            className="space-y-4 text-md leading-relaxed text-gray-500"
-            immediate={false}
-          >
+          <Reveal className="space-y-4 text-md leading-relaxed text-gray-500">
             <p>
               {
-                "I'm Arturo Spatino, a digital product designer based in Italy with over 10 years of experience designing digital products across startups, agencies and consulting environments."
+                "I'm Grailord Antonio, a digital marketing specialist based in the Philippines. My background spans social media management, SEO, and WordPress management."
               }
             </p>
             <p>
               {
-                "Over the years, I've worked across UX, UI and design systems, helping teams create products that are clearer, more consistent and easier to use."
-              }
-            </p>
-            <p>
-              {
-                "My career evolved from hands-on product design to leading teams, shaping design processes and mentoring designers through collaboration and training."
-              }
-            </p>
-            <p>
-              {
-                "Today, I work as an independent designer, partnering with companies to build thoughtful digital experiences that balance user needs, business goals and scalable systems."
-              }
-            </p>
-            <p>
-              {
-                "My work is driven by curiosity, clarity and a constant desire to improve how things work — both for people and for the teams building them."
+                "I've worked with authors and businesses on content, search, and websites. Today, I focus on social media management, brand growth, and marketing automation—bringing creative work and practical systems together to help businesses reach their audiences and organise their marketing."
               }
             </p>
           </Reveal>
@@ -73,426 +135,76 @@ export default function Page() {
       </section>
       <section className="px-4 py-10 md:py-12 border-t border-gray-100">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6">
-          <h2 className="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
-            {"Work Experience"}
+          <h2 className="section-heading md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+            Work Experience
           </h2>
           <div className="divide-y divide-gray-100">
-            <Reveal className="py-10 first:pt-0" immediate={false}>
-              <div className="flex items-end justify-between mb-5">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
-                    <Image
-                      alt="Independent"
-                      className="object-cover"
-                      sizes="48px"
-                      src="/icon.png"
-                      quality={90}
-                      fill={true}
-                    />
+            {workExperience.map((experience) => (
+              <Reveal
+                key={experience.company}
+                className="py-10 first:pt-0"
+                delay={experience.delay}
+              >
+                <div className="flex items-end justify-between mb-5">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
+                      <Image
+                        alt={experience.alt}
+                        className="object-cover"
+                        sizes="48px"
+                        src={experience.logo}
+                        quality={90}
+                        fill
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-md font-medium text-[#111111]">
+                        {experience.company}
+                      </h3>
+                      <p className="text-sm text-gray-400 mt-0.5">
+                        {experience.role}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-md font-medium text-[#111111]">
-                      {"Independent"}
-                    </h3>
-                    <p className="text-sm text-gray-400 mt-0.5">
-                      {"Freelance and partnerships"}
-                    </p>
-                  </div>
+                  {experience.period && (
+                    <span className="text-xs text-gray-400 shrink-0 ml-4">
+                      {experience.period}
+                    </span>
+                  )}
                 </div>
-              </div>
-              <div className="space-y-3">
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "I’m working with product teams and startups to help them build digital experiences that are clearer, more consistent and easier to use."
-                  }
-                </p>
-              </div>
-            </Reveal>
-            <Reveal className="py-10 first:pt-0" immediate={false} delay={0.12}>
-              <div className="flex items-end justify-between mb-5">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
-                    <Image
-                      alt="Nebula"
-                      className="object-cover"
-                      sizes="48px"
-                      src="/images/nebula.png"
-                      quality={90}
-                      fill={true}
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-md font-medium text-[#111111]">
-                      {"Nebula"}
-                    </h3>
-                    <p className="text-sm text-gray-400 mt-0.5">
-                      {"Co-founder and Lead of Design"}
+                <div className="space-y-3">
+                  {experience.paragraphs.map((paragraph) => (
+                    <p
+                      key={paragraph}
+                      className="text-sm text-gray-500 leading-relaxed"
+                    >
+                      {paragraph}
                     </p>
-                  </div>
+                  ))}
                 </div>
-                <span className="text-xs text-gray-400 shrink-0 ml-4">
-                  {"2024 — Today"}
-                </span>
-              </div>
-              <div className="space-y-3">
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "Nebula is an independent tech company focused on building digital products and tailored solutions for startups and businesses, combining design, technology and AI to create intuitive user experiences."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "As Co-Founder and Lead Designer, I led the design direction across products, brand and user experience, helping shape the company vision from the ground up. I worked across UX, UI and design systems, while also guiding design decisions, collaboration processes and product strategy."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "During this experience, I contributed to the launch of Togevent, a platform designed to simplify event organization through a shared digital space for guests, updates, media and communication."
-                  }
-                </p>
-              </div>
-            </Reveal>
-            <Reveal className="py-10 first:pt-0" immediate={false} delay={0.24}>
-              <div className="flex items-end justify-between mb-5">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
-                    <Image
-                      alt="Bip Red"
-                      className="object-cover"
-                      sizes="48px"
-                      src="/images/bipred.png"
-                      quality={90}
-                      fill={true}
-                    />
-                  </div>
-                  <div>
-                    <p className="text-md font-medium text-[#111111]">
-                      {"Bip Red"}
-                    </p>
-                    <p className="text-sm text-gray-400 mt-0.5">
-                      {"Senior UI Designer"}
-                    </p>
-                  </div>
-                </div>
-                <span className="text-xs text-gray-400 shrink-0 ml-4">
-                  {"2022 — 2025"}
-                </span>
-              </div>
-              <div className="space-y-3">
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "BIP Red is the digital experience and innovation unit of BIP Group, focused on designing products and services that connect strategy, technology and user experience for large-scale companies and organizations."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "As a Senior UI Designer, I worked on digital platforms and product experiences across different industries, collaborating with multidisciplinary teams to transform complex requirements into accessible, scalable and visually consistent interfaces."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "My work focused on UI design, design systems and product consistency, contributing to the creation of cohesive user experiences aligned with both business objectives and user needs."
-                  }
-                </p>
-              </div>
-            </Reveal>
-            <Reveal className="py-10 first:pt-0" immediate={false} delay={0.36}>
-              <div className="flex items-end justify-between mb-5">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
-                    <Image
-                      alt="The Wave Studio"
-                      className="object-cover"
-                      sizes="48px"
-                      src="/images/thewavestudio.png"
-                      quality={90}
-                      fill={true}
-                    />
-                  </div>
-                  <div>
-                    <p className="text-md font-medium text-[#111111]">
-                      {"The Wave Studio"}
-                    </p>
-                    <p className="text-sm text-gray-400 mt-0.5">
-                      {"Lead UX / UI Designer"}
-                    </p>
-                  </div>
-                </div>
-                <span className="text-xs text-gray-400 shrink-0 ml-4">
-                  {"2020 — 2022"}
-                </span>
-              </div>
-              <div className="space-y-3">
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "The Wave is a digital agency focused on designing and developing digital products, combining strategy, design and technology to create scalable experiences for startups and established companies."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "As Lead Designer, I led design activities across multiple digital products and client projects, collaborating with cross-functional teams to shape user experiences from concept to delivery."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "My role combined product thinking, UI design and design systems, while also guiding design direction, team collaboration and internal processes. Alongside project work, I was involved in training and mentoring activities, supporting the growth of junior designers and helping teams develop stronger design practices and workflows."
-                  }
-                </p>
-              </div>
-            </Reveal>
-            <Reveal className="py-10 first:pt-0" immediate={false} delay={0.48}>
-              <div className="flex items-end justify-between mb-5">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden relative shrink-0">
-                    <Image
-                      alt="SEO Tester Online"
-                      className="object-cover"
-                      sizes="48px"
-                      src="/images/seotesteronline.png"
-                      quality={90}
-                      fill={true}
-                    />
-                  </div>
-                  <div>
-                    <p className="text-md font-medium text-[#111111]">
-                      {"SEO Tester Online"}
-                    </p>
-                    <p className="text-sm text-gray-400 mt-0.5">
-                      {"UX / UI Designer"}
-                    </p>
-                  </div>
-                </div>
-                <span className="text-xs text-gray-400 shrink-0 ml-4">
-                  {"2018 — 2020"}
-                </span>
-              </div>
-              <div className="space-y-3">
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "SEO Tester Online is an all-in-one SEO platform used by marketers, agencies and businesses to improve website visibility through technical analysis, keyword research and optimization tools."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "As UI/UX Designer, I worked on the evolution of the platform experience, designing interfaces and user flows aimed at simplifying complex SEO processes into more accessible and intuitive interactions."
-                  }
-                </p>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {
-                    "My work focused on improving usability, visual consistency and product scalability across different tools and dashboards, collaborating closely with product and development teams to enhance both user experience and platform clarity."
-                  }
-                </p>
-              </div>
-            </Reveal>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
       <section className="px-4 py-10 md:py-12 border-t border-gray-100">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6">
-          <h2 className="md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
-            {"Clients"}
+          <h2 className="section-heading md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
+            Tools & Platforms
           </h2>
           <div className="grid grid-cols-3 md:grid-cols-4 gap-x-4 items-center">
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Talent Garden"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/talentgarden.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Sketchin"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/sketchin.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Tangity"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/tangity.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="The Wave"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/thewave.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Kiwi"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/kiwi.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Poste Italiane"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/poste.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Barilla"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/barilla.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Giro d'Italia"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/giroditalia.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="E.ON"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/eon.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Enel"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/enel.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Prada"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/prada.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Costa"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/costa.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="BPER"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/bper.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Sanofi"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/sanofi.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="DHL"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/dhl.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Brembo"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/brembo.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Mottura"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/mottura.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Monogrid"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/monogrid.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Tangible"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/tangible.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
-            <div className="relative h-15 md:h-20 w-full">
-              <Image
-                alt="Togevent"
-                className="object-contain object-left"
-                sizes={imageSizes.clientLogo}
-                src="/images/togevent.png"
-                quality={90}
-                fill={true}
-              />
-            </div>
+            {clientLogos.map((logo) => (
+              <div key={logo.name} className="relative h-15 md:h-20 w-full">
+                <Image
+                  alt={logo.name}
+                  className="object-contain object-left"
+                  sizes={imageSizes.clientLogo}
+                  src={logo.image}
+                  quality={90}
+                  fill
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

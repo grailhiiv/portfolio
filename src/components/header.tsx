@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, useReducedMotion } from "motion/react";
@@ -12,33 +13,23 @@ const links = [
   { href: "#contact", label: "Contact" },
 ];
 
+function Brand() {
+  return (
+    <span className="brand">
+      <Image className="brand-mark" src="/images/grailhiiv-logo.svg" alt="" width={32} height={34} />
+      <span className="text-md font-medium leading-none">GrailHiiv</span>
+    </span>
+  );
+}
+
 export default function Header() {
   const pathname = usePathname();
   const reduced = useReducedMotion();
-  const [clock, setClock] = useState({ date: "", time: "" });
   const [visible, setVisible] = useState(false);
   const previousY = useRef(0);
   const frame = useRef(0);
 
   useEffect(() => {
-    const update = () => {
-      const now = new Date();
-      setClock({
-        date: now.toLocaleDateString("en-PH", {
-          day: "2-digit",
-          month: "short",
-          timeZone: "Asia/Manila",
-        }),
-        time: now.toLocaleTimeString("en-PH", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: false,
-          timeZone: "Asia/Manila",
-        }),
-      });
-    };
-    update();
-    const timer = setInterval(update, 30_000);
     const onScroll = () => {
       const y = window.scrollY;
       if (y < 80) setVisible(false);
@@ -51,7 +42,6 @@ export default function Header() {
     window.addEventListener("touchstart", stopScroll, { passive: true });
     window.addEventListener("keydown", stopScroll);
     return () => {
-      clearInterval(timer);
       cancelAnimationFrame(frame.current);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("wheel", stopScroll);
@@ -125,13 +115,10 @@ export default function Header() {
 
   return (
     <>
-      <header className="px-4 py-4 border-b border-gray-100">
+      <header className="header px-4 py-4 border-b border-gray-100">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start md:items-end justify-between gap-4">
           <div className="flex flex-col">
-            <p className="text-md font-medium leading-none">Grailord Antonio</p>
-            <p className="block text-sm text-gray-400 mt-1">
-              {clock.date} — {clock.time} Philippines (PHT)
-            </p>
+            <Brand />
           </div>
           <div className="md:justify-end flex">{nav}</div>
         </div>
@@ -144,10 +131,10 @@ export default function Header() {
           ease: [0.25, 0.1, 0.25, 1],
         }}
         inert={!visible}
-        className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 px-4 py-4"
+        className="header fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 px-4 py-4"
       >
         <div className="max-w-5xl mx-auto flex-col md:flex-row flex md:items-center gap-2 justify-between">
-          <p className="text-md font-medium">Grailord Antonio</p>
+          <Brand />
           {nav}
         </div>
       </motion.header>

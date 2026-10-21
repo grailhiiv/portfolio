@@ -1,4 +1,33 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Footer() {
+  const [clock, setClock] = useState({ date: "", time: "" });
+
+  useEffect(() => {
+    const update = () => {
+      const now = new Date();
+      setClock({
+        date: now.toLocaleDateString("en-US", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "2-digit",
+          timeZone: "Asia/Manila",
+        }),
+        time: now.toLocaleTimeString("en-PH", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+          timeZone: "Asia/Manila",
+        }),
+      });
+    };
+    update();
+    const timer = setInterval(update, 30_000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <footer
       id="contact"
@@ -8,32 +37,37 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto flex flex-col gap-16 md:gap-64">
         <div>
           <h2 className="text-2xl font-light leading-[1.1] tracking-[-2px] md:tracking-[-2.56px] text-[#111111]">
-            {"Connect, collaborate,  "}
+            {"Have a project in mind?"}
             <br />
-            {"or just say hello"}
+            {"Let's talk."}
           </h2>
           <a
-            href="mailto:ciao@arturospatino.com"
+            href="mailto:social@grailhiiv.com"
             className="hidden md:block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
           >
-            {"ciao@arturospatino.com"}
+            {"social@grailhiiv.com"}
           </a>
           <a
-            href="mailto:ciao@arturospatino.com"
+            href="mailto:social@grailhiiv.com"
             className="block md:hidden text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
           >
             {"Email"}
           </a>
         </div>
-        <a
-          href="https://www.linkedin.com/in/arturo-spatino/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Arturo Spatino on LinkedIn (opens in new tab)"
-          className="block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
-        >
-          {"LinkedIn"}
-        </a>
+        <div className="flex flex-col gap-6 items-start">
+          <a
+            href="https://www.linkedin.com/in/grailordsmm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Grailord Antonio on LinkedIn (opens in new tab)"
+            className="block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
+          >
+            {"LinkedIn"}
+          </a>
+          <p className="text-2xl font-light text-[#b2b2b2]">
+            {clock.date} — {clock.time} PHT
+          </p>
+        </div>
       </div>
     </footer>
   );

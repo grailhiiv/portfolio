@@ -8,13 +8,7 @@ export const imageSizes = {
     "(min-width: 1472px) 718px, (min-width: 768px) calc((100vw - 36px) / 2), calc(100vw - 32px)",
   paired: "(min-width: 1472px) 718px, calc((100vw - 36px) / 2)",
   homeCard:
-    "(min-width: 1472px) 475px, (min-width: 768px) calc((100vw - 48px) / 3), calc(100vw - 32px)",
-  workCard:
-    "(min-width: 1472px) 354px, (min-width: 768px) calc((100vw - 56px) / 4), calc((100vw - 40px) / 2)",
-  compactGallery:
-    "(min-width: 1472px) 235px, (min-width: 768px) calc((100vw - 60px) / 6), calc((100vw - 36px) / 2)",
-  gallery:
-    "(min-width: 1472px) 285px, (min-width: 768px) calc((100vw - 48px) / 5), calc((100vw - 4px) / 3)",
+    "(min-width: 1472px) 354px, (min-width: 1024px) calc((100vw - 56px) / 4), (min-width: 768px) calc((100vw - 48px) / 3), calc((100vw - 40px) / 2)",
   clientLogo:
     "(min-width: 1472px) 168px, (min-width: 768px) calc((100vw - 132px) / 8), calc((100vw - 64px) / 3)",
 };

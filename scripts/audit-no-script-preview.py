@@ -1,7 +1,7 @@
 """Local-only audit fixture: proxy the app with scripts blocked by CSP.
 
 Run during the audit, visit localhost:3001, and stop when finished. This verifies
-readable HTML and a native cursor when hydration cannot run, not gallery behavior.
+readable HTML and a native cursor when hydration cannot run, not video-preview behavior.
 """
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import requests
