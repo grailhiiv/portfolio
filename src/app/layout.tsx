@@ -1,3 +1,4 @@
+import imageAsset0 from "../../public/icon.png";
 import type { Metadata } from "next";
 import { MotionConfig } from "motion/react";
 import Header from "@/components/header";
@@ -7,11 +8,11 @@ import "./reference.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Arturo Spatino — Product Designer",
+  title: "Grailord Antonio — Social Media Manager",
   description:
-    "Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments.",
+    "I help businesses grow their social media presence, create strategic content that connects with the right audience, and streamline lead management through CRM and marketing automation.",
   robots: { index: false, follow: false },
-  icons: { icon: "/icon.png" },
+  icons: { icon: imageAsset0.src },
 };
 
 export default function RootLayout({

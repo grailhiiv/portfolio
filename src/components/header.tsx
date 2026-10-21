@@ -15,30 +15,11 @@ const links = [
 export default function Header() {
   const pathname = usePathname();
   const reduced = useReducedMotion();
-  const [clock, setClock] = useState({ date: "", time: "" });
   const [visible, setVisible] = useState(false);
   const previousY = useRef(0);
   const frame = useRef(0);
 
   useEffect(() => {
-    const update = () => {
-      const now = new Date();
-      setClock({
-        date: now.toLocaleDateString("en-PH", {
-          day: "2-digit",
-          month: "short",
-          timeZone: "Asia/Manila",
-        }),
-        time: now.toLocaleTimeString("en-PH", {
-          hour: "2-digit",
-          minute: "2-digit",
-          hour12: false,
-          timeZone: "Asia/Manila",
-        }),
-      });
-    };
-    update();
-    const timer = setInterval(update, 30_000);
     const onScroll = () => {
       const y = window.scrollY;
       if (y < 80) setVisible(false);
@@ -51,7 +32,6 @@ export default function Header() {
     window.addEventListener("touchstart", stopScroll, { passive: true });
     window.addEventListener("keydown", stopScroll);
     return () => {
-      clearInterval(timer);
       cancelAnimationFrame(frame.current);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("wheel", stopScroll);
@@ -129,9 +109,7 @@ export default function Header() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-start md:items-end justify-between gap-4">
           <div className="flex flex-col">
             <p className="text-md font-medium leading-none">Grailord Antonio</p>
-            <p className="block text-sm text-gray-400 mt-1">
-              {clock.date} — {clock.time} Philippines (PHT)
-            </p>
+
           </div>
           <div className="md:justify-end flex">{nav}</div>
         </div>

@@ -1,3 +1,10 @@
+import imageAsset0 from "../../../../public/images/bounty-hunters/bh-hero.png";
+import imageAsset1 from "../../../../public/images/bounty-hunters/bh-1.png";
+import imageAsset2 from "../../../../public/images/bounty-hunters/bh-2.png";
+import imageAsset3 from "../../../../public/images/bounty-hunters/bh-3.png";
+import imageAsset4 from "../../../../public/images/bounty-hunters/bh-4.png";
+import imageAsset5 from "../../../../public/images/bounty-hunters/bh-5.png";
+import imageAsset6 from "../../../../public/images/bounty-hunters/bh-6.png";
 import { imageSizes } from "@/lib/image-sizes";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -78,7 +85,7 @@ export default function Page() {
               alt="Bounty Hunters website"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/bounty-hunters/bh-hero.png"
+              src={imageAsset0}
               quality={90}
               fill={true}
               preload={true}
@@ -123,7 +130,7 @@ export default function Page() {
               alt="Bounty Hunters screens"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/bounty-hunters/bh-1.png"
+              src={imageAsset1}
               quality={90}
               fill={true}
             />
@@ -156,7 +163,7 @@ export default function Page() {
               alt="bounty-hunters screen 2"
               className="object-contain"
               sizes={imageSizes.paired}
-              src="/images/bounty-hunters/bh-2.png"
+              src={imageAsset2}
               quality={90}
               fill={true}
             />
@@ -166,7 +173,7 @@ export default function Page() {
               alt="bounty-hunters screen 3"
               className="object-contain"
               sizes={imageSizes.paired}
-              src="/images/bounty-hunters/bh-3.png"
+              src={imageAsset3}
               quality={90}
               fill={true}
             />
@@ -179,7 +186,7 @@ export default function Page() {
               alt="bounty-hunters screen 4"
               className="object-contain"
               sizes={imageSizes.full}
-              src="/images/bounty-hunters/bh-4.png"
+              src={imageAsset4}
               quality={90}
               fill={true}
             />
@@ -209,7 +216,7 @@ export default function Page() {
               alt="Bounty Hunters mobile"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/bounty-hunters/bh-5.png"
+              src={imageAsset5}
               quality={90}
               fill={true}
             />
@@ -223,7 +230,7 @@ export default function Page() {
               alt="Bounty Hunters share your work"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/bounty-hunters/bh-6.png"
+              src={imageAsset6}
               quality={90}
               fill={true}
             />
@@ -232,12 +239,12 @@ export default function Page() {
       </Reveal>
       <Link
         className="block bg-[#ffffff] border-t border-gray-100 px-4 py-8 md:py-10 hover:bg-gray-50 transition-colors"
-        href="/work/4fett"
+        href="/work/daniel"
       >
         <div className="max-w-5xl mx-auto flex items-end justify-between">
           <div>
             <p className="text-xs text-gray-800 mb-1">{"Next project"}</p>
-            <p className="text-2xl tracking-[-2.56px] text-black">{"4fett"}</p>
+            <p className="text-2xl tracking-[-2.56px] text-black">{"Daniel G. Miller"}</p>
           </div>
           <span className="text-sm pb-4 text-black">{"Visualizza →"}</span>
         </div>

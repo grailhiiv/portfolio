@@ -147,3 +147,9 @@ main {
 .home-hero-heading > span {
   font-size: min(1em, 9.5cqi);
 }
+
+@media (min-width: 64rem) {
+  .lg\:pt-24 {
+    padding-top: calc(var(--spacing) * 24);
+  }
+}

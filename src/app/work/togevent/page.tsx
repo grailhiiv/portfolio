@@ -1,3 +1,13 @@
+import imageAsset0 from "../../../../public/images/togevent/tog-hero.webp";
+import imageAsset1 from "../../../../public/images/togevent/tog-1.webp";
+import imageAsset2 from "../../../../public/images/togevent/tog-2.webp";
+import imageAsset3 from "../../../../public/images/togevent/tog-3.webp";
+import imageAsset4 from "../../../../public/images/togevent/tog-4.webp";
+import imageAsset5 from "../../../../public/images/togevent/tog-5.webp";
+import imageAsset6 from "../../../../public/images/togevent/tog-6.webp";
+import imageAsset7 from "../../../../public/images/togevent/tog-7.webp";
+import imageAsset8 from "../../../../public/images/togevent/tog-ds.webp";
+import imageAsset9 from "../../../../public/images/togevent/tog-8.webp";
 import { imageSizes } from "@/lib/image-sizes";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -72,7 +82,7 @@ export default function Page() {
               alt="Togevent mobile app"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/togevent/tog-hero.webp"
+              src={imageAsset0}
               quality={90}
               fill={true}
               preload={true}
@@ -117,7 +127,7 @@ export default function Page() {
               alt="Togevent app screens"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/togevent/tog-1.webp"
+              src={imageAsset1}
               quality={90}
               fill={true}
             />
@@ -147,7 +157,7 @@ export default function Page() {
               alt="Togevent desktop screens"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/togevent/tog-2.webp"
+              src={imageAsset2}
               quality={90}
               fill={true}
             />
@@ -164,7 +174,7 @@ export default function Page() {
               alt="Togevent screen 1"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/togevent/tog-3.webp"
+              src={imageAsset3}
               quality={90}
               fill={true}
             />
@@ -174,7 +184,7 @@ export default function Page() {
               alt="Togevent screen 2"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/togevent/tog-4.webp"
+              src={imageAsset4}
               quality={90}
               fill={true}
             />
@@ -184,7 +194,7 @@ export default function Page() {
               alt="Togevent screen 3"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/togevent/tog-5.webp"
+              src={imageAsset5}
               quality={90}
               fill={true}
             />
@@ -194,7 +204,7 @@ export default function Page() {
               alt="Togevent screen 4"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/togevent/tog-6.webp"
+              src={imageAsset6}
               quality={90}
               fill={true}
             />
@@ -208,7 +218,7 @@ export default function Page() {
               alt="Togevent desktop screens"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/togevent/tog-7.webp"
+              src={imageAsset7}
               quality={90}
               fill={true}
             />
@@ -240,7 +250,7 @@ export default function Page() {
               height={0}
               className="w-full h-auto rounded-lg"
               sizes={imageSizes.portrait}
-              src="/images/togevent/tog-ds.webp"
+              src={imageAsset8}
               quality={90}
             />
           </div>
@@ -255,7 +265,7 @@ export default function Page() {
               height={0}
               className="w-full h-auto rounded-lg"
               sizes={imageSizes.portrait}
-              src="/images/togevent/tog-8.webp"
+              src={imageAsset9}
               quality={90}
             />
           </div>

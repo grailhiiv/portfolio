@@ -1,3 +1,11 @@
+import imageAsset0 from "../../../../public/images/kiwi/kiwi-hero.webp";
+import imageAsset1 from "../../../../public/images/kiwi/kiwi-1.webp";
+import imageAsset2 from "../../../../public/images/kiwi/kiwi-2.webp";
+import imageAsset3 from "../../../../public/images/kiwi/kiwi-3.webp";
+import imageAsset4 from "../../../../public/images/kiwi/kiwi-4.webp";
+import imageAsset5 from "../../../../public/images/kiwi/kiwi-5.webp";
+import imageAsset6 from "../../../../public/images/kiwi/kiwi-ds.webp";
+import imageAsset7 from "../../../../public/images/kiwi/kiwi-6.webp";
 import { imageSizes } from "@/lib/image-sizes";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -55,7 +63,7 @@ export default function Page() {
               alt="kiwi mobile app"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/kiwi/kiwi-hero.webp"
+              src={imageAsset0}
               quality={90}
               fill={true}
               preload={true}
@@ -100,7 +108,7 @@ export default function Page() {
               alt="kiwi app screens"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/kiwi/kiwi-1.webp"
+              src={imageAsset1}
               quality={90}
               fill={true}
             />
@@ -133,7 +141,7 @@ export default function Page() {
               alt="kiwi screen 1"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/kiwi/kiwi-2.webp"
+              src={imageAsset2}
               quality={90}
               fill={true}
             />
@@ -143,7 +151,7 @@ export default function Page() {
               alt="kiwi screen 2"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/kiwi/kiwi-3.webp"
+              src={imageAsset3}
               quality={90}
               fill={true}
             />
@@ -153,7 +161,7 @@ export default function Page() {
               alt="kiwi screen 3"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/kiwi/kiwi-4.webp"
+              src={imageAsset4}
               quality={90}
               fill={true}
             />
@@ -163,7 +171,7 @@ export default function Page() {
               alt="kiwi screen 4"
               className="object-cover"
               sizes={imageSizes.paired}
-              src="/images/kiwi/kiwi-5.webp"
+              src={imageAsset5}
               quality={90}
               fill={true}
             />
@@ -177,7 +185,7 @@ export default function Page() {
               alt="kiwi colors"
               className="object-cover"
               sizes={imageSizes.full}
-              src="/images/kiwi/kiwi-ds.webp"
+              src={imageAsset6}
               quality={90}
               fill={true}
             />
@@ -193,7 +201,7 @@ export default function Page() {
               height={0}
               className="w-full h-auto rounded-lg"
               sizes={imageSizes.portrait}
-              src="/images/kiwi/kiwi-6.webp"
+              src={imageAsset7}
               quality={90}
             />
           </div>

@@ -1,3 +1,15 @@
+import imageAsset0 from "../../../public/images/case-4fett.webp";
+import imageAsset1 from "../../../public/images/case-togevent.webp";
+import imageAsset2 from "../../../public/images/case-bh.png";
+import imageAsset3 from "../../../public/images/case-kiwi.webp";
+import imageAsset4 from "../../../public/images/fantacalcio1.webp";
+import imageAsset5 from "../../../public/images/fantacalcio2.webp";
+import imageAsset6 from "../../../public/images/fantacalcio3.webp";
+import imageAsset7 from "../../../public/images/napoli1.webp";
+import imageAsset8 from "../../../public/images/napoli2.webp";
+import imageAsset9 from "../../../public/images/napoli3.webp";
+import imageAsset10 from "../../../public/images/lumina1.webp";
+import imageAsset11 from "../../../public/images/lumina2.webp";
 import { imageSizes } from "@/lib/image-sizes";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -165,20 +177,20 @@ export default function Page() {
           </Reveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
             <Reveal immediate={false}>
-              <Link className="block group" href="/work/4fett">
+              <Link className="block group" href="/work/daniel">
                 <div className="aspect-[3/4] bg-gray-100 overflow-hidden rounded-lg relative mb-3">
                   <Image
-                    alt="4fett"
+                    alt="Daniel G. Miller"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                     sizes={imageSizes.workCard}
-                    src="/images/case-4fett.webp"
+                    src={imageAsset0}
                     quality={90}
                     fill={true}
                     preload={true}
                   />
                 </div>
                 <h3 className="text-sm font-medium text-[#111111]">
-                  {"4fett"}
+                  {"Daniel G. Miller"}
                 </h3>
                 <p className="text-xs text-gray-400 mt-0.5">{"Web app"}</p>
               </Link>
@@ -190,7 +202,7 @@ export default function Page() {
                     alt="Togevent"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                     sizes={imageSizes.workCard}
-                    src="/images/case-togevent.webp"
+                    src={imageAsset1}
                     quality={90}
                     fill={true}
                   />
@@ -208,7 +220,7 @@ export default function Page() {
                     alt="Bounty Hunters"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                     sizes={imageSizes.workCard}
-                    src="/images/case-bh.png"
+                    src={imageAsset2}
                     quality={90}
                     fill={true}
                   />
@@ -226,7 +238,7 @@ export default function Page() {
                     alt="Kiwi"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                     sizes={imageSizes.workCard}
-                    src="/images/case-kiwi.webp"
+                    src={imageAsset3}
                     quality={90}
                     fill={true}
                   />
@@ -246,14 +258,14 @@ export default function Page() {
           <Gallery
             compact={false}
             images={[
-              { src: "/images/fantacalcio1.webp", alt: "Exploration 1" },
-              { src: "/images/fantacalcio2.webp", alt: "Exploration 2" },
-              { src: "/images/fantacalcio3.webp", alt: "Exploration 3" },
-              { src: "/images/napoli1.webp", alt: "Exploration 4" },
-              { src: "/images/napoli2.webp", alt: "Exploration 5" },
-              { src: "/images/napoli3.webp", alt: "Exploration 6" },
-              { src: "/images/lumina1.webp", alt: "Exploration 7" },
-              { src: "/images/lumina2.webp", alt: "Exploration 8" },
+              { src: imageAsset4.src, alt: "Exploration 1" },
+              { src: imageAsset5.src, alt: "Exploration 2" },
+              { src: imageAsset6.src, alt: "Exploration 3" },
+              { src: imageAsset7.src, alt: "Exploration 4" },
+              { src: imageAsset8.src, alt: "Exploration 5" },
+              { src: imageAsset9.src, alt: "Exploration 6" },
+              { src: imageAsset10.src, alt: "Exploration 7" },
+              { src: imageAsset11.src, alt: "Exploration 8" },
             ]}
           />
         </Reveal>

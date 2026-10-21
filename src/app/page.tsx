@@ -1,3 +1,22 @@
+import imageAsset0 from "../../public/images/home-hero-social-media.webp";
+import imageAsset1 from "../../public/images/case-daniel.webp";
+import imageAsset2 from "../../public/images/case-togevent.webp";
+import imageAsset3 from "../../public/images/napoli3.webp";
+import imageAsset4 from "../../public/images/napoli2.webp";
+import imageAsset5 from "../../public/images/fantacalcio2.webp";
+import imageAsset6 from "../../public/images/fantacalcio3.webp";
+import imageAsset7 from "../../public/images/canva.png";
+import imageAsset8 from "../../public/images/buffer.png";
+import imageAsset9 from "../../public/images/meta.png";
+import imageAsset10 from "../../public/images/chatgpt.png";
+import imageAsset11 from "../../public/images/analytics.png";
+import imageAsset12 from "../../public/images/zapier.png";
+import imageAsset13 from "../../public/images/mailchimp.png";
+import imageAsset14 from "../../public/images/attio.png";
+import imageAsset15 from "../../public/images/wordpress.png";
+import imageAsset16 from "../../public/images/sitebulb.png";
+import imageAsset17 from "../../public/images/pipedrive.png";
+import imageAsset18 from "../../public/images/claude.png";
 import { imageSizes } from "@/lib/image-sizes";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -7,11 +26,26 @@ import Gallery from "@/components/gallery";
 import ServiceIcon from "@/components/service-icon";
 
 export const metadata: Metadata = {
-  title: "Arturo Spatino — Product Designer",
+  title: "Grailord Antonio — Social Media Manager",
   description:
-    "Product Designer with 10+ years of experience designing digital products across startups, agencies and consulting environments.",
+    "I help businesses grow their social media presence, create strategic content that connects with the right audience, and streamline lead management through CRM and marketing automation.",
   robots: { index: false, follow: false },
 };
+
+const toolLogos = [
+  { name: "Canva", image: imageAsset7 },
+  { name: "Buffer", image: imageAsset8 },
+  { name: "Meta", image: imageAsset9 },
+  { name: "ChatGPT", image: imageAsset10 },
+  { name: "Google Analytics", image: imageAsset11 },
+  { name: "Zapier", image: imageAsset12 },
+  { name: "Mailchimp", image: imageAsset13 },
+  { name: "Attio", image: imageAsset14 },
+  { name: "WordPress", image: imageAsset15 },
+  { name: "Sitebulb", image: imageAsset16 },
+  { name: "Pipedrive", image: imageAsset17 },
+  { name: "Claude", image: imageAsset18 },
+];
 
 export default function Page() {
   return (
@@ -112,7 +146,7 @@ export default function Page() {
             <Reveal immediate={true}>
               <p className="text-md md:max-w-[540px] leading-relaxed text-gray-400">
                 {
-                  "Social Media Manager specializing in brand growth, CRM, and marketing automation. I help businesses strengthen their online presence, create strategic content, and build smarter workflows that turn attention into opportunities."
+                  "I help businesses grow their social media presence, create strategic content that connects with the right audience, and streamline lead management through CRM and marketing automation."
                 }
               </p>
             </Reveal>
@@ -120,10 +154,10 @@ export default function Page() {
           <Reveal immediate={true}>
             <div className="aspect-[3/4] md:aspect-square relative overflow-hidden rounded-lg">
               <Image
-                alt="Social media campaign designs for Daniel G. Miller"
+                alt="Social Media Campaign Designs for Author Daniel G. Miller"
                 className="object-cover"
                 sizes={imageSizes.portrait}
-                src="/images/home-hero-social-media.webp"
+                src={imageAsset0}
                 quality={90}
                 fill={true}
                 preload={true}
@@ -141,7 +175,7 @@ export default function Page() {
             <div>
               <p className="text-md leading-relaxed text-gray-500">
                 {
-                  "I'm Grailord Antonio, a digital marketing specialist based in the Philippines with over 10 years of experience, specializing in social media management, brand growth, and marketing automation. My work combines creative strategy, technical expertise, and marketing systems to help businesses build a stronger, more connected digital presence."
+                  "I'm a digital marketing specialist based in the Philippines with a background in social media management, SEO, and website management. I currently specialise in social media management, brand growth, CRM, and marketing automation, combining creative strategy with smarter marketing systems to help businesses grow."
                 }
               </p>
               <Link
@@ -170,14 +204,14 @@ export default function Page() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium text-[#111111]">
-                  {"UX Design"}
+                  {"Social Media Management"}
                 </h3>
                 <p className="text-sm font-medium text-[#111111] mt-2 mb-4">
-                  {"Understand before designing."}
+                  {"Strategic content that builds stronger brands."}
                 </p>
                 <p className="text-sm text-gray-400 leading-relaxed">
                   {
-                    "I turn user needs into flows that reduce friction and guesswork, so your product just makes sense."
+                    "Creating and managing content that grows visibility, engages audiences, and strengthens brand presence."
                   }
                 </p>
               </div>
@@ -193,14 +227,14 @@ export default function Page() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium text-[#111111]">
-                  {"UI Design"}
+                  {"Website Management"}
                 </h3>
                 <p className="text-sm font-medium text-[#111111] mt-2 mb-4">
-                  {"Clarity, hierarchy, and detail."}
+                  {"Reliable websites that support business growth."}
                 </p>
                 <p className="text-sm text-gray-400 leading-relaxed">
                   {
-                    "Interfaces that look sharp and drive action, balancing usability with a personality that fits your brand."
+                    "Keeping websites secure, updated, and optimised for performance and user experience."
                   }
                 </p>
               </div>
@@ -216,14 +250,14 @@ export default function Page() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium text-[#111111]">
-                  {"Design System"}
+                  {"CRM & Lead Management"}
                 </h3>
                 <p className="text-sm font-medium text-[#111111] mt-2 mb-4">
-                  {"Consistency that scales."}
+                  {"Organised leads that build better relationships."}
                 </p>
                 <p className="text-sm text-gray-400 leading-relaxed">
                   {
-                    "Systems that let your team ship faster and stay aligned as the product grows."
+                    "Streamlining contact management, lead tracking, and follow-ups to keep opportunities moving."
                   }
                 </p>
               </div>
@@ -239,14 +273,14 @@ export default function Page() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-xl font-medium text-[#111111]">
-                  {"Accessibility"}
+                  {"Marketing Automation"}
                 </h3>
                 <p className="text-sm font-medium text-[#111111] mt-2 mb-4">
-                  {"Design for everyone."}
+                  {"Smarter workflows that save time and effort."}
                 </p>
                 <p className="text-sm text-gray-400 leading-relaxed">
                   {
-                    "Inclusive, WCAG-compliant experiences that widen your reach, so no one gets left out."
+                    "Automating repetitive tasks and connecting marketing tools to improve efficiency and consistency."
                   }
                 </p>
               </div>
@@ -263,7 +297,7 @@ export default function Page() {
             <div>
               <p className="text-sm leading-relaxed text-gray-500">
                 {
-                  "A selection of projects across product design, interfaces and design systems — built with teams that care about how things look."
+                  "A selection of projects showcasing social media management, brand growth, website management, and smarter marketing systems that help businesses strengthen their digital presence."
                 }
               </p>
               <Link
@@ -275,19 +309,23 @@ export default function Page() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-            <Link className="block group" href="/work/4fett">
+            <Link className="block group" href="/work/daniel">
               <div className="aspect-[3/4] bg-gray-50 overflow-hidden rounded-lg relative mb-3">
                 <Image
-                  alt="4fett"
+                  alt="Daniel G. Miller"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                   sizes={imageSizes.homeCard}
-                  src="/images/case-4fett.webp"
+                  src={imageAsset1}
                   quality={90}
                   fill={true}
                 />
               </div>
-              <h3 className="text-sm font-medium text-[#111111]">{"4fett"}</h3>
-              <p className="text-xs text-gray-400 mt-0.5">{"Web app"}</p>
+              <h3 className="text-sm font-medium text-[#111111]">
+                {"Daniel G. Miller"}
+              </h3>
+              <p className="text-xs text-gray-400 mt-0.5">
+                {"Social Media Management"}
+              </p>
             </Link>
             <Link className="block group" href="/work/togevent">
               <div className="aspect-[3/4] bg-gray-100 overflow-hidden rounded-lg relative mb-3">
@@ -295,7 +333,7 @@ export default function Page() {
                   alt="Togevent"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                   sizes={imageSizes.homeCard}
-                  src="/images/case-togevent.webp"
+                  src={imageAsset2}
                   quality={90}
                   fill={true}
                 />
@@ -309,10 +347,10 @@ export default function Page() {
               <Gallery
                 compact={true}
                 images={[
-                  { src: "/images/napoli3.webp", alt: "Exploration" },
-                  { src: "/images/napoli2.webp", alt: "Exploration" },
-                  { src: "/images/fantacalcio2.webp", alt: "Exploration" },
-                  { src: "/images/fantacalcio3.webp", alt: "Exploration" },
+                  { src: imageAsset3.src, alt: "Exploration" },
+                  { src: imageAsset4.src, alt: "Exploration" },
+                  { src: imageAsset5.src, alt: "Exploration" },
+                  { src: imageAsset6.src, alt: "Exploration" },
                 ]}
               />
               <h3 className="text-sm font-medium text-[#111111]">
@@ -329,406 +367,21 @@ export default function Page() {
         <div className="px-4"></div>
         <div className="marquee-mask overflow-hidden">
           <div className="animate-marquee flex w-max items-center gap-5 hover:[animation-play-state:paused]">
-            <Image
-              aria-hidden="false"
-              alt="Talent Garden"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/talentgarden.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Sketchin"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/sketchin.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Tangity"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/tangity.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="The Wave"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/thewave.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Kiwi"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/kiwi.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Poste Italiane"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/poste.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Barilla"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/barilla.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Giro d'Italia"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/giroditalia.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="E.ON"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/eon.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Enel"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/enel.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Prada"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/prada.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Costa"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/costa.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="BPER"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/bper.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Sanofi"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/sanofi.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="DHL"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/dhl.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Brembo"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/brembo.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Mottura"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/mottura.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Monogrid"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/monogrid.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Tangible"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/tangible.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="false"
-              alt="Togevent"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/togevent.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Talent Garden"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/talentgarden.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Sketchin"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/sketchin.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Tangity"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/tangity.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="The Wave"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/thewave.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Kiwi"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/kiwi.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Poste Italiane"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/poste.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Barilla"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/barilla.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Giro d'Italia"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/giroditalia.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="E.ON"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/eon.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Enel"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/enel.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Prada"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/prada.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Costa"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/costa.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="BPER"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/bper.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Sanofi"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/sanofi.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="DHL"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/dhl.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Brembo"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/brembo.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Mottura"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/mottura.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Monogrid"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/monogrid.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Tangible"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/tangible.png"
-              quality={90}
-            />
-            <Image
-              aria-hidden="true"
-              alt="Togevent"
-              width={195}
-              height={82}
-              className="h-12 md:h-20 w-auto object-contain shrink-0"
-              sizes="240px"
-              src="/images/togevent.png"
-              quality={90}
-            />
+            {[false, true].flatMap((duplicate) =>
+              toolLogos.map((logo) => (
+                <Image
+                  key={`${logo.name}-${duplicate}`}
+                  aria-hidden={duplicate}
+                  alt={duplicate ? "" : logo.name}
+                  width={195}
+                  height={82}
+                  className="h-12 md:h-20 w-auto object-contain shrink-0"
+                  sizes="240px"
+                  src={logo.image}
+                  quality={90}
+                />
+              )),
+            )}
           </div>
         </div>
       </section>
