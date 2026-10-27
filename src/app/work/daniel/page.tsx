@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <CaseStudy
-      title="Building Visibility and Reader Engagement for Daniel G. Miller"
+      title="Generating 57,680 Social Media Views in 3 Months for Daniel G. Miller"
       description={description}
       showcase={<DanielShowcase />}
       details={[

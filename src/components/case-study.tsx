@@ -47,16 +47,7 @@ export function CaseStudy({
         <div className={`max-w-5xl mx-auto case-study-intro`}>
           <div className="case-study-text-column">
             <div className="case-study-summary">
-              <AnimatedHeading
-                className="case-study-heading"
-                words={title
-                  .split(" ")
-                  .map((word, index, words) =>
-                    [
-                      ...(word + (index < words.length - 1 ? "\u00a0" : "")),
-                    ].map((text) => ({ text, className: "" })),
-                  )}
-              />
+              <AnimatedHeading className="case-study-heading">{title}</AnimatedHeading>
               <Reveal immediate>
                 <p className="case-study-description">{description}</p>
                 {focus && <p className="case-study-focus">{focus}</p>}

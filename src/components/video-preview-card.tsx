@@ -25,6 +25,8 @@ export function VideoPreviewCard({
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   const wanted = useRef(false);
+  const hovered = useRef(false);
+  const focused = useRef(false);
   const [playing, setPlaying] = useState(false);
 
   function stop() {
@@ -66,13 +68,25 @@ export function VideoPreviewCard({
       className="block group video-preview-card"
       href={href}
       onPointerEnter={(event) => {
-        if (event.pointerType !== "touch") start();
+        if (event.pointerType !== "touch") {
+          hovered.current = true;
+          start();
+        }
       }}
-      onPointerLeave={stop}
+      onPointerLeave={() => {
+        hovered.current = false;
+        if (!focused.current) stop();
+      }}
       onFocus={(event) => {
-        if (event.currentTarget.matches(":focus-visible")) start();
+        if (event.currentTarget.matches(":focus-visible")) {
+          focused.current = true;
+          start();
+        }
       }}
-      onBlur={stop}
+      onBlur={() => {
+        focused.current = false;
+        if (!hovered.current) stop();
+      }}
     >
       <div className="aspect-[3/4] bg-gray-50 overflow-hidden rounded-lg relative mb-3">
         <Image
@@ -102,13 +116,13 @@ export function VideoPreviewCard({
           }}
           onError={() => setPlaying(false)}
         />
-        <div className="video-preview-card-result">
-          <span className="video-preview-card-result-value">{result.value}</span>{" "}
-          <span className="video-preview-card-result-label">{result.label}</span>
-        </div>
       </div>
       <h3 className="text-sm font-medium text-[#111111]">{title}</h3>
       <p className="work-card-sublabel text-gray-400 mt-0.5">{description}</p>
+      <p className="video-preview-card-result">
+        <span className="video-preview-card-result-value">{result.value}</span>
+        <span className="video-preview-card-result-label">{result.label}</span>
+      </p>
     </Link>
   );
 }

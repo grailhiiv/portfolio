@@ -43,15 +43,9 @@ export default function Footer() {
           </h2>
           <a
             href="mailto:social@grailhiiv.com"
-            className="hidden md:block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
+            className="footer-email block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
           >
             {"social@grailhiiv.com"}
-          </a>
-          <a
-            href="mailto:social@grailhiiv.com"
-            className="block md:hidden text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
-          >
-            {"Email"}
           </a>
         </div>
         <div className="flex flex-col gap-6 items-start">

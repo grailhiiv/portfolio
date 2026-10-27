@@ -36,11 +36,6 @@
     "source": "user-provided:about-hero.webp"
   },
   {
-    "local": "public/images/analytics.png",
-    "bytes": 2537,
-    "sha256": "a4e3fb3a4ec4e9ab102e1bd13128970155b9d0bef5e5d95a63fcd4297c54ea0c"
-  },
-  {
     "local": "public/images/atlas/atlas-post-1.webp",
     "bytes": 111090,
     "sha256": "f564228ef093b2d157800c5c7794f1b0f7fdbbac62b9336fbbb42fbaca83e3ce"
@@ -97,8 +92,8 @@
   },
   {
     "local": "public/images/buffer.png",
-    "bytes": 3342,
-    "sha256": "4dd6771063ce774e79ff13288c8a27da3050523a67bebba3dda0281b34e759c2"
+    "bytes": 6459,
+    "sha256": "f34ef7dc5689a6e98673c897cec92e732ec52278db17a50f23dbaf19b6b944c1"
   },
   {
     "local": "public/images/canva.png",
@@ -162,13 +157,13 @@
   },
   {
     "local": "public/images/chatgpt.png",
-    "bytes": 3880,
-    "sha256": "08d8ae97555b25d1e1efb3f8a2b240b74c33f1d18b8c58253047a5ce5d015188"
+    "bytes": 7950,
+    "sha256": "6668ee3519f6a3b805fddffdc5f4104949ee622d73605b6dc1a383a2f115eecf"
   },
   {
     "local": "public/images/claude.png",
-    "bytes": 1549,
-    "sha256": "bcb26b2aa5426e7d6ef4d1f900e31971abb69582e4c56659b23e6ed4e0d43bae"
+    "bytes": 7819,
+    "sha256": "2f575b7374c13ec225f7326fad540079bf34046a12cfdeb74b4c36432ab85b2b"
   },
   {
     "local": "public/images/daniel/daniel-post-1.webp",
@@ -242,8 +237,8 @@
   },
   {
     "local": "public/images/mailchimp.png",
-    "bytes": 4845,
-    "sha256": "4e02f2b738a9e14663c6fa4c3ed772d4c18b7da6dc49f2cb5891080ee82eee84"
+    "bytes": 8674,
+    "sha256": "ac7a7e6c03b6c8e16abded5d0ce9748ef670c3a5e29a92a43a3e23ac0ca49875"
   },
   {
     "local": "public/images/melissa/melissa-post-1.webp",
@@ -307,8 +302,8 @@
   },
   {
     "local": "public/images/wordpress.png",
-    "bytes": 1664,
-    "sha256": "e19b04527e1675d37af524f52e898388c4b9da89e6df00415a71474b5e64ed25"
+    "bytes": 7880,
+    "sha256": "978263acb0269d4885f1e918326ec94d77aef4cede7144b79e530a5edc3978b3"
   },
   {
     "local": "public/images/zapier.png",

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <CaseStudy
-      title="Building a Global BookTok Audience for Caroline Montague"
+      title="Growing Caroline Montague’s TikTok from 0 to 171K Followers in 16 Months"
       description={description}
       showcase={<CarolineShowcase />}
       details={[

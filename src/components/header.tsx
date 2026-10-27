@@ -15,10 +15,10 @@ const links = [
 
 function Brand() {
   return (
-    <span className="brand">
+    <Link className="brand" href="/" aria-label="GrailHiiv home">
       <Image className="brand-mark" src="/images/grailhiiv-logo.svg" alt="" width={32} height={34} />
       <span className="text-md font-medium leading-none">GrailHiiv</span>
-    </span>
+    </Link>
   );
 }
 
@@ -69,15 +69,14 @@ export default function Header() {
     if (!target) return;
     event.preventDefault();
     cancelAnimationFrame(frame.current);
+    if (window.location.hash !== "#contact") {
+      window.history.pushState(window.history.state, "", "#contact");
+    }
+    target.focus({ preventScroll: true });
     const startY = window.scrollY;
     const distance = target.getBoundingClientRect().top;
-    const finish = () => {
-      window.history.replaceState(window.history.state, "", "#contact");
-      target.focus({ preventScroll: true });
-    };
     if (reduced) {
       window.scrollTo(0, startY + distance);
-      finish();
       return;
     }
     let start: number | undefined;
@@ -86,7 +85,6 @@ export default function Header() {
       const progress = Math.min((time - start) / 900, 1);
       window.scrollTo(0, startY + distance * (1 - (1 - progress) ** 3));
       if (progress < 1) frame.current = requestAnimationFrame(step);
-      else finish();
     };
     frame.current = requestAnimationFrame(step);
   }

@@ -3,7 +3,6 @@ import imageAsset1 from "../../../public/images/canva.png";
 import imageAsset2 from "../../../public/images/buffer.png";
 import imageAsset3 from "../../../public/images/meta.png";
 import imageAsset4 from "../../../public/images/chatgpt.png";
-import imageAsset5 from "../../../public/images/analytics.png";
 import imageAsset6 from "../../../public/images/zapier.png";
 import imageAsset7 from "../../../public/images/mailchimp.png";
 import imageAsset8 from "../../../public/images/attio.png";
@@ -23,7 +22,7 @@ import { Reveal } from "@/components/animation";
 export const metadata: Metadata = {
   title: "About Grailord Antonio",
   description:
-    "I'm Grailord Antonio, a digital marketing specialist based in the Philippines with a background in social media management, SEO, and WordPress management.",
+    "I'm Grailord Antonio, a digital marketing specialist with a background in social media management, SEO, and WordPress management.",
   robots: { index: false, follow: false },
 };
 
@@ -81,7 +80,6 @@ const clientLogos = [
   { name: "Buffer", image: imageAsset2 },
   { name: "Meta", image: imageAsset3 },
   { name: "ChatGPT", image: imageAsset4 },
-  { name: "Google Analytics", image: imageAsset5 },
   { name: "Zapier", image: imageAsset6 },
   { name: "Mailchimp", image: imageAsset7 },
   { name: "Attio", image: imageAsset8 },
@@ -122,7 +120,7 @@ export default function AboutPage() {
           <Reveal className="space-y-4 text-md leading-relaxed text-gray-500">
             <p>
               {
-                "I'm Grailord Antonio, a digital marketing specialist based in the Philippines. My background spans social media management, SEO, and WordPress management."
+                "I'm Grailord Antonio, a digital marketing specialist. My background spans social media management, SEO, and WordPress management."
               }
             </p>
             <p>
@@ -192,17 +190,27 @@ export default function AboutPage() {
           <h2 className="section-heading md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
             Tools & Platforms
           </h2>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-x-4 items-center">
-            {clientLogos.map((logo) => (
-              <div key={logo.name} className="relative h-15 md:h-20 w-full">
-                <Image
-                  alt={logo.name}
-                  className="object-contain object-left"
-                  sizes={imageSizes.clientLogo}
-                  src={logo.image}
-                  quality={90}
-                  fill
-                />
+          <div className="about-logo-slider">
+            {[clientLogos.slice(0, 6), clientLogos.slice(6)].map((row, rowIndex) => (
+              <div className="about-logo-row" key={rowIndex}>
+                <div className={`about-logo-track${rowIndex === 1 ? " about-logo-track-reverse" : ""}`}>
+                  {[false, true].map((duplicate) => (
+                    <div className="about-logo-group" key={String(duplicate)} aria-hidden={duplicate}>
+                      {row.map((logo) => (
+                        <div key={logo.name} className="about-logo-item">
+                          <Image
+                            alt={duplicate ? "" : logo.name}
+                            className="object-contain"
+                            sizes={imageSizes.clientLogo}
+                            src={logo.image}
+                            quality={90}
+                            fill
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

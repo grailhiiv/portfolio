@@ -7,14 +7,14 @@ import { imageSizes } from "@/lib/image-sizes";
 
 export function FeaturedWork() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 gap-y-6">
       <VideoPreviewCard
         href="/work/daniel"
         image={danielImage}
         sizes={imageSizes.homeCard}
         title="Daniel G. Miller"
         description="Social Media Management"
-        result={{ value: "57,680", label: "Social media views in 3 months" }}
+        result={{ value: "57,680", label: "Social Media Views in 3 Months" }}
         video="/videos/daniel/daniel-case.mp4"
         poster="/images/daniel/daniel-video-1-poster.webp"
       />
@@ -24,7 +24,7 @@ export function FeaturedWork() {
         sizes={imageSizes.homeCard}
         title="Melissa Castro"
         description="Email & Social Media Marketing"
-        result={{ value: "112%", label: "Of pre-order goal in 30 days" }}
+        result={{ value: "112%", label: "Pre-Order Goal in 30 Days" }}
         video="/videos/melissa/melissa-case.mp4"
         poster="/images/melissa/melissa-video-1-poster.webp"
       />
@@ -34,7 +34,7 @@ export function FeaturedWork() {
         sizes={imageSizes.homeCard}
         title="Caroline Montague"
         description="Social Media Strategy & Brand Growth"
-        result={{ value: "0 → 171K", label: "TikTok followers in 16 months" }}
+        result={{ value: "0 → 171K", label: "TikTok Followers in 16 Months" }}
         video="/videos/caroline/caroline-case.mp4"
         poster="/images/caroline/caroline-video-1-poster.webp"
       />
@@ -44,7 +44,7 @@ export function FeaturedWork() {
         sizes={imageSizes.homeCard}
         title="Atlas Rose"
         description="Email Marketing & Automation"
-        result={{ value: "+275.6%", label: "Email revenue in 90 days" }}
+        result={{ value: "+275.6%", label: "Email Revenue in 90 Days" }}
         video="/videos/atlas/case-atlas.mp4"
         poster="/images/case-atlas.webp"
       />

@@ -19,20 +19,26 @@ export default function Cursor({ primary = true }: { primary?: boolean }) {
 
   useEffect(() => {
     const pointer = window.matchMedia("(pointer: fine)");
+    let active = false;
+    const interactiveTarget = (target: EventTarget | null) =>
+      target instanceof Element &&
+      !!target.closest('a, button, [role="button"], label, select, input');
     const move = (event: MouseEvent) => {
       if (!pointer.matches) return;
-      if (primary) document.documentElement.dataset.pointer = "ready";
       x.set(event.clientX);
       y.set(event.clientY);
-      setVisible(true);
-      setInteractive(
-        event.target instanceof Element &&
-          !!event.target.closest(
-            'a, button, [role="button"], label, select, input',
-          ),
-      );
+      if (!active) {
+        active = true;
+        if (primary) document.documentElement.dataset.pointer = "ready";
+        setVisible(true);
+        setInteractive(interactiveTarget(event.target));
+      }
+    };
+    const over = (event: MouseEvent) => {
+      if (active && pointer.matches) setInteractive(interactiveTarget(event.target));
     };
     const leave = () => {
+      active = false;
       setVisible(false);
       if (primary) delete document.documentElement.dataset.pointer;
     };
@@ -40,12 +46,14 @@ export default function Cursor({ primary = true }: { primary?: boolean }) {
       if (event.key === "Tab") leave();
     };
     window.addEventListener("mousemove", move, { passive: true });
+    window.addEventListener("mouseover", over, { passive: true });
     document.documentElement.addEventListener("mouseleave", leave);
     window.addEventListener("blur", leave);
     window.addEventListener("keydown", keyboard);
     pointer.addEventListener("change", leave);
     return () => {
       window.removeEventListener("mousemove", move);
+      window.removeEventListener("mouseover", over);
       document.documentElement.removeEventListener("mouseleave", leave);
       window.removeEventListener("blur", leave);
       window.removeEventListener("keydown", keyboard);

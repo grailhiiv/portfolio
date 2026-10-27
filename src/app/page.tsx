@@ -2,7 +2,6 @@ import imageAsset7 from "../../public/images/canva.png";
 import imageAsset8 from "../../public/images/buffer.png";
 import imageAsset9 from "../../public/images/meta.png";
 import imageAsset10 from "../../public/images/chatgpt.png";
-import imageAsset11 from "../../public/images/analytics.png";
 import imageAsset12 from "../../public/images/zapier.png";
 import imageAsset13 from "../../public/images/mailchimp.png";
 import imageAsset14 from "../../public/images/attio.png";
@@ -19,7 +18,7 @@ import { FeaturedWork } from "@/components/featured-work";
 import { HomeShowcase } from "@/components/home-showcase";
 
 export const metadata: Metadata = {
-  title: "Grailord Antonio — Social Media Manager",
+  title: "GrailHiiv",
   description:
     "I create and manage social content, email campaigns, and marketing workflows that help businesses reach their audience and keep opportunities moving.",
   robots: { index: false, follow: false },
@@ -30,7 +29,6 @@ const toolLogos = [
   { name: "Buffer", image: imageAsset8 },
   { name: "Meta", image: imageAsset9 },
   { name: "ChatGPT", image: imageAsset10 },
-  { name: "Google Analytics", image: imageAsset11 },
   { name: "Zapier", image: imageAsset12 },
   { name: "Mailchimp", image: imageAsset13 },
   { name: "Attio", image: imageAsset14 },
@@ -43,105 +41,12 @@ const toolLogos = [
 export default function Page() {
   return (
     <main id="main-content">
-      <section className="px-4 pt-4 pb-2">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6 items-stretch">
-          <div className="flex flex-col justify-end py-4 md:py-16 gap-6 md:gap-10 md:h-full">
-            <AnimatedHeading
-              className="home-hero-heading text-2xl md:max-w-[540px] leading-none tracking-[-2.5px]"
-              words={[
-                [
-                  { text: "S", className: "text-[#111111]" },
-                  { text: "o", className: "text-[#111111]" },
-                  { text: "c", className: "text-[#111111]" },
-                  { text: "i", className: "text-[#111111]" },
-                  { text: "a", className: "text-[#111111]" },
-                  { text: "l", className: "text-[#111111]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "m", className: "text-[#111111]" },
-                  { text: "e", className: "text-[#111111]" },
-                  { text: "d", className: "text-[#111111]" },
-                  { text: "i", className: "text-[#111111]" },
-                  { text: "a", className: "text-[#111111]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "a", className: "text-[#111111]" },
-                  { text: "n", className: "text-[#111111]" },
-                  { text: "d", className: "text-[#111111]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "m", className: "text-[#b2b2b2]" },
-                  { text: "a", className: "text-[#b2b2b2]" },
-                  { text: "r", className: "text-[#b2b2b2]" },
-                  { text: "k", className: "text-[#b2b2b2]" },
-                  { text: "e", className: "text-[#b2b2b2]" },
-                  { text: "t", className: "text-[#b2b2b2]" },
-                  { text: "i", className: "text-[#b2b2b2]" },
-                  { text: "n", className: "text-[#b2b2b2]" },
-                  { text: "g", className: "text-[#b2b2b2]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "s", className: "text-[#b2b2b2]" },
-                  { text: "y", className: "text-[#b2b2b2]" },
-                  { text: "s", className: "text-[#b2b2b2]" },
-                  { text: "t", className: "text-[#b2b2b2]" },
-                  { text: "e", className: "text-[#b2b2b2]" },
-                  { text: "m", className: "text-[#b2b2b2]" },
-                  { text: "s", className: "text-[#b2b2b2]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "t", className: "text-[#b2b2b2]" },
-                  { text: "h", className: "text-[#b2b2b2]" },
-                  { text: "a", className: "text-[#b2b2b2]" },
-                  { text: "t", className: "text-[#b2b2b2]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "h", className: "text-[#b2b2b2]" },
-                  { text: "e", className: "text-[#b2b2b2]" },
-                  { text: "l", className: "text-[#b2b2b2]" },
-                  { text: "p", className: "text-[#b2b2b2]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "b", className: "text-[#111111]" },
-                  { text: "r", className: "text-[#111111]" },
-                  { text: "a", className: "text-[#111111]" },
-                  { text: "n", className: "text-[#111111]" },
-                  { text: "d", className: "text-[#111111]" },
-                  { text: "s", className: "text-[#111111]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "c", className: "text-[#111111]" },
-                  { text: "o", className: "text-[#111111]" },
-                  { text: "n", className: "text-[#111111]" },
-                  { text: "n", className: "text-[#111111]" },
-                  { text: "e", className: "text-[#111111]" },
-                  { text: "c", className: "text-[#111111]" },
-                  { text: "t", className: "text-[#111111]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "a", className: "text-[#111111]" },
-                  { text: "n", className: "text-[#111111]" },
-                  { text: "d", className: "text-[#111111]" },
-                  { text: "\u00a0", className: "" },
-                ],
-                [
-                  { text: "g", className: "text-[#111111]" },
-                  { text: "r", className: "text-[#111111]" },
-                  { text: "o", className: "text-[#111111]" },
-                  { text: "w", className: "text-[#111111]" },
-                  { text: ".", className: "text-[#111111]" },
-                ],
-              ]}
-            />
+      <section className="home-hero px-4 pt-4 pb-2">
+        <div className="home-hero-grid max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6 items-stretch">
+          <div className="flex flex-col justify-center py-4 md:py-16 gap-6 md:gap-10 md:h-full">
+            <AnimatedHeading className="home-hero-heading text-2xl md:max-w-[540px] leading-none tracking-[-2.5px]">
+              Social media and <span className="text-[#b2b2b2]">marketing systems that help</span> brands connect and grow.
+            </AnimatedHeading>
             <Reveal immediate={true}>
               <p className="text-md md:max-w-[540px] leading-relaxed text-gray-400">
                 {
@@ -150,7 +55,7 @@ export default function Page() {
               </p>
             </Reveal>
           </div>
-          <Reveal immediate={true}>
+          <Reveal immediate={true} className="home-hero-showcase">
             <div className="home-showcase">
               <HomeShowcase />
             </div>
@@ -166,7 +71,7 @@ export default function Page() {
             <div>
               <p className="text-md leading-relaxed text-gray-500">
                 {
-                  "I'm a digital marketing specialist based in the Philippines. My background spans social media, SEO, and website management, and my work brings content and marketing systems together."
+                  "I'm a digital marketing specialist with a background in social media, SEO, and website management. My work brings content and marketing systems together."
                 }
               </p>
               <Link
@@ -186,7 +91,7 @@ export default function Page() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
             <Reveal
-              className="flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
+              className="service-card flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
               immediate={false}
             >
               <div className="flex flex-col">
@@ -208,7 +113,7 @@ export default function Page() {
               </div>
             </Reveal>
             <Reveal
-              className="flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
+              className="service-card flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
               immediate={false}
               delay={0.12}
             >
@@ -231,7 +136,7 @@ export default function Page() {
               </div>
             </Reveal>
             <Reveal
-              className="flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
+              className="service-card flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
               immediate={false}
               delay={0.24}
             >
@@ -254,7 +159,7 @@ export default function Page() {
               </div>
             </Reveal>
             <Reveal
-              className="flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
+              className="service-card flex flex-col gap-28 border border-gray-200 rounded-lg p-6"
               immediate={false}
               delay={0.36}
             >
@@ -304,8 +209,8 @@ export default function Page() {
       </section>
       <section className="py-16 md:py-24 border-t border-gray-100 overflow-hidden">
         <div className="px-4"></div>
-        <div className="marquee-mask overflow-hidden">
-          <div className="animate-marquee flex w-max items-center gap-5 hover:[animation-play-state:paused]">
+        <div className="home-logo-desktop marquee-mask overflow-hidden">
+          <div className="animate-marquee flex w-max items-center gap-5">
             {[false, true].flatMap((duplicate) =>
               toolLogos.map((logo) => (
                 <Image
@@ -322,6 +227,30 @@ export default function Page() {
               )),
             )}
           </div>
+        </div>
+        <div className="home-logo-mobile">
+          {[toolLogos.slice(0, 6), toolLogos.slice(6)].map((row, rowIndex) => (
+            <div className="about-logo-row" key={rowIndex}>
+              <div className={`about-logo-track${rowIndex === 1 ? " about-logo-track-reverse" : ""}`}>
+                {[false, true].map((duplicate) => (
+                  <div className="about-logo-group" key={String(duplicate)} aria-hidden={duplicate}>
+                    {row.map((logo) => (
+                      <div key={logo.name} className="about-logo-item">
+                        <Image
+                          alt={duplicate ? "" : logo.name}
+                          className="object-contain"
+                          sizes="33vw"
+                          src={logo.image}
+                          quality={90}
+                          fill
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </main>

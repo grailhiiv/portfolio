@@ -65,34 +65,23 @@ export function Reveal({
   );
 }
 
-type Character = { text: string; className: string };
-
 export function AnimatedHeading({
-  words,
+  children,
   className,
 }: {
-  words: Character[][];
+  children: ReactNode;
   className?: string;
 }) {
   const ref = useRef<HTMLHeadingElement>(null);
-  const label = words
-    .flatMap((word) => word.map((char) => char.text))
-    .join("")
-    .replaceAll("\u00a0", " ");
   useEffect(() => {
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (preference.matches) return;
-    const animations = Array.from(
-      ref.current?.querySelectorAll("[data-letter]") ?? [],
-    ).map((element, index) =>
-      element.animate(frames, {
-        duration: 450,
-        delay: 50 + index * 18,
-        easing,
-        fill: "backwards",
-      }),
-    );
-    const cancel = () => animations.forEach((animation) => animation.cancel());
+    const animation = ref.current?.animate(frames, {
+      duration: 600,
+      easing,
+      fill: "backwards",
+    });
+    const cancel = () => animation?.cancel();
     const onPreference = () => {
       if (preference.matches) cancel();
     };
@@ -101,27 +90,8 @@ export function AnimatedHeading({
       cancel();
       preference.removeEventListener("change", onPreference);
     };
-  }, [label]);
+  }, []);
   return (
-    <h1 ref={ref} className={className} aria-label={label}>
-      {words.map((word, index) => (
-        <span
-          key={index}
-          aria-hidden="true"
-          style={{ display: "inline-block", whiteSpace: "nowrap" }}
-        >
-          {word.map((char, charIndex) => (
-            <span
-              key={charIndex}
-              data-letter={char.text === "\u00a0" ? undefined : ""}
-              className={char.className}
-              style={{ display: "inline-block" }}
-            >
-              {char.text}
-            </span>
-          ))}
-        </span>
-      ))}
-    </h1>
+    <h1 ref={ref} className={className}>{children}</h1>
   );
 }

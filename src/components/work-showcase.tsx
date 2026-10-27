@@ -45,24 +45,24 @@ export function WorkShowcase({
                   key={copy}
                   aria-hidden={copy === 1 ? true : undefined}
                 >
-                  {[...posts, ...posts].map((item, index) =>
+                  {posts.map((item, index) =>
                     "video" in item ? (
                       <ShowcaseVideo
                         key={index}
                         src={item.video}
                         poster={item.poster}
                         label={item.alt}
-                        duplicate={copy !== 0 || index >= posts.length}
+                        duplicate={copy !== 0}
                       />
                     ) : (
                       <Image
                         key={index}
                         src={item.image}
-                        alt={copy === 0 && index < posts.length ? item.alt : ""}
-                        data-duplicate={copy !== 0 || index >= posts.length}
+                        alt={copy === 0 ? item.alt : ""}
+                        data-duplicate={copy !== 0}
                         className="work-showcase-post"
                         sizes="(max-width: 767px) 50vw, 25vw"
-                        loading="eager"
+                        loading={copy === 0 && index === 0 ? "eager" : "lazy"}
                       />
                     ),
                   )}
