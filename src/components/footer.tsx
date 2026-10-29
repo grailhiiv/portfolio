@@ -3,25 +3,17 @@
 import { useEffect, useState } from "react";
 
 export default function Footer() {
-  const [clock, setClock] = useState({ date: "", time: "" });
+  const [time, setTime] = useState("");
 
   useEffect(() => {
     const update = () => {
       const now = new Date();
-      setClock({
-        date: now.toLocaleDateString("en-US", {
-          day: "2-digit",
-          month: "2-digit",
-          year: "2-digit",
-          timeZone: "Asia/Manila",
-        }),
-        time: now.toLocaleTimeString("en-PH", {
+      setTime(now.toLocaleTimeString("en-PH", {
           hour: "2-digit",
           minute: "2-digit",
           hour12: false,
           timeZone: "Asia/Manila",
-        }),
-      });
+        }));
     };
     update();
     const timer = setInterval(update, 30_000);
@@ -39,14 +31,16 @@ export default function Footer() {
           <h2 className="text-2xl font-light leading-[1.1] tracking-[-2px] md:tracking-[-2.56px] text-[#111111]">
             {"Have a project in mind?"}
             <br />
-            {"Let's talk."}
+            <a
+              href="mailto:social@grailhiiv.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email Grailhiiv (opens in a new tab)"
+              className="text-[#b2b2b2] hover:text-[#111111] transition-colors"
+            >
+              Email me.
+            </a>
           </h2>
-          <a
-            href="mailto:social@grailhiiv.com"
-            className="footer-email block text-2xl font-light text-[#b2b2b2] hover:text-[#111111] transition-colors"
-          >
-            {"social@grailhiiv.com"}
-          </a>
         </div>
         <div className="flex flex-col gap-6 items-start">
           <a
@@ -59,7 +53,7 @@ export default function Footer() {
             {"LinkedIn"}
           </a>
           <p className="text-2xl font-light text-[#b2b2b2]">
-            {clock.date} — {clock.time} PHT
+            © 2026 — {time} PHT
           </p>
         </div>
       </div>
