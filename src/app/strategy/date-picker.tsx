@@ -17,13 +17,21 @@ export default function DatePicker({ value, onChange, id }: { value: string; onC
   const [month, setMonth] = useState(() => { const date = parseDate(value) ?? new Date(); return new Date(date.getFullYear(), date.getMonth(), 1); });
   const container = useRef<HTMLDivElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
+  const popup = useRef<HTMLDivElement>(null);
   const selected = parseDate(value);
   const today = dateValue(new Date());
   const firstDay = month.getDay();
   const days = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate();
 
   useEffect(() => {
+    const parsed = parseDate(value);
+    if (parsed) setMonth(new Date(parsed.getFullYear(), parsed.getMonth(), 1));
+  }, [value]);
+
+  useEffect(() => {
     if (!open) return;
+    const focusTarget = popup.current?.querySelector<HTMLButtonElement>(".date-picker-grid button.is-selected, .date-picker-grid button.is-today, .date-picker-grid button");
+    focusTarget?.focus();
     const closeOutside = (event: PointerEvent) => { if (!container.current?.contains(event.target as Node)) setOpen(false); };
     const escape = (event: KeyboardEvent) => { if (event.key === "Escape") { setOpen(false); trigger.current?.focus(); } };
     document.addEventListener("pointerdown", closeOutside);
@@ -37,7 +45,7 @@ export default function DatePicker({ value, onChange, id }: { value: string; onC
     <button ref={trigger} id={id} type="button" className="date-picker-trigger" aria-haspopup="dialog" aria-expanded={open} aria-controls={`${id}-calendar`} onClick={() => { if (!open) { const date = selected ?? new Date(); setMonth(new Date(date.getFullYear(), date.getMonth(), 1)); } setOpen(!open); }}>
       <span className={selected ? "" : "date-picker-placeholder"}>{selected ? new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric" }).format(selected) : "Select a date"}</span>
     </button>
-    {open && <div id={`${id}-calendar`} className="date-picker-popup" role="dialog" aria-label="Choose date observed">
+    {open && <div ref={popup} id={`${id}-calendar`} className="date-picker-popup" role="dialog" aria-label="Choose date observed">
       <div className="date-picker-header"><strong aria-live="polite">{new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" }).format(month)}</strong><div><button type="button" aria-label="Previous month" onClick={() => shift(-1)}>Previous</button><button type="button" aria-label="Next month" onClick={() => shift(1)}>Next</button></div></div>
       <div className="date-picker-grid">{["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map(day => <span className="date-picker-weekday" key={day}>{day}</span>)}{Array.from({ length: firstDay }, (_, i) => <span key={`blank-${i}`} />)}{Array.from({ length: days }, (_, i) => { const date = new Date(month.getFullYear(), month.getMonth(), i + 1); const current = dateValue(date); return <button type="button" key={current} className={`${current === value ? "is-selected" : ""} ${current === today ? "is-today" : ""}`} aria-label={new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date)} aria-pressed={current === value} onClick={() => choose(date)}>{i + 1}</button>; })}</div>
       <div className="date-picker-actions"><button type="button" onClick={() => choose(null)}>Clear</button><button type="button" onClick={() => choose(new Date())}>Today</button></div>

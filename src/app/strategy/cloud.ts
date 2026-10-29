@@ -1,10 +1,8 @@
 "use client";
 import { createBrowserClient } from "@supabase/ssr";
+import { SUPABASE_PUBLISHABLE_KEY, SUPABASE_URL } from "@/lib/supabase/config";
 
-const client = createBrowserClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL || "https://bxfiinpwmzhkywssgtfw.supabase.co",
-  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || "sb_publishable_FGnJBCfaegf2m4X2zHIG9Q_J4BGdx2X",
-);
+const client = createBrowserClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
 const bucket = client.storage.from("strategy-screenshots");
 export type CloudRecord = { id: string; updatedAt: string; draft: unknown };
 export async function listRecords(): Promise<CloudRecord[]> {

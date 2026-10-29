@@ -9,7 +9,7 @@ export default function CloudAttachments({ ownerId, profileId, profileNumber }: 
   async function upload(files: File[]) {
     if (files.some(file => !["image/png", "image/jpeg", "image/webp", "image/gif"].includes(file.type) || file.size > 10 * 1024 * 1024)) { setError("Choose PNG, JPEG, WebP or GIF images up to 10 MB each."); return; }
     setBusy(true); setError("");
-    try { for (const file of files) await uploadAttachment(ownerId, profileId, crypto.randomUUID(), file); setItems(await listAttachments(ownerId, profileId)); }
+    try { await Promise.all(files.map(file => uploadAttachment(ownerId, profileId, crypto.randomUUID(), file))); setItems(await listAttachments(ownerId, profileId)); }
     catch { setError("Could not upload all screenshots. Check your connection and try again."); try { setItems(await listAttachments(ownerId, profileId)); } catch {} }
     finally { setBusy(false); }
   }

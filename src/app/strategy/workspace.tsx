@@ -2,9 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import { logout } from "../login/actions";
-import { readAttachments } from "./profile-attachments";
+import { removeOpenAIKey, saveOpenAIKey } from "./actions";
+import { deleteAttachments, readAttachments } from "./profile-attachments";
 import CloudAttachments from "./cloud-attachments";
-import { listRecords, saveRecord, removeRecords, uploadAttachment, deleteProfileCloud, listAttachments } from "./cloud";
+import { listRecords, saveRecord, removeRecords, uploadAttachment, deleteProfileCloud, listAttachments, type CloudRecord } from "./cloud";
 import DatePicker from "./date-picker";
 import CustomSelect from "./custom-select";
 import ConfirmOutline from "./confirm-outline";
@@ -20,23 +21,75 @@ type RecordEntry = { id: string; updatedAt: string; draft: Draft };
 type WorkspaceData = { version: 2; activeId: string | null; records: RecordEntry[] };
 const businessTypes = ["Author or publisher", "Coach or consultant", "Creator or influencer", "E-commerce or retail", "Professional services", "Health and wellness", "Beauty and personal care", "Food and hospitality", "Real estate", "Education and training", "Technology or software", "Nonprofit or community", "Arts and entertainment", "Local services", "Other"];
 
-export default function StrategyWorkspace({ ownerId, openAIConfigured }: { ownerId: string; openAIConfigured: boolean }) {
+export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustomOpenAIKey = false, initialRecords = null }: { ownerId: string; openAIConfigured: boolean; hasCustomOpenAIKey?: boolean; initialRecords?: CloudRecord[] | null }) {
   const [draft, setDraft] = useState<Draft>(empty);
   const [ready, setReady] = useState(false);
   const [status, setStatus] = useState("");
   const [confirmOutline, setConfirmOutline] = useState(false);
   const [view, setView] = useState<"workspace" | "history" | "settings">("workspace");
+  const [keyConfigured, setKeyConfigured] = useState(openAIConfigured);
+  const [customKeySaved, setCustomKeySaved] = useState(hasCustomOpenAIKey);
+  const [apiKeyInput, setApiKeyInput] = useState("");
+  const [keyBusy, setKeyBusy] = useState(false);
+  const [keyMessage, setKeyMessage] = useState("");
   const [data, setData] = useState<WorkspaceData>({ version: 2, activeId: null, records: [] });
   const dataRef = useRef(data);
   const [deleteTarget, setDeleteTarget] = useState<string | "all" | null>(null);
   const saveQueue = useRef<Promise<void>>(Promise.resolve());
+  const pendingRecordsRef = useRef<Map<string, RecordEntry>>(new Map());
+  const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dirtyKey = `grailhiiv-unsynced-${ownerId}`;
+
+  function flushSaves(): Promise<void> {
+    if (saveTimerRef.current !== null) {
+      clearTimeout(saveTimerRef.current);
+      saveTimerRef.current = null;
+    }
+    const batch = Array.from(pendingRecordsRef.current.values());
+    pendingRecordsRef.current.clear();
+    if (!batch.length) return saveQueue.current;
+    saveQueue.current = saveQueue.current.catch(() => {}).then(async () => {
+      let failed = false;
+      for (const record of batch) {
+        try {
+          await saveRecord(ownerId, record);
+          const pending = JSON.parse(localStorage.getItem(dirtyKey) || "{}") as Record<string, string>;
+          if (pending[record.id] === record.updatedAt) {
+            delete pending[record.id];
+            localStorage.setItem(dirtyKey, JSON.stringify(pending));
+          }
+        } catch {
+          failed = true;
+        }
+      }
+      if (failed) {
+        setStatus("Could not save to Supabase. Your browser backup remains available; retry by editing the record again.");
+      } else {
+        const pending = JSON.parse(localStorage.getItem(dirtyKey) || "{}") as Record<string, string>;
+        if (!Object.keys(pending).length) setStatus("");
+      }
+    });
+    return saveQueue.current;
+  }
+
+  useEffect(() => {
+    const onHide = () => { if (document.visibilityState === "hidden") void flushSaves(); };
+    const onPageHide = () => { void flushSaves(); };
+    document.addEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", onPageHide);
+    return () => {
+      document.removeEventListener("visibilitychange", onHide);
+      window.removeEventListener("pagehide", onPageHide);
+      void flushSaves();
+    };
+  });
+
   useEffect(() => {
     let active = true;
     async function load() {
       try {
         const marker = `grailhiiv-supabase-migrated-${ownerId}`;
-        let records = await listRecords();
+        let records = initialRecords ?? await listRecords();
         let saved = localStorage.getItem(key);
         const legacy = localStorage.getItem(legacyKey);
         if (!saved && legacy && !localStorage.getItem(marker)) {
@@ -49,11 +102,47 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured }: { owner
           saved = JSON.stringify({ version: 2, activeId: id, records: [{ id, updatedAt: new Date().toISOString(), draft: { ...empty, ...strings, profiles, findings } }] });
           localStorage.setItem(key, saved);
         }
-        if (saved && localStorage.getItem(dirtyKey) && localStorage.getItem(dirtyKey) !== "{}") {
+        const rawDirty = localStorage.getItem(dirtyKey);
+        if (saved && rawDirty && rawDirty !== "{}") {
           const backup = JSON.parse(saved) as WorkspaceData;
+          const dirtyMap = JSON.parse(rawDirty) as Record<string, string>;
+          const remoteTyped = records.map(record => ({ ...record, draft: { ...empty, ...(record.draft as Draft) } }));
+          const mergedMap = new Map<string, RecordEntry>(remoteTyped.map(record => [record.id, record]));
+          for (const localRecord of backup.records ?? []) {
+            const normalized: RecordEntry = { ...localRecord, draft: { ...empty, ...localRecord.draft } };
+            const remoteRecord = mergedMap.get(localRecord.id);
+            if (!remoteRecord || dirtyMap[localRecord.id] || localRecord.updatedAt >= remoteRecord.updatedAt) {
+              mergedMap.set(localRecord.id, normalized);
+            }
+          }
+          const mergedRecords = Array.from(mergedMap.values()).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+          let syncFailed = false;
+          for (const id of Object.keys(dirtyMap)) {
+            const record = mergedMap.get(id);
+            if (!record) {
+              delete dirtyMap[id];
+              continue;
+            }
+            try {
+              await saveRecord(ownerId, record);
+              delete dirtyMap[id];
+            } catch {
+              syncFailed = true;
+            }
+          }
+          localStorage.setItem(dirtyKey, JSON.stringify(dirtyMap));
           if (!active) return;
-          dataRef.current = backup; setData(backup); setDraft(backup.records.find(item => item.id === backup.activeId)?.draft ?? { ...empty });
-          setStatus("Unsynced changes were recovered from this browser. Export your draft and retry saving before using another device."); setReady(true); return;
+          const activeId = backup.activeId && mergedMap.has(backup.activeId) ? backup.activeId : mergedRecords[0]?.id ?? null;
+          const reconciled: WorkspaceData = { version: 2, activeId, records: mergedRecords };
+          localStorage.setItem(key, JSON.stringify(reconciled));
+          dataRef.current = reconciled;
+          setData(reconciled);
+          setDraft(reconciled.records.find(item => item.id === activeId)?.draft ?? { ...empty });
+          if (syncFailed) {
+            setStatus("Unsynced changes were recovered from this browser. Export your draft and retry saving before using another device.");
+          }
+          setReady(true);
+          return;
         }
         if (saved && !localStorage.getItem(marker)) {
           const local = JSON.parse(saved) as WorkspaceData;
@@ -63,7 +152,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured }: { owner
             if (!existing.has(record.id)) await saveRecord(ownerId, record, true);
             for (const profile of record.draft.profiles ?? []) {
               const images = await readAttachments(profile.id);
-              for (const image of images) await uploadAttachment(ownerId, profile.id, image.id, image.file);
+              await Promise.all(images.map(image => uploadAttachment(ownerId, profile.id, image.id, image.file)));
               const uploaded = await listAttachments(ownerId, profile.id);
               if (images.some(image => !uploaded.some(item => item.id === image.id))) throw new Error("Screenshot verification failed");
             }
@@ -71,6 +160,8 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured }: { owner
           records = await listRecords();
           if (local.records.some(record => !records.some(item => item.id === record.id))) throw new Error("Record verification failed");
           localStorage.setItem(marker, "1");
+          localStorage.removeItem(legacyKey);
+          await deleteAttachments(null).catch(() => {});
         }
         if (!active) return;
         const typed = records.map(record => ({ ...record, draft: { ...empty, ...(record.draft as Draft) } }));
@@ -81,43 +172,51 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured }: { owner
     }
     void load();
     return () => { active = false; };
-  }, [ownerId, dirtyKey]);
+  }, [ownerId, dirtyKey, initialRecords]);
+
   function persist(next: WorkspaceData): boolean {
     try { localStorage.setItem(key, JSON.stringify(next)); dataRef.current = next; setData(next); return true; }
     catch { setStatus("Could not save the browser backup. Check your browser storage."); return false; }
   }
-  function queueSave(record: RecordEntry) {
+  function queueSave(record: RecordEntry, immediate = false) {
     try { const pending = JSON.parse(localStorage.getItem(dirtyKey) || "{}") as Record<string, string>; pending[record.id] = record.updatedAt; localStorage.setItem(dirtyKey, JSON.stringify(pending)); } catch { setStatus("Could not mark the browser backup as unsynced."); }
-    saveQueue.current = saveQueue.current.catch(() => {}).then(async () => { await saveRecord(ownerId, record); });
-    void saveQueue.current.then(() => {
-      const pending = JSON.parse(localStorage.getItem(dirtyKey) || "{}") as Record<string, string>;
-      if (pending[record.id] === record.updatedAt) { delete pending[record.id]; localStorage.setItem(dirtyKey, JSON.stringify(pending)); if (!Object.keys(pending).length) setStatus(""); }
-    }, () => setStatus("Could not save to Supabase. Your browser backup remains available; retry by editing the record again."));
+    pendingRecordsRef.current.set(record.id, record);
+    if (immediate) {
+      void flushSaves();
+      return;
+    }
+    if (saveTimerRef.current !== null) clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(() => { void flushSaves(); }, 400);
   }
   function update<K extends keyof Draft>(field: K, value: Draft[K]) {
     const current = dataRef.current;
-    const record = current.records.find(item => item.id === current.activeId);
-    if (!record) return;
-    const nextDraft = { ...record.draft, [field]: value };
-    const updated = { ...record, draft: nextDraft, updatedAt: new Date().toISOString() };
-    const next = { ...current, records: current.records.map(item => item.id === record.id ? updated : item) };
+    const existing = current.records.find(item => item.id === current.activeId);
+    if (!existing) {
+      const id = crypto.randomUUID();
+      const nextDraft = { ...empty, [field]: value };
+      const created: RecordEntry = { id, updatedAt: new Date().toISOString(), draft: nextDraft };
+      const next: WorkspaceData = { version: 2, activeId: id, records: [created, ...current.records] };
+      setDraft(nextDraft);
+      if (persist(next)) queueSave(created);
+      return;
+    }
+    const nextDraft = { ...existing.draft, [field]: value };
+    const updated = { ...existing, draft: nextDraft, updatedAt: new Date().toISOString() };
+    const next = { ...current, records: current.records.map(item => item.id === existing.id ? updated : item) };
     setDraft(nextDraft);
     if (persist(next)) queueSave(updated);
   }
   function openRecord(id: string) {
+    void flushSaves();
     const current = dataRef.current; const record = current.records.find(item => item.id === id);
     if (record && persist({ ...current, activeId: id })) { setDraft(record.draft); setView("workspace"); }
-  }
-  function newRecord() {
-    const id = crypto.randomUUID(); const draft = { ...empty }; const record = { id, updatedAt: new Date().toISOString(), draft };
-    const current = dataRef.current;
-    if (persist({ ...current, activeId: id, records: [record, ...current.records] })) { queueSave(record); setDraft(draft); setView("workspace"); }
   }
   async function deleteRecords(target: string | "all") {
     const current = dataRef.current; const doomed = target === "all" ? current.records : current.records.filter(item => item.id === target);
     try {
-      await saveQueue.current;
-      for (const record of doomed) for (const profile of record.draft.profiles) await deleteProfileCloud(ownerId, profile.id);
+      for (const record of doomed) pendingRecordsRef.current.delete(record.id);
+      await flushSaves();
+      await Promise.all(doomed.flatMap(record => record.draft.profiles.map(profile => deleteProfileCloud(ownerId, profile.id))));
       await removeRecords(doomed.map(item => item.id));
       const remaining = target === "all" ? [] : current.records.filter(item => item.id !== target);
       const activeId = remaining.some(item => item.id === current.activeId) ? current.activeId : remaining[0]?.id ?? null;
@@ -137,12 +236,42 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured }: { owner
   }
   return (
     <main id="main-content" className="strategy-page">
-      <div className="strategy-shell">{confirmOutline && <ConfirmOutline onCancel={() => setConfirmOutline(false)} onConfirm={() => { setConfirmOutline(false); createOutline(); }} />}<nav className="strategy-nav" aria-label="Workspace navigation"><button type="button" aria-current={view === "workspace" ? "page" : undefined} onClick={() => setView("workspace")}>Workspace</button><button type="button" aria-current={view === "history" ? "page" : undefined} onClick={() => setView("history")}>History</button><button type="button" aria-current={view === "settings" ? "page" : undefined} onClick={() => setView("settings")}>Settings</button><form action={logout}><button type="submit">Sign Out</button></form></nav>
+      <div className="strategy-shell"><h1 className="strategy-sr-only">Strategy Workspace</h1>{confirmOutline && <ConfirmOutline onCancel={() => setConfirmOutline(false)} onConfirm={() => { setConfirmOutline(false); createOutline(); }} />}<nav className="strategy-nav" aria-label="Workspace navigation"><button type="button" aria-current={view === "workspace" ? "page" : undefined} onClick={() => setView("workspace")}>Home</button><button type="button" aria-current={view === "history" ? "page" : undefined} onClick={() => setView("history")}>History</button><button type="button" aria-current={view === "settings" ? "page" : undefined} onClick={() => setView("settings")}>Settings</button><form action={logout}><button type="submit">Sign Out</button></form></nav>
         {status && <p className="strategy-status" role="alert">{status}</p>}
         {deleteTarget && <ConfirmDelete all={deleteTarget === "all"} name={data.records.find(item => item.id === deleteTarget)?.draft.business || data.records.find(item => item.id === deleteTarget)?.draft.name || "this record"} onCancel={() => setDeleteTarget(null)} onConfirm={() => deleteRecords(deleteTarget)} />}
-        {view === "history" && <section className="strategy-history"><div className="strategy-heading"><h2>History<span>.</span></h2><p>Records and screenshots are stored privately in Supabase.</p></div><button className="strategy-button" type="button" disabled={!ready} onClick={newRecord}>New Strategy</button><div className="history-list">{data.records.length === 0 ? <p>No saved records yet.</p> : data.records.map(record => <article key={record.id} className="history-record"><div><h3>{record.draft.business || record.draft.name || "Untitled Strategy"}</h3><p>{record.draft.mode === "client" ? "Client Strategy" : "Lead Proposal"} · Updated {new Date(record.updatedAt).toLocaleDateString()}</p></div><div className="history-actions"><button type="button" onClick={() => openRecord(record.id)}>Open</button><button type="button" onClick={() => setDeleteTarget(record.id)}>Delete</button></div></article>)}</div><button className="history-delete-all" type="button" disabled={!ready} onClick={() => setDeleteTarget("all")}>Delete All Workspace Data</button></section>}
-        {view === "settings" && <section className="strategy-settings"><div className="strategy-heading"><h2>Settings<span>.</span></h2><p>Manage the workspace’s integrations and data.</p></div><div className="settings-card"><h3>OpenAI</h3><p>API key: <strong>{openAIConfigured ? "Configured on server" : "Not configured"}</strong></p><p>Set <code>OPENAI_API_KEY</code> in the server environment. The key is never displayed here. AI strategy generation is not connected yet.</p></div><div className="settings-card"><h3>Storage</h3><p>Strategies and screenshots are stored privately in Supabase. A browser backup is kept locally. Draft JSON exports do not include screenshots.</p></div></section>}
-        {view === "workspace" && (data.activeId ? <>
+        {view === "history" && <section className="strategy-history"><div className="strategy-heading"><h2>History<span>.</span></h2><p>Records and screenshots are stored privately in Supabase.</p></div><div className="history-list">{data.records.length === 0 ? <p>No saved records yet.</p> : data.records.map(record => <article key={record.id} className="history-record"><div><h3>{record.draft.business || record.draft.name || "Untitled Strategy"}</h3><p>{record.draft.mode === "client" ? "Client Strategy" : "Lead Proposal"} · Updated {new Date(record.updatedAt).toLocaleDateString()}</p></div><div className="history-actions"><button type="button" onClick={() => openRecord(record.id)}>Open</button><button type="button" onClick={() => setDeleteTarget(record.id)}>Delete</button></div></article>)}</div><button className="history-delete-all" type="button" disabled={!ready} onClick={() => setDeleteTarget("all")}>Delete All Workspace Data</button></section>}
+        {view === "settings" && <section className="strategy-settings"><div className="strategy-heading"><h2>Settings<span>.</span></h2><p>Manage the workspace’s integrations and data.</p></div><div className="settings-card"><form className="settings-key-form" onSubmit={async event => {
+          event.preventDefault();
+          if (!apiKeyInput.trim() || keyBusy) return;
+          setKeyBusy(true);
+          setKeyMessage("");
+          try {
+            const result = await saveOpenAIKey(apiKeyInput);
+            setApiKeyInput("");
+            setKeyConfigured(result.configured);
+            setCustomKeySaved(result.hasCustomKey);
+            setKeyMessage(result.message);
+          } catch {
+            setKeyMessage("Could not save the API key. Please try again.");
+          } finally {
+            setKeyBusy(false);
+          }
+        }}><label>OpenAI API Key<input type="password" name="openaiApiKey" autoComplete="new-password" spellCheck={false} placeholder={keyConfigured ? "Enter a new key to replace the current key" : "sk-..."} value={apiKeyInput} disabled={keyBusy} onChange={e => setApiKeyInput(e.target.value)} /></label><div className="strategy-actions"><button className="strategy-button" type="submit" disabled={keyBusy || !apiKeyInput.trim()}>{keyBusy ? "Saving…" : keyConfigured ? "Update API Key" : "Save API Key"}</button>{customKeySaved && <button type="button" disabled={keyBusy} onClick={async () => {
+          setKeyBusy(true);
+          setKeyMessage("");
+          try {
+            const result = await removeOpenAIKey();
+            setApiKeyInput("");
+            setKeyConfigured(result.configured);
+            setCustomKeySaved(result.hasCustomKey);
+            setKeyMessage(result.message);
+          } catch {
+            setKeyMessage("Could not remove the saved API key.");
+          } finally {
+            setKeyBusy(false);
+          }
+        }}>Remove Saved Key</button>}</div>{keyMessage && <p className="settings-key-status" role="status">{keyMessage}</p>}</form></div></section>}
+        {view === "workspace" && <>
         <fieldset className="strategy-modes" disabled={!ready}><legend>Choose a Strategy Type</legend>
           {[["lead", "Lead Proposal", "Develop an opportunity for a prospective client."], ["client", "Client Strategy", "Plan the work for an existing client."]].map(([value, title, description]) => <label className={`strategy-mode ${draft.mode === value ? "is-selected" : ""}`} key={value}><input type="radio" name="mode" checked={draft.mode === value} onChange={() => update("mode", value)} /><span><strong>{title}</strong><small>{description}</small></span></label>)}
         </fieldset>
@@ -155,7 +284,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured }: { owner
           </div>
         </section>
         <section className="strategy-section"><div className="strategy-heading"><span>02 / SOCIAL PROFILES</span><h2>Social Profiles<span>.</span></h2><p>Add each account separately. All fields are optional.</p></div>
-          <div className="strategy-records">{draft.profiles.map((profile, index) => <div className="strategy-record" key={profile.id}><div className="strategy-record-header"><h3>Profile {index + 1}</h3><button type="button" onClick={async () => { try { await saveQueue.current; await deleteProfileCloud(ownerId, profile.id); update("profiles", draft.profiles.filter(item => item.id !== profile.id)); } catch { setStatus("Could not remove this profile’s screenshots. Please try again."); } }}>Remove Profile {index + 1}</button></div><div className="strategy-fields">
+          <div className="strategy-records">{draft.profiles.map((profile, index) => <div className="strategy-record" key={profile.id}><div className="strategy-record-header"><h3>Profile {index + 1}</h3><button type="button" onClick={async () => { try { await flushSaves(); await deleteProfileCloud(ownerId, profile.id); update("profiles", draft.profiles.filter(item => item.id !== profile.id)); } catch { setStatus("Could not remove this profile’s screenshots. Please try again."); } }}>Remove Profile {index + 1}</button></div><div className="strategy-fields">
             <CustomSelect label="Platform" value={profile.platform} onChange={value => update("profiles", draft.profiles.map(item => item.id === profile.id ? { ...item, platform: value } : item))} options={[{ value: "", label: "Not Provided" }, ...["Instagram", "Facebook", "LinkedIn", "TikTok", "YouTube", "Pinterest", "Threads", "X", "Other"].map(value => ({ value, label: value }))]} />
             <label>Profile URL<input type="url" placeholder="https://" value={profile.url} onChange={e => update("profiles", draft.profiles.map(item => item.id === profile.id ? { ...item, url: e.target.value } : item))} /></label>
             <label>Notes<textarea rows={3} value={profile.notes} onChange={e => update("profiles", draft.profiles.map(item => item.id === profile.id ? { ...item, notes: e.target.value } : item))} /></label>
@@ -171,7 +300,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured }: { owner
           </div></div>)}</div><button className="strategy-add" type="button" disabled={!ready} onClick={() => update("findings", [...draft.findings, { id: crypto.randomUUID(), source: "", date: "", observation: "", status: "" }])}>Add Finding</button>
         </section>
         <section className="strategy-section"><div className="strategy-heading"><span>04 / STRATEGY</span><h2>Make a Plan<span>.</span></h2><p>Create a starting outline from your brief, then edit it below. This outline is a template, not an AI-generated strategy.</p></div><button className="strategy-button" type="button" disabled={!ready} onClick={() => draft.strategy.trim() ? setConfirmOutline(true) : createOutline()}>Create Starting Outline</button><label className="strategy-editor">Strategy Draft<textarea rows={18} placeholder="Your editable strategy will appear here." value={draft.strategy} disabled={!ready} onChange={e => update("strategy", e.target.value)} /></label><div className="strategy-print"><h1>Strategy Draft</h1><pre>{draft.strategy}</pre></div><div className="strategy-actions"><button type="button" onClick={exportDraft} disabled={!ready}>Export Draft</button><button type="button" onClick={() => window.print()} disabled={!ready}>Print / Save PDF</button></div></section>
-        </> : <section className="strategy-empty"><p>No strategy is open.</p><button className="strategy-button" type="button" disabled={!ready} onClick={newRecord}>New Strategy</button></section>)}
+        </>}
       </div>
     </main>
   );
