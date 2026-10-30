@@ -24,6 +24,9 @@ export default async function StrategyPage() {
       ownerId={user.id}
       openAIConfigured={keyStatus.configured}
       hasCustomOpenAIKey={keyStatus.hasCustomKey}
+      maskedOpenAIKey={keyStatus.maskedKey}
+      initialModel={keyStatus.model}
+      initialReasoningEffort={keyStatus.reasoningEffort}
       initialRecords={initialRecords}
     />
   );
