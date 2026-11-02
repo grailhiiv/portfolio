@@ -34,7 +34,7 @@ export default function ServiceIcon({ index }: { index: number }) {
       }).catch((error) => {
         if (!cancelled) console.error("Unable to load service animation", error);
       });
-    }, { rootMargin: "200px" });
+    }, { rootMargin: "800px" });
     observer.observe(element);
     return () => {
       cancelled = true;

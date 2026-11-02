@@ -1,23 +1,13 @@
 import imageAsset0 from "../../../public/images/about-hero.webp";
-import imageAsset1 from "../../../public/images/canva.png";
-import imageAsset2 from "../../../public/images/buffer.png";
-import imageAsset3 from "../../../public/images/meta.png";
-import imageAsset4 from "../../../public/images/chatgpt.png";
-import imageAsset6 from "../../../public/images/zapier.png";
-import imageAsset7 from "../../../public/images/mailchimp.png";
-import imageAsset8 from "../../../public/images/attio.png";
-import imageAsset9 from "../../../public/images/wordpress.png";
-import imageAsset10 from "../../../public/images/sitebulb.png";
-import imageAsset11 from "../../../public/images/pipedrive.png";
-import imageAsset12 from "../../../public/images/claude.png";
 import imageAsset13 from "../../../public/images/icon.png";
-import imageAsset14 from "../../../public/images/penguin.png";
-import imageAsset15 from "../../../public/images/macmillan.png";
+import imageAsset14 from "../../../public/images/greenleaf.png";
+import imageAsset15 from "../../../public/images/amplify.png";
 import imageAsset16 from "../../../public/images/graywolf.png";
 import { imageSizes } from "@/lib/image-sizes";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Reveal } from "@/components/animation";
+import { AnimatedHeading, Reveal } from "@/components/animation";
+import { Testimonials } from "@/components/testimonials";
 
 export const metadata: Metadata = {
   title: "About Grailord Antonio",
@@ -39,11 +29,11 @@ const workExperience = [
     ],
   },
   {
-    company: "Penguin Random House",
+    company: "Greenleaf Book Group",
     role: "Social Media Manager",
     period: "2022 — 2026",
     logo: imageAsset14,
-    alt: "Penguin Random House",
+    alt: "Greenleaf Book Group",
     delay: 0.12,
     paragraphs: [
       "As a Social Media Manager, I managed content for author and book marketing campaigns across multiple social media profiles. I developed monthly content calendars and coordinated scheduling and publishing through Buffer.",
@@ -51,11 +41,11 @@ const workExperience = [
     ],
   },
   {
-    company: "Pan Macmillan",
+    company: "Amplify Publishing Group",
     role: "SEO Specialist",
     period: "2015 — 2022",
     logo: imageAsset15,
-    alt: "Pan Macmillan",
+    alt: "Amplify Publishing Group",
     delay: 0.24,
     paragraphs: [
       "I progressed from Junior to Senior SEO Specialist, working on technical SEO and website optimisation to support organic search visibility.",
@@ -75,30 +65,18 @@ const workExperience = [
   },
 ];
 
-const clientLogos = [
-  { name: "Canva", image: imageAsset1 },
-  { name: "Buffer", image: imageAsset2 },
-  { name: "Meta", image: imageAsset3 },
-  { name: "ChatGPT", image: imageAsset4 },
-  { name: "Zapier", image: imageAsset6 },
-  { name: "Mailchimp", image: imageAsset7 },
-  { name: "Attio", image: imageAsset8 },
-  { name: "WordPress", image: imageAsset9 },
-  { name: "Sitebulb", image: imageAsset10 },
-  { name: "Pipedrive", image: imageAsset11 },
-  { name: "Claude", image: imageAsset12 },
-];
-
 export default function AboutPage() {
   return (
     <main id="main-content">
-      <h1 className="sr-only" data-audit-heading="true">
-        About Grailord Antonio
-      </h1>
-      <section className="px-4 pb-4 md:pb-14 pt-4">
-        <div className="max-w-5xl mx-auto">
-          <Reveal immediate>
-            <div className="aspect-[3/4] md:aspect-[2/1] rounded-lg relative overflow-hidden">
+      <section className="about-hero px-4 pt-4 pb-2">
+        <div className="about-hero-grid max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6 items-stretch">
+          <div className="flex flex-col justify-center py-4 md:py-16 md:h-full">
+            <AnimatedHeading className="home-hero-heading text-2xl md:max-w-[540px] leading-none tracking-[-2.5px]">
+              A little creative, <span className="text-[#b2b2b2]">a little technical,</span> always curious.
+            </AnimatedHeading>
+          </div>
+          <Reveal immediate className="about-hero-image">
+            <div className="about-hero-image-frame aspect-[3/4] rounded-lg relative overflow-hidden">
               <Image
                 alt="Portrait of Grailord Antonio"
                 className="object-cover"
@@ -188,32 +166,8 @@ export default function AboutPage() {
       <section className="px-4 py-10 md:py-12 border-t border-gray-100">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-6">
           <h2 className="section-heading md:sticky md:self-start md:top-4 text-lg leading-[36.4px] tracking-[-0.64px] text-black">
-            Tools & Platforms
-          </h2>
-          <div className="about-logo-slider">
-            {[clientLogos.slice(0, 6), clientLogos.slice(6)].map((row, rowIndex) => (
-              <div className="about-logo-row" key={rowIndex}>
-                <div className={`about-logo-track${rowIndex === 1 ? " about-logo-track-reverse" : ""}`}>
-                  {[false, true].map((duplicate) => (
-                    <div className="about-logo-group" key={String(duplicate)} aria-hidden={duplicate}>
-                      {row.map((logo) => (
-                        <div key={logo.name} className="about-logo-item">
-                          <Image
-                            alt={duplicate ? "" : logo.name}
-                            className="object-contain"
-                            sizes={imageSizes.clientLogo}
-                            src={logo.image}
-                            quality={90}
-                            fill
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+            Client Testimonials</h2>
+          <Testimonials />
         </div>
       </section>
     </main>

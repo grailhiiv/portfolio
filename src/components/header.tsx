@@ -7,9 +7,9 @@ import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 
 const links = [
-  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/work", label: "Work" },
+  { href: "/pricing", label: "Pricing" },
   { href: "#contact", label: "Contact" },
 ];
 

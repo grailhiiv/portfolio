@@ -1,4 +1,4 @@
-# Current portfolio verification
+# Current verification
 
 The current portfolio contains Home, About, Work, and the Daniel G. Miller, Melissa Castro, Caroline Montague, and Atlas Rose case studies. Home and Work render the same shared featured cards and hover previews. Case studies share their layout and scrolling showcase.
 

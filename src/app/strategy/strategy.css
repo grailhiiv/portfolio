@@ -157,3 +157,28 @@ html[data-pointer="ready"]:has(.strategy-dialog[open]) body > .cursor { display:
 .settings-model-fields { margin-top: 28px; }
 .settings-model-fields .strategy-actions { margin-top: 0; }
 @media (max-width: 600px) { .strategy-nav { justify-content: flex-start; gap: 16px; } .history-record { align-items: flex-start; flex-direction: column; gap: 14px; } }
+
+/* Match the portfolio's typography, spacing, and rounded surfaces. */
+.strategy-brand { display: inline-flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 500; }
+.strategy-login h1 { margin: 48px 0 14px; }
+.strategy-login-inner > p:not(.strategy-login-brand) { font-size: 16px; line-height: 1.6; }
+.strategy-login form { margin-top: 36px; }
+.strategy-login button { min-height: 56px; font-weight: 500; }
+.strategy-login button:focus-visible, .strategy-brand:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
+.strategy-page { padding-top: 72px; }
+.strategy-shell { max-width: 1024px; }
+.strategy-workspace-title { margin-bottom: 36px; }
+.strategy-workspace-title h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 500; line-height: 1.05; letter-spacing: -.05em; }
+.strategy-workspace-title h1 span { color: #b2b2b2; }
+.strategy-workspace-title p { margin-top: 14px; color: #777; font-size: 16px; line-height: 1.6; }
+.strategy-nav { justify-content: flex-start; padding-bottom: 24px; border-bottom: 1px solid #eee; }
+.strategy-mode, .strategy-subpanel, .strategy-record { border-radius: 8px; }
+.strategy-fields input, .strategy-fields textarea, .strategy-editor textarea, .settings-key-form input, .date-picker-trigger, .custom-select-trigger { border-radius: 6px; }
+.strategy-button, .strategy-add, .strategy-actions button, .strategy-dialog button { border-radius: 6px; }
+@media (max-width: 767px) { .strategy-page { padding-top: 48px; } .strategy-workspace-title { margin-bottom: 28px; } }
+
+/* Consistent control and surface corners across the workspace and login. */
+.strategy-page :is(form, button, input:not([type="radio"]), textarea, select, .strategy-mode, .strategy-subpanel, .strategy-record, .strategy-dialog, .date-picker-popup, .custom-select-options, .profile-attachments-button),
+.strategy-login :is(form, button, input, textarea, select) { border-radius: 4px; }
+
+.strategy-login-logo { display: block; margin-inline: auto; }

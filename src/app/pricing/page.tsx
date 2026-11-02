@@ -72,8 +72,16 @@ const services = [
     name: "Website Care",
     intro:
       "Keep your existing WordPress site current with routine updates, backup checks, and small content changes.",
-    details:
-      "Includes support for one existing WordPress site and up to two hours of work per month. Hosting, paid licenses, major changes, and repairs to pre-existing problems are quoted separately.",
+    inclusions: [
+      "Maintenance for one existing WordPress website",
+      "WordPress core, theme, and plugin updates",
+      "Routine backup and website health checks",
+      "Small content, image, and text updates",
+      "Basic functionality checks after updates",
+      "Up to 2 hours of maintenance per month across these tasks",
+    ],
+    separately:
+      "Hosting, premium licenses, major website changes, security incident recovery, and repairs to pre-existing issues",
     price: "$250",
     period: "month",
     cta: "Discuss Website Care",
@@ -82,8 +90,15 @@ const services = [
     name: "SEO Audit",
     intro:
       "Understand what may be holding your site back in search and where to focus your efforts.",
-    details:
-      "Includes a technical and on-page review of one website, a prioritized findings report, and practical recommendations. Implementation is quoted separately.",
+    inclusions: [
+      "Technical SEO review of one website",
+      "Crawlability, indexing, and sitemap checks",
+      "On-page SEO review of up to 10 priority pages",
+      "Page speed and mobile usability assessment",
+      "Review of existing Google Search Console data, if available",
+      "Prioritized audit report with actionable recommendations",
+    ],
+    separately: "SEO implementation, keyword research beyond the reviewed pages, content creation, backlink building, and ongoing SEO management",
     price: "$450",
     period: "project",
     cta: "Discuss an SEO Audit",
@@ -92,8 +107,16 @@ const services = [
     name: "CRM Setup",
     intro:
       "Get your customer information and sales process organized in a CRM that fits the way you work.",
-    details:
-      "A starting scope includes configuration of one CRM, one pipeline, and a basic workflow. Additional pipelines, integrations, data migration, and complex automations are quoted separately.",
+    inclusions: [
+      "Setup and configuration of one CRM platform",
+      "One customized sales or lead management pipeline",
+      "Basic contact fields, tags, and lead stages",
+      "One simple automation within the CRM",
+      "Testing of contact records and pipeline flow",
+      "Basic walkthrough and handover documentation",
+    ],
+    separately:
+      "Additional pipelines, third-party integrations, bulk data migration, advanced customization, ongoing CRM management, and software subscriptions",
     price: "$600",
     period: "project",
     cta: "Discuss CRM Setup",
@@ -102,8 +125,16 @@ const services = [
     name: "Automation Build",
     intro:
       "Save time on repeat tasks with a workflow designed around your goals and existing tools.",
-    details:
-      "A starting scope includes one workflow connecting up to two existing tools. Complex logic, additional integrations, ongoing monitoring, and software fees are quoted separately.",
+    inclusions: [
+      "Workflow planning and process mapping",
+      "One custom automation workflow",
+      "Connection of up to two existing tools",
+      "Basic triggers, actions, and data mapping",
+      "End-to-end workflow testing",
+      "Workflow documentation and handover",
+    ],
+    separately:
+      "Complex logic, additional workflows or integrations, custom API development, ongoing monitoring, maintenance, and software fees",
     price: "$750",
     period: "project",
     cta: "Discuss an Automation",
@@ -269,7 +300,17 @@ export default function PricingPage() {
                     {service.name}
                   </h3>
                   <p className="pricing-addon-intro">{service.intro}</p>
-                  <p className="pricing-addon-details">{service.details}</p>
+                  <div className="pricing-addon-scope">
+                    <p className="pricing-addon-label">Includes</p>
+                    <ul className="pricing-addon-inclusions">
+                      {service.inclusions.map((inclusion) => (
+                        <li key={inclusion}>{inclusion}</li>
+                      ))}
+                    </ul>
+                    <p className="pricing-addon-exclusions">
+                      <span>Not included:</span> {service.separately}.
+                    </p>
+                  </div>
                   <div className="pricing-addon-action">
                     <div className="pricing-service-price">
                       <span>From</span>

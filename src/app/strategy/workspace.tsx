@@ -8,20 +8,17 @@ import CloudAttachments from "./cloud-attachments";
 import { listRecords, saveRecord, removeRecords, uploadAttachment, deleteProfileCloud, listAttachments, type CloudRecord } from "./cloud";
 import DatePicker from "./date-picker";
 import CustomSelect from "./custom-select";
+import ClientBrief from "./client-brief";
+import { createLocalOutline } from "./local-outline";
 import ConfirmOutline from "./confirm-outline";
 import ConfirmDelete from "./confirm-delete";
 import {
-  activePackageOptions,
-  budgetTierOptions,
-  businessTypes,
   emptyDraft,
   findingCategories,
-  getActiveBusinessFields,
   getPlaceholders,
   normalizeDraft,
   profileStatuses,
   socialPlatforms,
-  videoCapacityOptions,
   type Draft,
   type Finding,
   type Profile,
@@ -33,21 +30,6 @@ const key = "grailhiiv-strategy-records-v2";
 type RecordEntry = { id: string; updatedAt: string; draft: Draft };
 type WorkspaceData = { version: 2; activeId: string | null; records: RecordEntry[] };
 
-function formatBusinessTypeLabel(type: string): string {
-  return type.replace(/\b[a-z]/g, (letter, index) =>
-    index === 0 || !/^(and|or)$/.test(type.slice(index).split(" ")[0]) ? letter.toUpperCase() : letter,
-  );
-}
-
-function SparkIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path className="spark-star-main" d="M10.5 2.5C11.1 7.2 12.8 8.9 17.5 9.5C12.8 10.1 11.1 11.8 10.5 16.5C9.9 11.8 8.2 10.1 3.5 9.5C8.2 8.9 9.9 7.2 10.5 2.5Z" />
-      <path className="spark-star-top" d="M18.5 2C18.8 4.1 19.6 4.9 21.7 5.2C19.6 5.5 18.8 6.3 18.5 8.4C18.2 6.3 17.4 5.5 15.3 5.2C17.4 4.9 18.2 4.1 18.5 2Z" />
-      <path className="spark-star-bottom" d="M17.5 14C17.8 16.1 18.6 16.9 20.7 17.2C18.6 17.5 17.8 18.3 17.5 20.4C17.2 18.3 16.4 17.5 14.3 17.2C16.4 16.9 17.2 16.1 17.5 14Z" />
-    </svg>
-  );
-}
 
 export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustomOpenAIKey = false, maskedOpenAIKey = null, initialModel = "gpt-6.1-terra", initialReasoningEffort = "medium", initialRecords = null }: { ownerId: string; openAIConfigured: boolean; hasCustomOpenAIKey?: boolean; maskedOpenAIKey?: string | null; initialModel?: OpenAIModel; initialReasoningEffort?: ReasoningEffort; initialRecords?: CloudRecord[] | null }) {
   const [draft, setDraft] = useState<Draft>(empty);
@@ -292,6 +274,8 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
       return;
     }
     if (generatingField || generatingStrategy) return;
+    const requestedRecordId = dataRef.current.activeId;
+    const requestedDraft = draft;
     setGeneratingField(targetField);
     setStatus("");
     try {
@@ -310,26 +294,48 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
         setStatus(payload?.error || `Could not generate field (${res.status}).`);
         return;
       }
+      const currentData = dataRef.current;
+      if (currentData.activeId !== requestedRecordId) {
+        setStatus("The active brief changed while generating. No generated fields were applied.");
+        return;
+      }
+      const latestDraft = currentData.records.find(item => item.id === requestedRecordId)?.draft ?? requestedDraft;
       if (targetField === "all_missing") {
         const mergedFields: Partial<Draft> = {};
         for (const [k, v] of Object.entries(payload.fields ?? {})) {
-          if (typeof v === "string" && v.trim() && !(draft[k as keyof Draft] as string | undefined)?.trim()) {
+          if (typeof v === "string" && v.trim() && !(latestDraft[k as keyof Draft] as string | undefined)?.trim()) {
             (mergedFields as Record<string, unknown>)[k] = v.trim();
           }
         }
-        const mergedDetails = { ...draft.details };
+        const mergedDetails = { ...latestDraft.details };
         for (const [k, v] of Object.entries(payload.details ?? {})) {
           if (typeof v === "string" && v.trim() && !mergedDetails[k]?.trim()) {
             mergedDetails[k] = v.trim();
           }
         }
-        patchDraft({ ...mergedFields, details: mergedDetails });
+        if (Object.keys(mergedFields).length || Object.keys(mergedDetails).some(k => mergedDetails[k] !== latestDraft.details[k])) {
+          patchDraft({ ...mergedFields, details: mergedDetails });
+        } else {
+          setStatus("No blank fields could be filled from the available information.");
+        }
       } else if (typeof payload.value === "string" && payload.value.trim()) {
         if (targetField.startsWith("detail:")) {
-          updateDetail(targetField.slice(7), payload.value.trim());
+          const detailKey = targetField.slice(7);
+          if (latestDraft.details[detailKey] !== requestedDraft.details[detailKey]) {
+            setStatus("This field changed while generating. Your edit was kept.");
+            return;
+          }
+          patchDraft({ details: { ...latestDraft.details, [detailKey]: payload.value.trim() } });
         } else {
-          update(targetField as keyof Draft, payload.value.trim() as never);
+          const field = targetField as keyof Draft;
+          if (latestDraft[field] !== requestedDraft[field]) {
+            setStatus("This field changed while generating. Your edit was kept.");
+            return;
+          }
+          patchDraft({ [field]: payload.value.trim() });
         }
+      } else {
+        setStatus("There is not enough information to generate this field. Add more source details and try again.");
       }
     } catch {
       setStatus("Could not generate field content. Please try again.");
@@ -394,20 +400,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
   }
   async function createOutline() {
     if (!keyConfigured) {
-      const subject = draft.business.trim() || draft.name.trim() || "Client";
-      const activeFields = getActiveBusinessFields(draft.businessType);
-      const nicheLines = activeFields
-        .map(f => {
-          const val = draft.details[f.key]?.trim();
-          return val ? `- ${f.label}: ${val}` : "";
-        })
-        .filter(Boolean)
-        .join("\n");
-      const diagnosticTemplate =
-        draft.mode === "lead"
-          ? `Internal Diagnostic Frameworks (Lead Proposal)\n\nNOISE Analysis (Pre-Pitch Audit)\n- Needs (What the brand is missing): \n- Opportunities (Areas for growth): \n- Improvements (Processes to fix): \n- Strengths (Current successes): ${draft.differentiator.trim() || draft.currentAssets.trim() || ""}\n- Exceptions (Known limitations): ${draft.constraints.trim() || ""}\n\nPESTLE Analysis (Macro-Environmental Urgency${draft.location.trim() ? ` — ${draft.location.trim()}` : ""})\n- Political: \n- Economic: \n- Social: \n- Technological: \n- Legal: \n- Environmental: \n\nSWOT Analysis (Competitive Baseline)\n- Strengths: ${draft.differentiator.trim() || ""}\n- Weaknesses: ${draft.challenges.trim() || ""}\n- Opportunities: ${draft.quickWin.trim() || ""}\n- Threats: `
-          : `Internal Diagnostic Frameworks (Client Strategy)\n\nNOISE Analysis (Mid-Campaign Systems Audit)\n- Needs (Missing elements): \n- Opportunities (Growth levers): \n- Improvements (Operational bottlenecks): ${draft.campaignHistory.trim() || ""}\n- Strengths (Current successes): ${draft.baselineKpis.trim() || ""}\n- Exceptions (Known limitations): ${draft.constraints.trim() || ""}\n\nTOWS Matrix (Tactical Pivots)\n- SO (Strengths + Opportunities): \n- WO (Weaknesses + Opportunities): \n- ST (Strengths + Threats): \n- WT (Weaknesses + Threats): `;
-      update("strategy", `${draft.mode === "lead" ? "Lead Proposal" : "Client Strategy"} — ${subject}\n\nObjective\n${draft.goals.trim() || "Add the primary business objective."}\n\nAudience\n${draft.audience.trim() || "Describe the target audience."}${nicheLines ? `\n\nIndustry & Niche Context\n${nicheLines}` : ""}\n\nOpportunities\n${draft.findings.filter(f => f.observation.trim()).map(f => `- ${f.observation.trim()}${f.category ? ` [${f.category}]` : ""}${f.status ? ` [${f.status}]` : ""}${f.source ? ` — ${f.source}` : ""}${f.date ? ` (${f.date})` : ""}`).join("\n") || "Review the research and identify opportunities."}\n\n${diagnosticTemplate}\n\nStrategy to Apply (Internal Execution Playbook)\nDefine the core positioning, channel playbooks, content pillars, and conversion mechanics to execute.\n\nWhat to Tell the Client (Client-Facing Narrative via SOAR)\n- Strengths (What’s Already Working): \n- Opportunities (Where the Untapped Growth Is): \n- Aspirations (What the Organisation Wants to Build): \n- Results (KPIs to Track Success): \n\nRecommended Services\nMonthly Packages:\n- Essentials (From $650 USD / month): 12 content pieces/mo, up to 2 profiles, 2 hrs/mo community management, monthly report\n- Growth (From $1,100 USD / month): 20 content pieces/mo (up to 4 short videos), up to 3 profiles, 3 hrs/mo community management, monthly 30-min strategy call\n- Complete (From $1,750 USD / month): 24 content pieces/mo (up to 6 short videos), up to 3 profiles, 4 hrs/mo community management, monthly 30-min strategy call, WordPress care (up to 2 hrs/mo), CRM & automation maintenance (up to 2 hrs/mo combined)\nAdd-ons:\n- Website Care (From $250 USD / month): Routine updates, backups & small changes for 1 existing WordPress site (up to 2 hrs/mo)\n- SEO Audit (From $450 USD / project): Technical & on-page review of 1 website with prioritized findings report\n- CRM Setup (From $600 USD / project): 1 CRM, 1 pipeline, and basic workflow configuration\n- Automation Build (From $750 USD / project): 1 workflow connecting up to 2 existing tools\n\n30 / 60 / 90 Day Roadmap\nDays 1–30: Foundation and planning\nDays 31–60: Launch and execution\nDays 61–90: Review and optimisation\n\nMeasurement\nDefine the baseline and appropriate KPIs.`);
+      update("strategy", createLocalOutline(draft));
       return;
     }
     abortRef.current?.abort();
@@ -470,17 +463,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
     }
   }
 
-  const activeBusinessFields = getActiveBusinessFields(draft.businessType);
   const placeholders = getPlaceholders(draft.businessType);
-  const resolvedBusinessLabel =
-    draft.businessType === "Other"
-      ? (draft.businessTypeOther ?? "").trim() || "Custom Business Type"
-      : formatBusinessTypeLabel(draft.businessType);
-  function isFieldGenerating(targetKey: string, currentValue: string | undefined): boolean {
-    if (!generatingField) return false;
-    if (generatingField === targetKey) return true;
-    return generatingField === "all_missing" && !(currentValue ?? "").trim();
-  }
 
   return (
     <main id="main-content" className="strategy-page">
@@ -548,242 +531,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
         <fieldset className="strategy-modes" disabled={!ready}><legend>Choose a Strategy Type</legend>
           {[["lead", "Lead Proposal", "Develop an opportunity for a prospective client."], ["client", "Client Strategy", "Plan the work for an existing client."]].map(([value, title, description]) => <label className={`strategy-mode ${draft.mode === value ? "is-selected" : ""}`} key={value}><input type="radio" name="mode" checked={draft.mode === value} onChange={() => update("mode", value)} /><span><strong>{title}</strong><small>{description}</small></span></label>)}
         </fieldset>
-        <section className="strategy-section"><div className="strategy-heading"><span>01 / THE BRIEF</span><h2>Client Brief<span>.</span></h2><p>Start with what you know. You can come back and add more anytime.</p></div>
-          <div className="strategy-fields">
-            <CustomSelect label="Business Type" value={draft.businessType} disabled={!ready} onChange={value => update("businessType", value)} options={[{ value: "", label: "Select a Business Type" }, ...(draft.businessType && !(businessTypes as readonly string[]).includes(draft.businessType) ? [{ value: draft.businessType, label: draft.businessType }] : []), ...businessTypes.map(type => ({ value: type, label: formatBusinessTypeLabel(type) }))]} />
-            {draft.businessType === "Other" && <label>Specify Business Type<input placeholder="Enter a business type or niche" value={draft.businessTypeOther} disabled={!ready} onChange={e => update("businessTypeOther", e.target.value)} /></label>}
-
-            <div className="strategy-subpanel" role="group" aria-label="Main source for autofill">
-              <div className="strategy-subpanel-header">
-                <span>QUICK SOURCE</span>
-                <h3>Source Info for Cold Outreach</h3>
-              </div>
-              <label>
-                {placeholders.mainSourceLabel}
-                <textarea
-                  rows={3}
-                  placeholder={placeholders.mainSourcePlaceholder}
-                  value={draft.mainSource ?? ""}
-                  disabled={!ready}
-                  onChange={e => update("mainSource", e.target.value)}
-                />
-              </label>
-              <div className="strategy-source-actions">
-                <small>Paste a link or bio above, then click the spark icon on any field—or fill all blank fields at once.</small>
-                <button
-                  type="button"
-                  className={`strategy-autofill-btn ${generatingField === "all_missing" ? "is-loading" : ""}`}
-                  disabled={!ready || Boolean(generatingField) || generatingStrategy}
-                  onClick={() => void generateField("all_missing")}
-                >
-                  <SparkIcon />
-                  {generatingField === "all_missing" ? "Filling Blank Fields…" : "Fill Blank Fields"}
-                </button>
-              </div>
-            </div>
-
-            {activeBusinessFields.length > 0 && (
-              <div className="strategy-subpanel" role="group" aria-label={`${resolvedBusinessLabel} inputs`}>
-                <div className="strategy-subpanel-header">
-                  <span>BUSINESS DETAILS</span>
-                  <h3>{resolvedBusinessLabel}</h3>
-                </div>
-                {activeBusinessFields.map(field => {
-                  const targetKey = `detail:${field.key}`;
-                  const currentVal = draft.details[field.key] ?? "";
-                  const loading = isFieldGenerating(targetKey, currentVal);
-                  return field.type === "select" && field.options ? (
-                    <CustomSelect
-                      key={field.key}
-                      label={field.label}
-                      value={currentVal}
-                      disabled={!ready}
-                      onChange={value => updateDetail(field.key, value)}
-                      options={field.options}
-                    />
-                  ) : field.type === "textarea" ? (
-                    <div className="strategy-field" key={field.key}>
-                      <label htmlFor={`field-${field.key}`}>{field.label}</label>
-                      <div className={`strategy-input-wrap is-textarea ${loading ? "is-loading" : ""}`}>
-                        <textarea
-                          id={`field-${field.key}`}
-                          rows={3}
-                          placeholder={loading && !currentVal ? "Generating…" : field.placeholder}
-                          value={currentVal}
-                          disabled={!ready}
-                          onChange={e => updateDetail(field.key, e.target.value)}
-                        />
-                        <button
-                          type="button"
-                          className={`strategy-spark-btn ${loading ? "is-loading" : ""}`}
-                          title={`Generate ${field.label}`}
-                          aria-label={`Generate ${field.label}`}
-                          disabled={!ready || Boolean(generatingField) || generatingStrategy}
-                          onClick={() => void generateField(targetKey)}
-                        >
-                          <SparkIcon />
-                        </button>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="strategy-field" key={field.key}>
-                      <label htmlFor={`field-${field.key}`}>{field.label}</label>
-                      <div className={`strategy-input-wrap is-input ${loading ? "is-loading" : ""}`}>
-                        <input
-                          id={`field-${field.key}`}
-                          type="text"
-                          placeholder={loading && !currentVal ? "Generating…" : field.placeholder}
-                          value={currentVal}
-                          disabled={!ready}
-                          onChange={e => updateDetail(field.key, e.target.value)}
-                        />
-                        <button
-                          type="button"
-                          className={`strategy-spark-btn ${loading ? "is-loading" : ""}`}
-                          title={`Generate ${field.label}`}
-                          aria-label={`Generate ${field.label}`}
-                          disabled={!ready || Boolean(generatingField) || generatingStrategy}
-                          onClick={() => void generateField(targetKey)}
-                        >
-                          <SparkIcon />
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-
-            <div className="strategy-grid-2">
-              {([["name", "Client Name", placeholders.name, false], ["business", "Business Name", placeholders.business, false], ["website", "Website", placeholders.website, false], ["location", "Location or Market", placeholders.location, true]] as const).map(([field, label, placeholder, spark]) => {
-                const loading = spark && isFieldGenerating(field, draft[field]);
-                return spark ? (
-                  <div className="strategy-field" key={field}>
-                    <label htmlFor={`field-${field}`}>{label}</label>
-                    <div className={`strategy-input-wrap is-input ${loading ? "is-loading" : ""}`}>
-                      <input id={`field-${field}`} type="text" placeholder={loading && !draft[field] ? "Generating…" : placeholder} value={draft[field]} disabled={!ready} onChange={e => update(field, e.target.value)} />
-                      <button type="button" className={`strategy-spark-btn ${loading ? "is-loading" : ""}`} title={`Generate ${label}`} aria-label={`Generate ${label}`} disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField(field)}><SparkIcon /></button>
-                    </div>
-                  </div>
-                ) : (
-                  <label key={field}>{label}<input type={field === "website" ? "url" : "text"} placeholder={placeholder} value={draft[field]} disabled={!ready} onChange={e => update(field, e.target.value)} /></label>
-                );
-              })}
-            </div>
-
-            {([["about", "About the Business", placeholders.about], ["differentiator", "What Makes Them Different", placeholders.differentiator], ["audience", "Target Audience", placeholders.audience], ["goals", "Main Goals", placeholders.goals], ["offerings", "Products or Services", placeholders.offerings], ["challenges", "Marketing Challenges", placeholders.challenges], ["competitors", "Competitors", placeholders.competitors]] as const).map(([field, label, placeholder]) => {
-              const loading = isFieldGenerating(field, draft[field]);
-              return (
-                <div className="strategy-field" key={field}>
-                  <label htmlFor={`field-${field}`}>{label}</label>
-                  <div className={`strategy-input-wrap is-textarea ${loading ? "is-loading" : ""}`}>
-                    <textarea id={`field-${field}`} rows={3} placeholder={loading && !draft[field] ? "Generating…" : placeholder} value={draft[field]} disabled={!ready} onChange={e => update(field, e.target.value)} />
-                    <button type="button" className={`strategy-spark-btn ${loading ? "is-loading" : ""}`} title={`Generate ${label}`} aria-label={`Generate ${label}`} disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField(field)}><SparkIcon /></button>
-                  </div>
-                </div>
-              );
-            })}
-
-            <div className="strategy-grid-2">
-              {([["conversionGoal", "Desired Customer Action", placeholders.conversionGoal], ["brandVoice", "Brand Voice", placeholders.brandVoice]] as const).map(([field, label, placeholder]) => {
-                const loading = isFieldGenerating(field, draft[field]);
-                return (
-                  <div className="strategy-field" key={field}>
-                    <label htmlFor={`field-${field}`}>{label}</label>
-                    <div className={`strategy-input-wrap is-input ${loading ? "is-loading" : ""}`}>
-                      <input id={`field-${field}`} type="text" placeholder={loading && !draft[field] ? "Generating…" : placeholder} value={draft[field]} disabled={!ready} onChange={e => update(field, e.target.value)} />
-                      <button type="button" className={`strategy-spark-btn ${loading ? "is-loading" : ""}`} title={`Generate ${label}`} aria-label={`Generate ${label}`} disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField(field)}><SparkIcon /></button>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="strategy-subpanel" role="group" aria-label="Content, tools, and budget">
-              <div className="strategy-subpanel-header">
-                <span>PRACTICAL DETAILS</span>
-                <h3>Content, Tools & Budget</h3>
-              </div>
-              <div className="strategy-grid-2">
-                <CustomSelect label="Video & Photo Availability" value={draft.videoCapacity} disabled={!ready} onChange={value => update("videoCapacity", value)} options={videoCapacityOptions} />
-                <CustomSelect label="Monthly Budget / Package" value={draft.budgetTier} disabled={!ready} onChange={value => update("budgetTier", value)} options={budgetTierOptions} />
-              </div>
-              <div className="strategy-grid-2">
-                {([["techStack", "Website Platform & Tools Used", placeholders.techStack], ["timeline", "Important Dates or Seasons", placeholders.timeline]] as const).map(([field, label, placeholder]) => {
-                  const loading = isFieldGenerating(field, draft[field]);
-                  return (
-                    <div className="strategy-field" key={field}>
-                      <label htmlFor={`field-${field}`}>{label}</label>
-                      <div className={`strategy-input-wrap is-input ${loading ? "is-loading" : ""}`}>
-                        <input id={`field-${field}`} type="text" placeholder={loading && !draft[field] ? "Generating…" : placeholder} value={draft[field]} disabled={!ready} onChange={e => update(field, e.target.value)} />
-                        <button type="button" className={`strategy-spark-btn ${loading ? "is-loading" : ""}`} title={`Generate ${label}`} aria-label={`Generate ${label}`} disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField(field)}><SparkIcon /></button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="strategy-field">
-                <label htmlFor="field-currentAssets">Existing Audience & Marketing Materials</label>
-                <div className={`strategy-input-wrap is-input ${isFieldGenerating("currentAssets", draft.currentAssets) ? "is-loading" : ""}`}>
-                  <input id="field-currentAssets" type="text" placeholder={isFieldGenerating("currentAssets", draft.currentAssets) && !draft.currentAssets ? "Generating…" : placeholders.currentAssets} value={draft.currentAssets} disabled={!ready} onChange={e => update("currentAssets", e.target.value)} />
-                  <button type="button" className={`strategy-spark-btn ${isFieldGenerating("currentAssets", draft.currentAssets) ? "is-loading" : ""}`} title="Generate Existing Audience & Marketing Materials" aria-label="Generate Existing Audience & Marketing Materials" disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField("currentAssets")}><SparkIcon /></button>
-                </div>
-              </div>
-              <div className="strategy-field">
-                <label htmlFor="field-constraints">Limits or Things to Avoid</label>
-                <div className={`strategy-input-wrap is-textarea ${isFieldGenerating("constraints", draft.constraints) ? "is-loading" : ""}`}>
-                  <textarea id="field-constraints" rows={2} placeholder={isFieldGenerating("constraints", draft.constraints) && !draft.constraints ? "Generating…" : placeholders.constraints} value={draft.constraints} disabled={!ready} onChange={e => update("constraints", e.target.value)} />
-                  <button type="button" className={`strategy-spark-btn ${isFieldGenerating("constraints", draft.constraints) ? "is-loading" : ""}`} title="Generate Limits or Things to Avoid" aria-label="Generate Limits or Things to Avoid" disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField("constraints")}><SparkIcon /></button>
-                </div>
-              </div>
-            </div>
-
-            {draft.mode === "lead" ? (
-              <div className="strategy-subpanel" role="group" aria-label="Proposal details">
-                <div className="strategy-subpanel-header">
-                  <span>PROPOSAL DETAILS</span>
-                  <h3>Why They Need Help Now</h3>
-                </div>
-                <div className="strategy-field">
-                  <label htmlFor="field-leadTrigger">Why Are They Reaching Out Now?</label>
-                  <div className={`strategy-input-wrap is-input ${isFieldGenerating("leadTrigger", draft.leadTrigger) ? "is-loading" : ""}`}>
-                    <input id="field-leadTrigger" type="text" placeholder={isFieldGenerating("leadTrigger", draft.leadTrigger) && !draft.leadTrigger ? "Generating…" : placeholders.leadTrigger} value={draft.leadTrigger} disabled={!ready} onChange={e => update("leadTrigger", e.target.value)} />
-                    <button type="button" className={`strategy-spark-btn ${isFieldGenerating("leadTrigger", draft.leadTrigger) ? "is-loading" : ""}`} title="Generate Why Are They Reaching Out Now?" aria-label="Generate Why Are They Reaching Out Now?" disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField("leadTrigger")}><SparkIcon /></button>
-                  </div>
-                </div>
-                <div className="strategy-field">
-                  <label htmlFor="field-quickWin">Biggest Quick Win</label>
-                  <div className={`strategy-input-wrap is-textarea ${isFieldGenerating("quickWin", draft.quickWin) ? "is-loading" : ""}`}>
-                    <textarea id="field-quickWin" rows={2} placeholder={isFieldGenerating("quickWin", draft.quickWin) && !draft.quickWin ? "Generating…" : placeholders.quickWin} value={draft.quickWin} disabled={!ready} onChange={e => update("quickWin", e.target.value)} />
-                    <button type="button" className={`strategy-spark-btn ${isFieldGenerating("quickWin", draft.quickWin) ? "is-loading" : ""}`} title="Generate Biggest Quick Win" aria-label="Generate Biggest Quick Win" disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField("quickWin")}><SparkIcon /></button>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="strategy-subpanel" role="group" aria-label="Current client details">
-                <div className="strategy-subpanel-header">
-                  <span>CURRENT CLIENT DETAILS</span>
-                  <h3>Current Results & What’s Working</h3>
-                </div>
-                <CustomSelect label="Current Package" value={draft.activePackage} disabled={!ready} onChange={value => update("activePackage", value)} options={activePackageOptions} />
-                <div className="strategy-field">
-                  <label htmlFor="field-baselineKpis">Current Numbers & Results</label>
-                  <div className={`strategy-input-wrap is-input ${isFieldGenerating("baselineKpis", draft.baselineKpis) ? "is-loading" : ""}`}>
-                    <input id="field-baselineKpis" type="text" placeholder={isFieldGenerating("baselineKpis", draft.baselineKpis) && !draft.baselineKpis ? "Generating…" : placeholders.baselineKpis} value={draft.baselineKpis} disabled={!ready} onChange={e => update("baselineKpis", e.target.value)} />
-                    <button type="button" className={`strategy-spark-btn ${isFieldGenerating("baselineKpis", draft.baselineKpis) ? "is-loading" : ""}`} title="Generate Current Numbers & Results" aria-label="Generate Current Numbers & Results" disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField("baselineKpis")}><SparkIcon /></button>
-                  </div>
-                </div>
-                <div className="strategy-field">
-                  <label htmlFor="field-campaignHistory">What’s Working & What’s Not</label>
-                  <div className={`strategy-input-wrap is-textarea ${isFieldGenerating("campaignHistory", draft.campaignHistory) ? "is-loading" : ""}`}>
-                    <textarea id="field-campaignHistory" rows={3} placeholder={isFieldGenerating("campaignHistory", draft.campaignHistory) && !draft.campaignHistory ? "Generating…" : placeholders.campaignHistory} value={draft.campaignHistory} disabled={!ready} onChange={e => update("campaignHistory", e.target.value)} />
-                    <button type="button" className={`strategy-spark-btn ${isFieldGenerating("campaignHistory", draft.campaignHistory) ? "is-loading" : ""}`} title="Generate What’s Working & What’s Not" aria-label="Generate What’s Working & What’s Not" disabled={!ready || Boolean(generatingField) || generatingStrategy} onClick={() => void generateField("campaignHistory")}><SparkIcon /></button>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
+        <ClientBrief draft={draft} ready={ready} generatingField={generatingField} generatingStrategy={generatingStrategy} update={update} updateDetail={updateDetail} generateField={generateField} />
         <section className="strategy-section"><div className="strategy-heading"><span>02 / SOCIAL PROFILES</span><h2>Social Profiles<span>.</span></h2><p>Add each account separately. All fields are optional.</p></div>
           <div className="strategy-records">{draft.profiles.map((profile, index) => <div className="strategy-record" key={profile.id}><div className="strategy-record-header"><h3>Profile {index + 1}</h3><button type="button" aria-label={`Remove Profile ${index + 1}`} onClick={async () => { try { await flushSaves(); await deleteProfileCloud(ownerId, profile.id); update("profiles", draft.profiles.filter(item => item.id !== profile.id)); } catch { setStatus("Could not remove this profile’s screenshots. Please try again."); } }}>Remove</button></div><div className="strategy-fields">
             <div className="strategy-grid-2">

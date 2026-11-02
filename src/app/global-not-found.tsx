@@ -3,7 +3,7 @@ import NotFoundContent from "@/components/not-found-content";
 import "./global.css";
 
 export const metadata: Metadata = {
-  title: "Page not found — Grailord Antonio",
+  title: "404",
   robots: { index: false, follow: false },
 };
 
