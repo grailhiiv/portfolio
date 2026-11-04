@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AnimatedHeading } from "@/components/animation";
 import ServiceIcon from "@/components/service-icon";
+import { formatPublicPrice, publicPrices } from "@/data/public-prices";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -14,7 +15,7 @@ const plans = [
     name: "Essentials",
     description:
       "A strong foundation for businesses that want a consistent, professional presence across their key social channels.",
-    price: "$650",
+    price: publicPrices.essentials,
     cta: "Discuss Essentials",
     features: [
       "12 original content pieces per month",
@@ -31,7 +32,7 @@ const plans = [
     name: "Growth",
     description:
       "For businesses ready to publish more often and connect with their audience through a mix of graphics and short-form video.",
-    price: "$1,100",
+    price: publicPrices.growth,
     cta: "Discuss Growth",
     features: [
       "20 original content pieces per month, including up to 4 short videos",
@@ -49,7 +50,7 @@ const plans = [
     name: "Complete",
     description:
       "More content and ongoing support for the website and systems behind your marketing.",
-    price: "$1,750",
+    price: publicPrices.complete,
     cta: "Discuss Complete",
     features: [
       "24 original content pieces per month, including up to 6 short videos",
@@ -69,6 +70,27 @@ const plans = [
 
 const services = [
   {
+    name: "Website Setup",
+    intro:
+      "Build a professional, mobile-friendly WordPress website that gives your business a strong online presence.",
+    inclusions: [
+      "WordPress installation and configuration",
+      "Setup of up to 5 standard website pages",
+      "Mobile-responsive design and layout",
+      "Theme customisation using existing brand assets",
+      "Navigation, contact form, and essential website elements",
+      "Website testing and launch assistance",
+      "Two rounds of revisions and website handover",
+    ],
+    separately:
+      "Domain registration, hosting, premium themes or plugins, copywriting, custom development, e-commerce functionality, advanced integrations, and ongoing maintenance",
+    price: publicPrices.websiteSetup,
+    period: "project",
+    cta: "Discuss Website Setup",
+    icon: 8,
+    iconClass: "pricing-enlarged-icon",
+  },
+  {
     name: "Website Care",
     intro:
       "Keep your existing WordPress site current with routine updates, backup checks, and small content changes.",
@@ -82,9 +104,11 @@ const services = [
     ],
     separately:
       "Hosting, premium licenses, major website changes, security incident recovery, and repairs to pre-existing issues",
-    price: "$250",
+    price: publicPrices.websiteCare,
     period: "month",
     cta: "Discuss Website Care",
+    icon: 4,
+    iconClass: undefined,
   },
   {
     name: "SEO Audit",
@@ -99,9 +123,11 @@ const services = [
       "Prioritized audit report with actionable recommendations",
     ],
     separately: "SEO implementation, keyword research beyond the reviewed pages, content creation, backlink building, and ongoing SEO management",
-    price: "$450",
+    price: publicPrices.seoAudit,
     period: "project",
     cta: "Discuss an SEO Audit",
+    icon: 7,
+    iconClass: "pricing-enlarged-icon",
   },
   {
     name: "CRM Setup",
@@ -117,9 +143,11 @@ const services = [
     ],
     separately:
       "Additional pipelines, third-party integrations, bulk data migration, advanced customization, ongoing CRM management, and software subscriptions",
-    price: "$600",
+    price: publicPrices.crmSetup,
     period: "project",
     cta: "Discuss CRM Setup",
+    icon: 5,
+    iconClass: "pricing-crm-icon",
   },
   {
     name: "Automation Build",
@@ -135,9 +163,11 @@ const services = [
     ],
     separately:
       "Complex logic, additional workflows or integrations, custom API development, ongoing monitoring, maintenance, and software fees",
-    price: "$750",
+    price: publicPrices.automationBuild,
     period: "project",
     cta: "Discuss an Automation",
+    icon: 6,
+    iconClass: "pricing-enlarged-icon",
   },
 ];
 
@@ -245,7 +275,7 @@ export default function PricingPage() {
                 <div className="pricing-plan-price">
                   <span>From</span>
                   <p>
-                    {plan.price} <small>USD / month</small>
+                    {formatPublicPrice(plan.price)} <small>USD / month</small>
                   </p>
                 </div>
                 <ul className="pricing-plan-features">
@@ -277,7 +307,7 @@ export default function PricingPage() {
           >
             Add-ons
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             {services.map((service, index) => (
               <article
                 className="pricing-addon-card service-card flex flex-col border border-gray-200 rounded-lg p-6"
@@ -287,12 +317,8 @@ export default function PricingPage() {
                   <p className="text-xs text-gray-400">
                     {String(index + 1).padStart(3, "0")}
                   </p>
-                  <div
-                    className={
-                      index === 2 ? "pricing-crm-icon" : index > 0 ? "pricing-enlarged-icon" : undefined
-                    }
-                  >
-                    <ServiceIcon index={[4, 7, 5, 6][index]} />
+                  <div className={service.iconClass}>
+                    <ServiceIcon index={service.icon} />
                   </div>
                 </div>
                 <div className="pricing-addon-content">
@@ -315,7 +341,7 @@ export default function PricingPage() {
                     <div className="pricing-service-price">
                       <span>From</span>
                       <p>
-                        {service.price} <small>USD / {service.period}</small>
+                        {formatPublicPrice(service.price)} <small>USD / {service.period}</small>
                       </p>
                     </div>
                     <a

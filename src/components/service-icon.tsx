@@ -6,14 +6,15 @@ import { useEffect, useRef, useState } from "react";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 const animations = [
-  () => import("@/data/service-0.json"),
-  () => import("@/data/service-1.json"),
-  () => import("@/data/service-2.json"),
-  () => import("@/data/service-3.json"),
-  () => import("@/data/addons-1.json"),
-  () => import("@/data/addons-3.json"),
-  () => import("@/data/addons-4.json"),
-  () => import("@/data/addons-2.json"),
+  () => import("@/data/service-social-media-management.json"),
+  () => import("@/data/service-website-management.json"),
+  () => import("@/data/service-crm-lead-management.json"),
+  () => import("@/data/service-marketing-automation.json"),
+  () => import("@/data/addons-website-care.json"),
+  () => import("@/data/addons-crm-setup.json"),
+  () => import("@/data/addons-automation-build.json"),
+  () => import("@/data/addons-seo-audit.json"),
+  () => import("@/data/addons-website-setup.json"),
 ];
 
 export default function ServiceIcon({ index }: { index: number }) {

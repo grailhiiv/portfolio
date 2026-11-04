@@ -7,8 +7,13 @@ import {
   useReducedMotion,
 } from "motion/react";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Cursor({ primary = true }: { primary?: boolean }) {
+  const pathname = usePathname();
+  const nativeCursor = ["/invoice", "/strategy", "/login"].some(
+    (route) => pathname === route || pathname?.startsWith(`${route}/`),
+  );
   const x = useMotionValue(-200);
   const y = useMotionValue(-200);
   const springX = useSpring(x, { stiffness: 120, damping: 18, mass: 1 });
@@ -18,6 +23,7 @@ export default function Cursor({ primary = true }: { primary?: boolean }) {
   const reduced = useReducedMotion();
 
   useEffect(() => {
+    if (nativeCursor) return;
     const pointer = window.matchMedia("(pointer: fine)");
     let active = false;
     const interactiveTarget = (target: EventTarget | null) =>
@@ -60,7 +66,9 @@ export default function Cursor({ primary = true }: { primary?: boolean }) {
       pointer.removeEventListener("change", leave);
       if (primary) delete document.documentElement.dataset.pointer;
     };
-  }, [x, y, primary]);
+  }, [x, y, primary, nativeCursor]);
+
+  if (nativeCursor) return null;
 
   return (
     <div

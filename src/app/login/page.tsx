@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { login } from "./actions";
+import SignInButton from "./sign-in-button";
 import "../strategy/strategy.css";
 
 export const metadata: Metadata = { title: "Login", robots: { index: false, follow: false } };
@@ -15,7 +16,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
           <label>Email<input name="email" type="email" autoComplete="username" required /></label>
           <label>Password<input name="password" type="password" autoComplete="current-password" required /></label>
           {error && <p role="alert">Unable to sign in. Check your email and password.</p>}
-          <button type="submit">Sign In</button>
+          <SignInButton />
         </form>
       </div>
     </main>

@@ -182,3 +182,13 @@ html[data-pointer="ready"]:has(.strategy-dialog[open]) body > .cursor { display:
 .strategy-login :is(form, button, input, textarea, select) { border-radius: 4px; }
 
 .strategy-login-logo { display: block; margin-inline: auto; }
+
+.strategy-login button:disabled { opacity: .75; cursor: wait; }
+.login-spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.35); border-top-color: #fff; border-radius: 50%; animation: login-spin .7s linear infinite; }
+.strategy-login button:has(.login-spinner) { align-items: center; gap: 10px; }
+@keyframes login-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .login-spinner { animation: none; } }
+.strategy-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 5px; }
+.strategy-nav a:hover { color: #777; }
+.strategy-nav a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
+.strategy-history .strategy-heading h2 { text-transform:none; }

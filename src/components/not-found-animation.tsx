@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useReducedMotion } from "motion/react";
-import animationData from "@/data/not-found.json";
+import animationData from "@/data/page-not-found.json";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 

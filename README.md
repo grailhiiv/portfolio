@@ -1,6 +1,6 @@
 ## Run
 
-Requires Node.js 20.9 or newer. In PowerShell:
+Use Node.js 24 or newer for the application and the verification commands below. In PowerShell:
 
 ```powershell
 npm.cmd install
@@ -16,8 +16,14 @@ npm.cmd start
 
 ## Pages and editing
 
+- `src/app/pricing/page.tsx`: Pricing
+- `src/data/public-prices.ts`: public starting prices shared by the pricing page and matching invoice catalogue items
+- `src/app/invoice/catalogue.ts`: invoice catalogue items, including internal-only prices and descriptions
 - `src/app/page.tsx`: Home
 - `src/app/about/page.tsx`: About
+- `src/app/strategy/`: authenticated strategy workspace, cloud sync, AI generation, and PDF export
+- `src/app/invoice/`: authenticated invoice workspace, catalogue, calculation, and PDF preview
+- `src/app/login/`: sign-in for the internal workspaces
 - `src/app/work/page.tsx`: Work, featuring Daniel G. Miller, Melissa Castro, Caroline Montague, and Atlas Rose
 - `src/app/work/{daniel,melissa,caroline,atlas}/page.tsx`: the four case studies
 - `src/components/header.tsx`: navigation, live Philippine clock (Asia/Manila), scroll-direction header
@@ -30,7 +36,19 @@ npm.cmd start
 - `public/images/`, `public/videos/`, and `public/fonts/`: local portfolio assets
 - `src/app/global.css`: fonts, theme, utilities, shared styles, case studies, and the author showcases
 
-Stack: Next.js App Router, React, TypeScript, Motion, Lottie, and Next.js image optimization. All CSS lives in `src/app/global.css`, imported once by the root layout. Case-study and showcase classes use prefixes to avoid global name collisions. A Tailwind compilation pipeline is not needed.
+Stack: Next.js App Router, React, TypeScript, Motion, Lottie, Supabase, the OpenAI Responses API, and PDF libraries.
+
+## Styles
+
+`src/app/global.css` is imported by the root layout and contains site-wide styles, utilities, and public-page styles. The strategy and invoice workspaces also import `src/app/strategy/strategy.css` and `src/app/invoice/invoice.css`, respectively. Case-study and showcase classes use prefixes to avoid global name collisions. A Tailwind compilation pipeline is not needed.
+
+When separating page-specific styles from `global.css`, preserve the cascade and check affected pages at desktop and mobile sizes. Pricing styles could be extracted first; a separate pricing stylesheet has not yet been created.
+
+## Pricing and internal workspaces
+
+Update the eight public starting prices in `src/data/public-prices.ts`. The pricing page and matching invoice catalogue entries use these values; catalogue items that are not listed publicly keep their own prices in `src/app/invoice/catalogue.ts`. Existing saved invoices retain their recorded amounts.
+
+The `/strategy` and `/invoice` pages require an authorized Supabase sign-in. Strategy records and screenshots use Supabase, with browser backup for strategy records. Invoice history is stored in the current browser. Strategy AI generation uses an OpenAI API key configured through the workspace or server environment.
 
 `public/asset-manifest.json` inventories current public files with byte sizes and SHA-256 hashes. Known original source URLs are retained as attribution; verification does not download from those sources. After intentionally adding, changing, or removing public files, run `python scripts/update-asset-manifest.py` and review the manifest diff.
 
@@ -39,6 +57,7 @@ Stack: Next.js App Router, React, TypeScript, Motion, Lottie, and Next.js image 
 ```powershell
 npm.cmd run typecheck
 npm.cmd run build
+node --test scripts/invoice-model.test.mjs scripts/strategy-autofill-response.test.mjs scripts/public-prices.test.mjs
 python scripts/audit-regressions.py
 python scripts/verify-site.py
 ```
