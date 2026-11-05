@@ -5,6 +5,7 @@ import { supabaseServer } from "@/lib/supabase/server";
 import { getOpenAIKeyStatus } from "./actions";
 import type { CloudRecord } from "./cloud";
 import StrategyWorkspace from "./workspace";
+import "../workspace.css";
 import "./strategy.css";
 
 export const metadata: Metadata = { title: "Strategy Workspace", robots: { index: false, follow: false } };

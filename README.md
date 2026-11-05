@@ -48,7 +48,7 @@ When separating page-specific styles from `global.css`, preserve the cascade and
 
 Update the eight public starting prices in `src/data/public-prices.ts`. The pricing page and matching invoice catalogue entries use these values; catalogue items that are not listed publicly keep their own prices in `src/app/invoice/catalogue.ts`. Existing saved invoices retain their recorded amounts.
 
-The `/strategy` and `/invoice` pages require an authorized Supabase sign-in. Strategy records and screenshots use Supabase, with browser backup for strategy records. Invoice history is stored in the current browser. Strategy AI generation uses an OpenAI API key configured through the workspace or server environment.
+The `/strategy` and `/invoice` pages require an authorized Supabase sign-in. Strategy records and screenshots use Supabase, with browser backup for strategy records. Invoice history is stored in the current browser. Strategy AI generation uses an OpenAI API key configured through the workspace or server environment. The source audit analyzes manually uploaded screenshots associated with the supplied source links; it does not crawl or capture the linked pages. At least one screenshot is required. Review the findings and save the audit to retain its screenshots privately, then generate a separate proposal or strategy. Scores are preliminary and based only on assessed categories; an overall score requires at least 80% coverage.
 
 `public/asset-manifest.json` inventories current public files with byte sizes and SHA-256 hashes. Known original source URLs are retained as attribution; verification does not download from those sources. After intentionally adding, changing, or removing public files, run `python scripts/update-asset-manifest.py` and review the manifest diff.
 
@@ -57,7 +57,7 @@ The `/strategy` and `/invoice` pages require an authorized Supabase sign-in. Str
 ```powershell
 npm.cmd run typecheck
 npm.cmd run build
-node --test scripts/invoice-model.test.mjs scripts/strategy-autofill-response.test.mjs scripts/public-prices.test.mjs
+node --test scripts/invoice-model.test.mjs scripts/strategy-autofill-response.test.mjs scripts/public-prices.test.mjs scripts/strategy-source-links.test.mjs scripts/strategy-audit-scoring.test.mjs scripts/strategy-pagespeed.test.mjs
 python scripts/audit-regressions.py
 python scripts/verify-site.py
 ```

@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Font, Page, StyleSheet, Svg, Line, Path, Text, View, pdf } from "@react-pdf/renderer";
+import { Document, Font, Image, Page, StyleSheet, Svg, Line, Path, Text, View, pdf } from "@react-pdf/renderer";
 import { getActiveBusinessFields, type Draft } from "./schema";
 
 // Disable mid-word hyphenation so headings and body copy wrap cleanly at word boundaries
@@ -691,7 +691,36 @@ function NumberedEditorialBlock({
   );
 }
 
-export function StrategyPdfDocument({ draft, edition }: { draft: Draft; edition: PdfEdition }) {
+export type PdfEvidence = { url: string; checkedAt: string; kind: string; image: string };
+const auditHeadings = ["Business overview", "Current digital presence", "Audit findings", "Key opportunities", "Recommended strategy", "GrailHiiv services", "30/60/90-day roadmap", "KPIs and measurement", "Evidence"];
+function extractAuditSections(text: string): { title: string; body: string }[] | null {
+  const start = text.lastIndexOf("1. Business overview");
+  if (start < 0) return null;
+  const tail = text.slice(start);
+  const positions = auditHeadings.map((heading, i) => tail.indexOf(`${i + 1}. ${heading}`));
+  if (positions.some((position, i) => position < 0 || (i > 0 && position <= positions[i - 1]))) return null;
+  const sections = auditHeadings.map((title, i) => ({ title, body: tail.slice(positions[i] + `${i + 1}. ${title}`.length, positions[i + 1] ?? tail.length).trim() }));
+  const previous = text.slice(0, start).replace(/--- New audit outline ---\s*$/, "").trim();
+  return previous ? [{ title: "Previous strategy", body: previous }, ...sections] : sections;
+}
+function AuditPdf({ draft, edition, sections, evidence, documentKind }: { draft: Draft; edition: PdfEdition; sections: { title: string; body: string }[]; evidence: PdfEvidence[]; documentKind: string }) {
+  return <Document title={`${draft.business || draft.name || "Business"} ${documentKind}`}>
+    {sections.map((section, index) => <Page key={section.title} size={SLIDE_SIZE} wrap style={{ paddingTop: 45, paddingBottom: 50, paddingHorizontal: 60, fontFamily: "Helvetica", backgroundColor: "#ffffff", color: "#111111" }}>
+      <Text style={{ fontSize: 11, color: "#555555", marginBottom: 14 }}>{edition === "client" ? `CLIENT ${documentKind.toUpperCase()}` : `INTERNAL ${documentKind.toUpperCase()}`} / {draft.business || draft.name || "BUSINESS"}</Text>
+      <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 25, marginBottom: 20 }}>{String(index + 1).padStart(2, "0")} / {section.title}</Text>
+      <Text style={{ fontSize: 13, lineHeight: 1.5 }}>{section.body || "No information available."}</Text>
+    </Page>)}
+    {evidence.map((item, index) => <Page key={`${item.url}-${index}`} size={SLIDE_SIZE} style={{ padding: 35, fontFamily: "Helvetica", backgroundColor: "#ffffff" }}>
+      <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 18, marginBottom: 8 }}>Evidence screenshot {index + 1}</Text>
+      <Text style={{ fontSize: 10, marginBottom: 6 }}>{item.url}</Text>
+      <Text style={{ fontSize: 10, marginBottom: 10 }}>{item.kind} / {item.checkedAt || "Capture date unknown"}</Text>
+      <Image src={item.image} style={{ width: "100%", height: 390, objectFit: "contain" }} />
+    </Page>)}
+  </Document>;
+}
+export function StrategyPdfDocument({ draft, edition, evidence = [], documentKind = "strategy" }: { draft: Draft; edition: PdfEdition; evidence?: PdfEvidence[]; documentKind?: "audit" | "proposal" | "strategy" }) {
+  const auditSections = documentKind === "strategy" ? extractAuditSections(draft.strategy) : null;
+  if (auditSections || draft.auditBased) return <AuditPdf draft={draft} edition={edition} sections={auditSections ?? [{ title: documentKind.charAt(0).toUpperCase() + documentKind.slice(1), body: draft.strategy }]} evidence={evidence} documentKind={documentKind} />;
   const isClientEdition = edition === "client";
   const subjectName = (draft.business.trim() || draft.name.trim() || "NORTHLINE GROUP").toUpperCase();
   const presenterName = "GRAILORD ANTONIO";
@@ -2160,15 +2189,15 @@ function triggerBlobDownload(blob: Blob, filename: string) {
   setTimeout(() => URL.revokeObjectURL(url), 4000);
 }
 
-export async function downloadStrategyPdfs(draft: Draft): Promise<void> {
+export async function downloadStrategyPdfs(draft: Draft, evidence: PdfEvidence[] = [], documentKind: "audit" | "proposal" | "strategy" = "strategy"): Promise<void> {
   const baseSlug = slugifyFilename(draft.business.trim() || draft.name.trim() || "strategy");
 
   const [clientBlob, playbookBlob] = await Promise.all([
-    pdf(<StrategyPdfDocument draft={draft} edition="client" />).toBlob(),
-    pdf(<StrategyPdfDocument draft={draft} edition="playbook" />).toBlob(),
+    pdf(<StrategyPdfDocument draft={draft} edition="client" evidence={evidence} documentKind={documentKind} />).toBlob(),
+    pdf(<StrategyPdfDocument draft={draft} edition="playbook" evidence={evidence} documentKind={documentKind} />).toBlob(),
   ]);
 
-  triggerBlobDownload(clientBlob, `${baseSlug}-client-presentation.pdf`);
+  triggerBlobDownload(clientBlob, `${baseSlug}-${documentKind}-client.pdf`);
   await new Promise(resolve => setTimeout(resolve, 350));
-  triggerBlobDownload(playbookBlob, `${baseSlug}-internal-playbook.pdf`);
+  triggerBlobDownload(playbookBlob, `${baseSlug}-${documentKind}-internal.pdf`);
 }

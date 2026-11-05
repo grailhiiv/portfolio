@@ -37,7 +37,9 @@ export async function uploadAttachment(owner: string, profileId: string, id: str
   const path = `${owner}/${profileId}/${id}--${encodeName(file.name)}`;
   const { error } = await bucket.upload(path, file, { upsert: true, contentType: file.type });
   if (error) throw error;
+  return path;
 }
+export async function readAttachment(path: string): Promise<Blob> { const { data, error } = await bucket.download(path); if (error) throw error; return data; }
 export async function deleteAttachmentPaths(paths: string[]) {
   for (let i = 0; i < paths.length; i += 100) { const { error } = await bucket.remove(paths.slice(i, i + 100)); if (error) throw error; }
 }

@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { ADMIN_EMAIL } from "@/lib/supabase/config";
 import { supabaseServer } from "@/lib/supabase/server";
 import InvoiceWorkspace from "./workspace";
+import "../workspace.css";
 import "./invoice.css";
 
 export const metadata: Metadata = { title: "Invoice Workspace", robots: { index: false, follow: false } };

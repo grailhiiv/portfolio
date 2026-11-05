@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { login } from "./actions";
 import SignInButton from "./sign-in-button";
-import "../strategy/strategy.css";
+import "../workspace.css";
 
 export const metadata: Metadata = { title: "Login", robots: { index: false, follow: false } };
 

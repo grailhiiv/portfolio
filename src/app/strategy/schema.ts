@@ -17,6 +17,10 @@ export type Finding = {
   category?: string;
 };
 
+export type AuditEvidence = { path: string; url: string; checkedAt: string; kind: string };
+export type ApprovedAuditFinding = { source: string; observation: string; recommendation: string; kind: string; impact: string; effort: string; benefit: string; service?: string; serviceRelevance?: string; outreachAngle?: string; evidencePoint?: { x: number; y: number; kind?: string }; confidence?: string; severity?: string; outreachSuitability?: string; relevance?: string; communicationEase?: string; verification?: string };
+export type AuditSourceStatus = { url: string; status: string; message: string; checkedAt: string };
+
 export type Draft = {
   mode: string;
   name: string;
@@ -28,6 +32,13 @@ export type Draft = {
   research: string;
   source: string;
   strategy: string;
+  proposal: string;
+  auditReport: string;
+  auditSnapshot: Record<string, unknown> | null;
+  prospectStatus: string;
+  outreachMessage: string;
+  approvedAuditFindings: ApprovedAuditFinding[];
+  auditSourceStatus: AuditSourceStatus[];
   businessType: string;
   businessTypeOther: string;
   offerings: string;
@@ -35,6 +46,11 @@ export type Draft = {
   competitors: string;
   conversionGoal: string;
   mainSource: string;
+  auditSources: string;
+  auditOtherSources: string[];
+  auditContext: string;
+  auditEvidence: AuditEvidence[];
+  auditBased: boolean;
   // Universal strategic context
   location: string;
   brandVoice: string;
@@ -68,6 +84,13 @@ export const emptyDraft: Draft = {
   research: "",
   source: "",
   strategy: "",
+  proposal: "",
+  auditReport: "",
+  auditSnapshot: null,
+  prospectStatus: "Not contacted",
+  outreachMessage: "",
+  approvedAuditFindings: [],
+  auditSourceStatus: [],
   businessType: "",
   businessTypeOther: "",
   offerings: "",
@@ -75,6 +98,11 @@ export const emptyDraft: Draft = {
   competitors: "",
   conversionGoal: "",
   mainSource: "",
+  auditSources: "",
+  auditOtherSources: [],
+  auditContext: "",
+  auditEvidence: [],
+  auditBased: false,
   location: "",
   brandVoice: "",
   differentiator: "",
@@ -1228,6 +1256,13 @@ export function normalizeDraft(raw: Partial<Draft> | null | undefined): Draft {
     research: s(raw.research),
     source: s(raw.source),
     strategy: s(raw.strategy),
+    proposal: s(raw.proposal),
+    auditReport: s(raw.auditReport),
+    auditSnapshot: raw.auditSnapshot && typeof raw.auditSnapshot === "object" && !Array.isArray(raw.auditSnapshot) ? raw.auditSnapshot : null,
+    prospectStatus: s(raw.prospectStatus, "Not contacted"),
+    outreachMessage: s(raw.outreachMessage),
+    approvedAuditFindings: Array.isArray(raw.approvedAuditFindings) ? raw.approvedAuditFindings.filter(f => f && typeof f.source === "string" && typeof f.observation === "string").map(f => ({ source: s(f.source), observation: s(f.observation), recommendation: s(f.recommendation), kind: s(f.kind), impact: s(f.impact), effort: s(f.effort), benefit: s(f.benefit), ...(typeof f.service === "string" ? { service: f.service } : {}), ...(typeof f.serviceRelevance === "string" ? { serviceRelevance: f.serviceRelevance } : {}), ...(typeof f.outreachAngle === "string" ? { outreachAngle: f.outreachAngle } : {}), ...(f.evidencePoint && typeof f.evidencePoint.x === "number" && typeof f.evidencePoint.y === "number" ? { evidencePoint: { x: f.evidencePoint.x, y: f.evidencePoint.y, ...(f.evidencePoint.kind === "mobile" || f.evidencePoint.kind === "desktop" ? { kind: f.evidencePoint.kind } : {}) } } : {}), ...(typeof f.confidence === "string" ? { confidence: f.confidence } : {}), ...(typeof f.severity === "string" ? { severity: f.severity } : {}), ...(typeof f.outreachSuitability === "string" ? { outreachSuitability: f.outreachSuitability } : {}), ...(typeof f.relevance === "string" ? { relevance: f.relevance } : {}), ...(typeof f.communicationEase === "string" ? { communicationEase: f.communicationEase } : {}), ...(typeof f.verification === "string" ? { verification: f.verification } : {}) })) : [],
+    auditSourceStatus: Array.isArray(raw.auditSourceStatus) ? raw.auditSourceStatus.filter(item => item && typeof item.url === "string").map(item => ({ url: s(item.url), status: s(item.status), message: s(item.message), checkedAt: s(item.checkedAt) })) : [],
     businessType: s(raw.businessType),
     businessTypeOther: s(raw.businessTypeOther),
     offerings: s(raw.offerings),
@@ -1235,6 +1270,11 @@ export function normalizeDraft(raw: Partial<Draft> | null | undefined): Draft {
     competitors: s(raw.competitors),
     conversionGoal: s(raw.conversionGoal),
     mainSource: s(raw.mainSource),
+    auditSources: typeof raw.auditSources === "string" ? raw.auditSources : [s(raw.website), ...profiles.map(profile => profile.url)].map(value => value.trim()).filter(Boolean).join("\n"),
+    auditOtherSources: Array.isArray(raw.auditOtherSources) ? raw.auditOtherSources.filter((value): value is string => typeof value === "string") : [],
+    auditContext: s(raw.auditContext),
+    auditBased: raw.auditBased === true,
+    auditEvidence: Array.isArray(raw.auditEvidence) ? raw.auditEvidence.filter(e => e && typeof e.path === "string" && typeof e.url === "string").map(e => ({ path: s(e.path), url: s(e.url), checkedAt: s(e.checkedAt), kind: s(e.kind) })) : [],
     location: s(raw.location),
     brandVoice: s(raw.brandVoice),
     differentiator: s(raw.differentiator),

@@ -49,6 +49,7 @@ export async function POST(request: Request) {
     const targetField = clean(body.targetField);
 
     const hasAnySignal =
+      Boolean(clean(draft.auditSources)) ||
       Boolean(clean(draft.mainSource)) ||
       Boolean(clean(draft.website)) ||
       Boolean(clean(draft.business)) ||

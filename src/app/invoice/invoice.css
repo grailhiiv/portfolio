@@ -1,4 +1,3 @@
-body:has(.invoice-page) > .header, body:has(.invoice-page) footer#contact { display:none; }
 .invoice-page { padding:72px 24px 120px; color:#111; }
 .invoice-shell { max-width:1440px; margin:auto; }
 .invoice-nav { display:flex; justify-content:space-between; gap:20px; border-bottom:1px solid #e7e7e7; padding-bottom:24px; font-size:13px; }
