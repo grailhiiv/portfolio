@@ -22,6 +22,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
   const [draft, setDraft] = useState<Draft>(empty);
   const [documentKind, setDocumentKind] = useState<"audit" | "proposal" | "strategy">("strategy");
   const [auditKey, setAuditKey] = useState(0);
+  const [openAuditResults, setOpenAuditResults] = useState(false);
   const [status, setStatus] = useState("");
   const [view, setView] = useState<"workspace" | "history" | "settings" | "documents">("workspace");
   useEffect(() => { const sync = () => { if (location.hash === "#history") setView("history"); else if (location.hash === "#settings") setView("settings"); }; sync(); window.addEventListener("hashchange", sync); return () => window.removeEventListener("hashchange", sync); }, []);
@@ -101,7 +102,13 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
     setAuditKey(key => key + 1);
     void flushSaves();
     const current = dataRef.current; const record = current.records.find(item => item.id === id);
-    if (record && persist({ ...current, activeId: id })) { setDraft(normalizeDraft(record.draft)); setView("workspace"); }
+    if (record && persist({ ...current, activeId: id })) {
+      const restored = normalizeDraft(record.draft);
+      setDraft(restored);
+      setOpenAuditResults(Boolean(restored.auditSnapshot || restored.auditReport));
+      setStatus(restored.auditSnapshot || restored.auditReport ? "" : "This record has no saved audit results. Run an audit to add results to History.");
+      setView("workspace");
+    }
   }
   async function deleteRecords(target: string | "all") {
     const current = dataRef.current; const doomed = target === "all" ? current.records : current.records.filter(item => item.id === target);
@@ -120,6 +127,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
   }
   function clearAll() {
     setAuditKey(key => key + 1);
+    setOpenAuditResults(false);
     void flushSaves();
     const current = dataRef.current;
     persist({ ...current, activeId: null });
@@ -212,7 +220,7 @@ export default function StrategyWorkspace({ ownerId, openAIConfigured, hasCustom
           setPrefsMessage("");
         }} options={[{ value: "low", label: "Low" }, { value: "medium", label: "Medium (Default)" }, { value: "high", label: "High" }, { value: "xhigh", label: "XHigh" }, { value: "max", label: "Max" }]} /><div className="strategy-actions"><button className="strategy-button" type="submit" disabled={prefsBusy || (model === savedModel && reasoningEffort === savedReasoningEffort)}>{prefsBusy ? "Saving…" : "Save"}</button></div>{prefsMessage && <p className="settings-key-status" role="status">{prefsMessage}</p>}</form></div></section>}
         {view === "workspace" && <>
-        <SourceAudit key={auditKey} ownerId={ownerId} currentRecordId={() => dataRef.current.activeId} currentRecordVersion={() => dataRef.current.records.find(record => record.id === dataRef.current.activeId)?.updatedAt ?? null} draft={draft} ready={ready} onApply={applyAudit} update={update} onSyncSources={syncAuditSources} onClear={clearAll} onDocumentCreated={output => { setDocumentKind(output); setView("documents"); }} />
+        <SourceAudit key={auditKey} ownerId={ownerId} currentRecordId={() => dataRef.current.activeId} currentRecordVersion={() => dataRef.current.records.find(record => record.id === dataRef.current.activeId)?.updatedAt ?? null} draft={draft} ready={ready} openResults={openAuditResults} onApply={applyAudit} update={update} onSyncSources={syncAuditSources} />
         </>}
         {view === "documents" && <>
         {<section className="strategy-section"><div className="strategy-heading"><span>03 / DOCUMENTS</span><h2>Documents<span>.</span></h2><p>Review and edit each document separately.</p></div><fieldset className="audit-choice"><legend>Document</legend>{([["audit", "Audit"], ["proposal", "Proposal"], ["strategy", "Strategy"]] as const).map(([kind, label]) => <label key={kind}><input type="radio" name="document-kind" checked={documentKind === kind} onChange={() => setDocumentKind(kind)} />{label}</label>)}</fieldset><label className="strategy-editor"><textarea aria-label={`${documentKind} draft`} rows={18} placeholder={`Your ${documentKind} will appear here.`} value={documentKind === "audit" ? draft.auditReport : documentKind === "proposal" ? draft.proposal : draft.strategy} disabled={!ready} onChange={e => update(documentKind === "audit" ? "auditReport" : documentKind, e.target.value)} /></label><div className="strategy-actions"><button type="button" onClick={clearAll} disabled={!ready || savingPdf}>Clear All</button><button type="button" onClick={async () => { try { await navigator.clipboard.writeText(documentKind === "audit" ? draft.auditReport : documentKind === "proposal" ? draft.proposal : draft.strategy); setCopied(true); if (copyTimerRef.current !== null) clearTimeout(copyTimerRef.current); copyTimerRef.current = setTimeout(() => setCopied(false), 2000); } catch { setStatus("Could not copy the document to your clipboard."); } }} disabled={!ready || savingPdf}>{copied ? "Copied" : "Copy Draft"}</button><button type="button" onClick={() => void savePdfs()} disabled={!ready || savingPdf || !(documentKind === "audit" ? draft.auditReport : documentKind === "proposal" ? draft.proposal : draft.strategy).trim()}>{savingPdf ? "Saving PDFs…" : "Save PDF"}</button></div></section>}

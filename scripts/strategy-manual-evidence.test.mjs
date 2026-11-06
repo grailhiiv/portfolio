@@ -6,7 +6,8 @@ import { parseAuditSources } from "../src/app/strategy/source-links.ts";
 test("a screenshot cannot silently follow an edited source link", () => {
   assert.equal(screenshotSourceMatches("https://example.com", "https://example.com "), true);
   assert.equal(screenshotSourceMatches("https://example.com", "https://other.example"), false);
-  assert.equal(screenshotSourceMatches("", "https://example.com"), true);
+  assert.equal(screenshotSourceMatches("https://example.com", ""), false);
+  assert.equal(screenshotSourceMatches("", "https://example.com"), false);
 });
 
 test("screenshots are associated with their source and unsupplied sources remain unassessed", () => {

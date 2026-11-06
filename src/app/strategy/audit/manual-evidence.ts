@@ -2,7 +2,7 @@ export type ManualAttachment = { url: string; name: string; dataUrl: string };
 
 /** An attachment with a known source must not silently follow an edited link. */
 export function screenshotSourceMatches(boundUrl: string, currentUrl: string) {
-  return !boundUrl || boundUrl === currentUrl.trim();
+  return Boolean(boundUrl.trim()) && boundUrl.trim() === currentUrl.trim();
 }
 
 /** Links are identifiers only: this function never fetches a source. */

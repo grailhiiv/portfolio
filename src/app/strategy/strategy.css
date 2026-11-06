@@ -238,3 +238,61 @@ html[data-pointer="ready"]:has(.strategy-dialog[open]) body > .cursor { display:
 .audit-attach-button:has(input:focus-visible) { outline: 2px solid #111; outline-offset: 2px; }
 .audit-attachment { display: flex; align-items: center; gap: 12px; overflow-wrap: anywhere; }
 .audit-attachment button { text-decoration: underline; }
+
+.audit-other-links, .audit-profile-group { padding: 16px; border: 1px solid #dedede; border-radius: 4px; }
+.audit-other-links { gap: 16px; }
+.audit-other-row { padding-top: 14px; border-top: 1px solid #dedede; }
+.audit-other-heading, .audit-attachment-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.audit-attachment-controls { justify-content: flex-start; }
+.audit-attachment-controls span, .audit-source-hint { color: #666; font-size: 13px; }
+.audit-source-hint, .audit-field-error { margin: 0; }
+.audit-field-error { color: #a32020; font-size: 13px; }
+.source-audit .audit-remove-url, .source-audit .audit-add-url { width: fit-content; padding: 7px 12px; border: 1px solid #d2d2d2; border-radius: 4px; background: #eee; color: #111; font: inherit; font-size: 14px; text-decoration: none; cursor: pointer; }
+.source-audit .audit-remove-url:hover, .source-audit .audit-add-url:hover { background: #e1e1e1; }
+.source-audit .audit-add-url { justify-self: center; }
+.source-audit .audit-remove-url:disabled, .source-audit .audit-add-url:disabled { cursor: not-allowed; opacity: .6; }
+.audit-attachment { flex-wrap: wrap; font-size: 14px; }
+
+
+.source-audit .audit-intake > label, .source-audit .audit-source-input > label, .source-audit .audit-choice legend, .source-audit .audit-intake > .custom-select-field > span, .audit-other-title { font-size: 16px; }
+.audit-other-title { font-weight: 400; }
+
+.audit-dashboard { display: grid; gap: 1.5rem; }
+.audit-dashboard > section { min-width: 0; border-top: 1px solid var(--strategy-border, #ddd); padding-top: 1.25rem; }
+.audit-dashboard p, .audit-dashboard li { overflow-wrap: anywhere; }
+.audit-dashboard p, .audit-dashboard li { line-height: 1.6; }
+.audit-dashboard p + p { margin-top: .75rem; }
+.audit-dashboard ul, .audit-dashboard ol { margin: .75rem 0; padding-left: 1.4rem; }
+.audit-dashboard ul { list-style: disc; }
+.audit-dashboard ol { list-style: decimal; }
+.audit-dashboard li + li { margin-top: .5rem; }
+.audit-dashboard-cards, .audit-dashboard-journey { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 1rem; }
+.audit-dashboard-journey + p { margin-top: 1.25rem; }
+.audit-dashboard-journey article, .audit-ledger-entry { border: 1px solid var(--strategy-border, #ddd); padding: 1rem; border-radius: 8px; min-width: 0; }
+.audit-dashboard details, .audit-ledger-entry { margin: .75rem 0; }
+.audit-dashboard label { display: grid; gap: .5rem; }
+.audit-dashboard textarea { width: 100%; }
+.audit-outreach textarea { margin-top: 1rem; }
+.audit-outreach-actions { display: flex; justify-content: center; margin-top: 1rem; }
+.audit-outreach .audit-field-error { margin-top: .75rem; text-align: center; }
+
+.audit-dashboard-cards { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.audit-dashboard .audit-opportunity { margin: 0; padding: 20px; border-radius: 4px; }
+.audit-opportunity-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.audit-opportunity-heading h4 { margin: 0; }
+.audit-opportunity-heading + p { margin-top: .75rem; }
+.audit-priority { color: #666; font-size: 13px; text-transform: capitalize; white-space: nowrap; }
+.audit-dashboard .audit-opportunity details { margin: 12px 0 0; padding-bottom: 0; }
+.audit-summary-facts, .audit-handoff { margin: 20px 0 0; border-top: 1px solid #dedede; }
+.audit-summary-facts > div { display: grid; grid-template-columns: minmax(120px, 180px) minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid #dedede; }
+.audit-summary-facts ul { margin: 0; }
+.audit-summary-facts li + li { margin-top: .2rem; }
+.audit-handoff { padding-top: 1rem; }
+.audit-handoff h4 { margin-bottom: .5rem; }
+.audit-dashboard dt { color: #666; font-size: 13px; }
+.audit-dashboard dd { margin: 0; overflow-wrap: anywhere; }
+.audit-additional { margin-top: 24px; }
+@media (max-width: 600px) {
+  .audit-summary-facts > div { grid-template-columns: 1fr; gap: 4px; }
+  .audit-opportunity-heading { align-items: flex-start; flex-direction: column; gap: 4px; }
+}

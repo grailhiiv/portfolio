@@ -6,6 +6,7 @@ const videos = [
   { id: "caroline", name: "Caroline Montague", service: "Social Media Strategy & Brand Growth", value: "0 → 171K", result: "TikTok Followers in 16 Months" },
   { id: "daniel", name: "Daniel G. Miller", service: "Social Media Management", value: "57,680", result: "Social Media Views in 3 Months" },
   { id: "melissa", name: "Melissa Castro", service: "Email & Social Media Marketing", value: "112%", result: "Pre-Order Goal in 30 Days" },
+  { id: "atlas", name: "Atlas Rose", service: "Email Marketing & Automation", value: "+275.6%", result: "Email Revenue in 90 Days" },
 ];
 
 export function Testimonials() {
